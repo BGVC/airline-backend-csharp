@@ -25,266 +25,261 @@ namespace BGVC.Airline.Backend
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            Seed(modelBuilder);
+            SeedData(modelBuilder);
         }
 
-        private void Seed(ModelBuilder modelBuilder)
+        private static void SeedData(ModelBuilder modelBuilder)
         {
-            SeedCountries(modelBuilder);
-        }
-
-        private void SeedCountries(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 1, Name = "Afghanistan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 2, Name = "Åland Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 3, Name = "Albania" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 4, Name = "Algeria" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 5, Name = "American Samoa" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 6, Name = "Andorra" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 7, Name = "Angola" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 8, Name = "Anguilla" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 9, Name = "Antarctica" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 10, Name = "Antigua and Barbuda" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 11, Name = "Argentina" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 12, Name = "Armenia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 13, Name = "Aruba" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 14, Name = "Australia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 15, Name = "Austria" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 16, Name = "Azerbaijan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 17, Name = "Bahrain" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 18, Name = "Bahamas" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 19, Name = "Bangladesh" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 20, Name = "Barbados" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 21, Name = "Belarus" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 22, Name = "Belgium" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 23, Name = "Belize" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 24, Name = "Benin" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 25, Name = "Bermuda" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 26, Name = "Bhutan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 27, Name = "Bolivia, Plurinational State of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 28, Name = "Bonaire, Sint Eustatius and Saba" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 29, Name = "Bosnia and Herzegovina" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 30, Name = "Botswana" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 31, Name = "Bouvet Island" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 32, Name = "Brazil" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 33, Name = "British Indian Ocean Territory" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 34, Name = "Brunei Darussalam" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 35, Name = "Bulgaria" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 36, Name = "Burkina Faso" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 37, Name = "Burundi" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 38, Name = "Cambodia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 39, Name = "Cameroon" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 40, Name = "Canada" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 41, Name = "Cape Verde" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 42, Name = "Cayman Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 43, Name = "Central African Republic" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 44, Name = "Chad" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 45, Name = "Chile" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 46, Name = "China" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 47, Name = "Christmas Island" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 48, Name = "Cocos (Keeling) Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 49, Name = "Colombia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 50, Name = "Comoros" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 51, Name = "Congo" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 52, Name = "Congo, the Democratic Republic of the" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 53, Name = "Cook Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 54, Name = "Costa Rica" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 55, Name = "Côte d'Ivoire" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 56, Name = "Croatia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 57, Name = "Cuba" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 58, Name = "Curaçao" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 59, Name = "Cyprus" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 60, Name = "Czech Republic" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 61, Name = "Denmark" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 62, Name = "Djibouti" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 63, Name = "Dominica" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 64, Name = "Dominican Republic" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 65, Name = "Ecuador" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 66, Name = "Egypt" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 67, Name = "El Salvador" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 68, Name = "Equatorial Guinea" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 69, Name = "Eritrea" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 70, Name = "Estonia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 71, Name = "Ethiopia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 72, Name = "Falkland Islands (Malvinas)" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 73, Name = "Faroe Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 74, Name = "Fiji" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 75, Name = "Finland" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 76, Name = "France" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 77, Name = "French Guiana" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 78, Name = "French Polynesia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 79, Name = "French Southern Territories" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 80, Name = "Gabon" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 81, Name = "Gambia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 82, Name = "Georgia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 83, Name = "Germany" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 84, Name = "Ghana" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 85, Name = "Gibraltar" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 86, Name = "Greece" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 87, Name = "Greenland" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 88, Name = "Grenada" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 89, Name = "Guadeloupe" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 90, Name = "Guam" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 91, Name = "Guatemala" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 92, Name = "Guernsey" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 93, Name = "Guinea" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 94, Name = "Guinea-Bissau" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 95, Name = "Guyana" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 96, Name = "Haiti" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 97, Name = "Heard Island and McDonald Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 98, Name = "Holy See (Vatican City State)" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 99, Name = "Honduras" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 100, Name = "Hong Kong" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 101, Name = "Hungary" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 102, Name = "Iceland" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 103, Name = "India" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 104, Name = "Indonesia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 105, Name = "Iran, Islamic Republic of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 106, Name = "Iraq" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 107, Name = "Ireland" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 108, Name = "Isle of Man" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 109, Name = "Israel" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 110, Name = "Italy" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 111, Name = "Jamaica" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 112, Name = "Japan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 113, Name = "Jersey" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 114, Name = "Jordan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 115, Name = "Kazakhstan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 116, Name = "Kenya" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 117, Name = "Kiribati" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 118, Name = "Korea, Democratic People's Republic of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 119, Name = "Korea, Republic of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 120, Name = "Kuwait" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 121, Name = "Kyrgyzstan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 122, Name = "Lao People's Democratic Republic" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 123, Name = "Latvia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 124, Name = "Lebanon" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 125, Name = "Lesotho" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 126, Name = "Liberia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 127, Name = "Libya" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 128, Name = "Liechtenstein" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 129, Name = "Lithuania" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 130, Name = "Luxembourg" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 131, Name = "Macao" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 132, Name = "Macedonia, the Former Yugoslav Republic of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 133, Name = "Madagascar" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 134, Name = "Malawi" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 135, Name = "Malaysia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 136, Name = "Maldives" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 137, Name = "Mali" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 138, Name = "Malta" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 139, Name = "Marshall Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 140, Name = "Martinique" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 141, Name = "Mauritania" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 142, Name = "Mauritius" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 143, Name = "Mayotte" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 144, Name = "Mexico" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 145, Name = "Micronesia, Federated States of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 146, Name = "Moldova, Republic of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 147, Name = "Monaco" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 148, Name = "Mongolia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 149, Name = "Montenegro" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 150, Name = "Montserrat" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 151, Name = "Morocco" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 152, Name = "Mozambique" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 153, Name = "Myanmar" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 154, Name = "Namibia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 155, Name = "Nauru" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 156, Name = "Nepal" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 157, Name = "Netherlands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 158, Name = "New Caledonia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 159, Name = "New Zealand" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 160, Name = "Nicaragua" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 161, Name = "Niger" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 162, Name = "Nigeria" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 163, Name = "Niue" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 164, Name = "Norfolk Island" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 165, Name = "Northern Mariana Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 166, Name = "Norway" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 167, Name = "Oman" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 168, Name = "Pakistan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 169, Name = "Palau" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 170, Name = "Palestine, State of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 171, Name = "Panama" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 172, Name = "Papua New Guinea" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 173, Name = "Paraguay" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 174, Name = "Peru" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 175, Name = "Philippines" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 176, Name = "Pitcairn" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 177, Name = "Poland" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 178, Name = "Portugal" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 179, Name = "Puerto Rico" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 180, Name = "Qatar" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 181, Name = "Réunion" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 182, Name = "Romania" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 183, Name = "Russian Federation" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 184, Name = "Rwanda" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 185, Name = "Saint Barthélemy" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 186, Name = "Saint Helena, Ascension and Tristan da Cunha" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 187, Name = "Saint Kitts and Nevis" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 188, Name = "Saint Lucia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 189, Name = "Saint Martin (French part)" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 190, Name = "Saint Pierre and Miquelon" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 191, Name = "Saint Vincent and the Grenadines" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 192, Name = "Samoa" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 193, Name = "San Marino" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 194, Name = "Sao Tome and Principe" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 195, Name = "Saudi Arabia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 196, Name = "Senegal" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 197, Name = "Serbia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 198, Name = "Seychelles" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 199, Name = "Sierra Leone" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 200, Name = "Singapore" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 201, Name = "Sint Maarten (Dutch part)" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 202, Name = "Slovakia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 203, Name = "Slovenia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 204, Name = "Solomon Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 205, Name = "Somalia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 206, Name = "South Africa" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 207, Name = "South Georgia and the South Sandwich Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 208, Name = "South Sudan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 209, Name = "Spain" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 210, Name = "Sri Lanka" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 211, Name = "Sudan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 212, Name = "Suriname" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 213, Name = "Svalbard and Jan Mayen" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 214, Name = "Swaziland" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 215, Name = "Sweden" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 216, Name = "Switzerland" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 217, Name = "Syrian Arab Republic" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 218, Name = "Taiwan, Province of China" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 219, Name = "Tajikistan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 220, Name = "Tanzania, United Republic of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 221, Name = "Thailand" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 222, Name = "Timor-Leste" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 223, Name = "Togo" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 224, Name = "Tokelau" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 225, Name = "Tonga" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 226, Name = "Trinidad and Tobago" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 227, Name = "Tunisia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 228, Name = "Turkey" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 229, Name = "Turkmenistan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 230, Name = "Turks and Caicos Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 231, Name = "Tuvalu" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 232, Name = "Uganda" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 233, Name = "Ukraine" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 234, Name = "United Arab Emirates" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 235, Name = "United Kingdom" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 236, Name = "United States" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 237, Name = "United States Minor Outlying Islands" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 238, Name = "Uruguay" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 239, Name = "Uzbekistan" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 240, Name = "Vanuatu" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 241, Name = "Venezuela, Bolivarian Republic of" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 242, Name = "Viet Nam" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 243, Name = "Virgin Islands, British" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 244, Name = "Virgin Islands, U.S." });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 245, Name = "Wallis and Futuna" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 246, Name = "Western Sahara" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 247, Name = "Yemen" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 248, Name = "Zambia" });
-            modelBuilder.Entity<Country>().HasData(new Country { Id = 249, Name = "Zimbabwe" });
-
+            modelBuilder.Entity<Country>().HasData(
+                            new Country { Id = 1, Name = "Afghanistan", Iso = "AF" },
+                            new Country { Id = 2, Name = "Åland Islands", Iso = "AX" },
+                            new Country { Id = 3, Name = "Albania", Iso = "AL" },
+                            new Country { Id = 4, Name = "Algeria", Iso = "DZ" },
+                            new Country { Id = 5, Name = "American Samoa", Iso = "AS" },
+                            new Country { Id = 6, Name = "Andorra", Iso = "AD" },
+                            new Country { Id = 7, Name = "Angola", Iso = "AO" },
+                            new Country { Id = 8, Name = "Anguilla", Iso = "AI" },
+                            new Country { Id = 9, Name = "Antarctica", Iso = "AQ" },
+                            new Country { Id = 10, Name = "Antigua and Barbuda", Iso = "AG" },
+                            new Country { Id = 11, Name = "Argentina", Iso = "AR" },
+                            new Country { Id = 12, Name = "Armenia", Iso = "AM" },
+                            new Country { Id = 13, Name = "Aruba", Iso = "AW" },
+                            new Country { Id = 14, Name = "Australia", Iso = "AU" },
+                            new Country { Id = 15, Name = "Austria", Iso = "AT" },
+                            new Country { Id = 16, Name = "Azerbaijan", Iso = "AZ" },
+                            new Country { Id = 17, Name = "Bahrain", Iso = "BH" },
+                            new Country { Id = 18, Name = "Bahamas", Iso = "BS" },
+                            new Country { Id = 19, Name = "Bangladesh", Iso = "BD" },
+                            new Country { Id = 20, Name = "Barbados", Iso = "BB" },
+                            new Country { Id = 21, Name = "Belarus", Iso = "BY" },
+                            new Country { Id = 22, Name = "Belgium", Iso = "BE" },
+                            new Country { Id = 23, Name = "Belize", Iso = "BZ" },
+                            new Country { Id = 24, Name = "Benin", Iso = "BJ" },
+                            new Country { Id = 25, Name = "Bermuda", Iso = "BM" },
+                            new Country { Id = 26, Name = "Bhutan", Iso = "BT" },
+                            new Country { Id = 27, Name = "Bolivia, Plurinational State of", Iso = "BO" },
+                            new Country { Id = 28, Name = "Bonaire, Sint Eustatius and Saba", Iso = "BQ" },
+                            new Country { Id = 29, Name = "Bosnia and Herzegovina", Iso = "BA" },
+                            new Country { Id = 30, Name = "Botswana", Iso = "BW" },
+                            new Country { Id = 31, Name = "Bouvet Island", Iso = "BV" },
+                            new Country { Id = 32, Name = "Brazil", Iso = "BR" },
+                            new Country { Id = 33, Name = "British Indian Ocean Territory", Iso = "IO" },
+                            new Country { Id = 34, Name = "Brunei Darussalam", Iso = "BN" },
+                            new Country { Id = 35, Name = "Bulgaria", Iso = "BG" },
+                            new Country { Id = 36, Name = "Burkina Faso", Iso = "BF" },
+                            new Country { Id = 37, Name = "Burundi", Iso = "BI" },
+                            new Country { Id = 38, Name = "Cambodia", Iso = "KH" },
+                            new Country { Id = 39, Name = "Cameroon", Iso = "CM" },
+                            new Country { Id = 40, Name = "Canada", Iso = "CA" },
+                            new Country { Id = 41, Name = "Cape Verde", Iso = "CV" },
+                            new Country { Id = 42, Name = "Cayman Islands", Iso = "KY" },
+                            new Country { Id = 43, Name = "Central African Republic", Iso = "CF" },
+                            new Country { Id = 44, Name = "Chad", Iso = "TD" },
+                            new Country { Id = 45, Name = "Chile", Iso = "CL" },
+                            new Country { Id = 46, Name = "China", Iso = "CN" },
+                            new Country { Id = 47, Name = "Christmas Island", Iso = "CX" },
+                            new Country { Id = 48, Name = "Cocos (Keeling) Islands", Iso = "CC" },
+                            new Country { Id = 49, Name = "Colombia", Iso = "CO" },
+                            new Country { Id = 50, Name = "Comoros", Iso = "KM" },
+                            new Country { Id = 51, Name = "Congo", Iso = "CG" },
+                            new Country { Id = 52, Name = "Congo, the Democratic Republic of the", Iso = "CD" },
+                            new Country { Id = 53, Name = "Cook Islands", Iso = "CK" },
+                            new Country { Id = 54, Name = "Costa Rica", Iso = "CR" },
+                            new Country { Id = 55, Name = "Côte d'Ivoire", Iso = "CI" },
+                            new Country { Id = 56, Name = "Croatia", Iso = "HR" },
+                            new Country { Id = 57, Name = "Cuba", Iso = "CU" },
+                            new Country { Id = 58, Name = "Curaçao", Iso = "CW" },
+                            new Country { Id = 59, Name = "Cyprus", Iso = "CY" },
+                            new Country { Id = 60, Name = "Czech Republic", Iso = "CZ" },
+                            new Country { Id = 61, Name = "Denmark", Iso = "DK" },
+                            new Country { Id = 62, Name = "Djibouti", Iso = "DJ" },
+                            new Country { Id = 63, Name = "Dominica", Iso = "DM" },
+                            new Country { Id = 64, Name = "Dominican Republic", Iso = "DO" },
+                            new Country { Id = 65, Name = "Ecuador", Iso = "EC" },
+                            new Country { Id = 66, Name = "Egypt", Iso = "EG" },
+                            new Country { Id = 67, Name = "El Salvador", Iso = "SV" },
+                            new Country { Id = 68, Name = "Equatorial Guinea", Iso = "GQ" },
+                            new Country { Id = 69, Name = "Eritrea", Iso = "ER" },
+                            new Country { Id = 70, Name = "Estonia", Iso = "EE" },
+                            new Country { Id = 71, Name = "Ethiopia", Iso = "ET" },
+                            new Country { Id = 72, Name = "Falkland Islands (Malvinas)", Iso = "FK" },
+                            new Country { Id = 73, Name = "Faroe Islands", Iso = "FO" },
+                            new Country { Id = 74, Name = "Fiji", Iso = "FJ" },
+                            new Country { Id = 75, Name = "Finland", Iso = "FI" },
+                            new Country { Id = 76, Name = "France", Iso = "FR" },
+                            new Country { Id = 77, Name = "French Guiana", Iso = "GF" },
+                            new Country { Id = 78, Name = "French Polynesia", Iso = "PF" },
+                            new Country { Id = 79, Name = "French Southern Territories", Iso = "TF" },
+                            new Country { Id = 80, Name = "Gabon", Iso = "GA" },
+                            new Country { Id = 81, Name = "Gambia", Iso = "GM" },
+                            new Country { Id = 82, Name = "Georgia", Iso = "GE" },
+                            new Country { Id = 83, Name = "Germany", Iso = "DE" },
+                            new Country { Id = 84, Name = "Ghana", Iso = "GH" },
+                            new Country { Id = 85, Name = "Gibraltar", Iso = "GI" },
+                            new Country { Id = 86, Name = "Greece", Iso = "GR" },
+                            new Country { Id = 87, Name = "Greenland", Iso = "GL" },
+                            new Country { Id = 88, Name = "Grenada", Iso = "GD" },
+                            new Country { Id = 89, Name = "Guadeloupe", Iso = "GP" },
+                            new Country { Id = 90, Name = "Guam", Iso = "GU" },
+                            new Country { Id = 91, Name = "Guatemala", Iso = "GT" },
+                            new Country { Id = 92, Name = "Guernsey", Iso = "GG" },
+                            new Country { Id = 93, Name = "Guinea", Iso = "GN" },
+                            new Country { Id = 94, Name = "Guinea-Bissau", Iso = "GW" },
+                            new Country { Id = 95, Name = "Guyana", Iso = "GY" },
+                            new Country { Id = 96, Name = "Haiti", Iso = "HT" },
+                            new Country { Id = 97, Name = "Heard Island and McDonald Islands", Iso = "HM" },
+                            new Country { Id = 98, Name = "Holy See (Vatican City State)", Iso = "VA" },
+                            new Country { Id = 99, Name = "Honduras", Iso = "HN" },
+                            new Country { Id = 100, Name = "Hong Kong", Iso = "HK" },
+                            new Country { Id = 101, Name = "Hungary", Iso = "HU" },
+                            new Country { Id = 102, Name = "Iceland", Iso = "IS" },
+                            new Country { Id = 103, Name = "India", Iso = "IN" },
+                            new Country { Id = 104, Name = "Indonesia", Iso = "ID" },
+                            new Country { Id = 105, Name = "Iran, Islamic Republic of", Iso = "IR" },
+                            new Country { Id = 106, Name = "Iraq", Iso = "IQ" },
+                            new Country { Id = 107, Name = "Ireland", Iso = "IE" },
+                            new Country { Id = 108, Name = "Isle of Man", Iso = "IM" },
+                            new Country { Id = 109, Name = "Israel", Iso = "IL" },
+                            new Country { Id = 110, Name = "Italy", Iso = "IT" },
+                            new Country { Id = 111, Name = "Jamaica", Iso = "JM" },
+                            new Country { Id = 112, Name = "Japan", Iso = "JP" },
+                            new Country { Id = 113, Name = "Jersey", Iso = "JE" },
+                            new Country { Id = 114, Name = "Jordan", Iso = "JO" },
+                            new Country { Id = 115, Name = "Kazakhstan", Iso = "KZ" },
+                            new Country { Id = 116, Name = "Kenya", Iso = "KE" },
+                            new Country { Id = 117, Name = "Kiribati", Iso = "KI" },
+                            new Country { Id = 118, Name = "Korea, Democratic People's Republic of", Iso = "KP" },
+                            new Country { Id = 119, Name = "Korea, Republic of", Iso = "KR" },
+                            new Country { Id = 120, Name = "Kuwait", Iso = "KW" },
+                            new Country { Id = 121, Name = "Kyrgyzstan", Iso = "KG" },
+                            new Country { Id = 122, Name = "Lao People's Democratic Republic", Iso = "LA" },
+                            new Country { Id = 123, Name = "Latvia", Iso = "LV" },
+                            new Country { Id = 124, Name = "Lebanon", Iso = "LB" },
+                            new Country { Id = 125, Name = "Lesotho", Iso = "LS" },
+                            new Country { Id = 126, Name = "Liberia", Iso = "LR" },
+                            new Country { Id = 127, Name = "Libya", Iso = "LY" },
+                            new Country { Id = 128, Name = "Liechtenstein", Iso = "LI" },
+                            new Country { Id = 129, Name = "Lithuania", Iso = "LT" },
+                            new Country { Id = 130, Name = "Luxembourg", Iso = "LU" },
+                            new Country { Id = 131, Name = "Macao", Iso = "MO" },
+                            new Country { Id = 132, Name = "Macedonia, the Former Yugoslav Republic of", Iso = "MK" },
+                            new Country { Id = 133, Name = "Madagascar", Iso = "MG" },
+                            new Country { Id = 134, Name = "Malawi", Iso = "MW" },
+                            new Country { Id = 135, Name = "Malaysia", Iso = "MY" },
+                            new Country { Id = 136, Name = "Maldives", Iso = "MV" },
+                            new Country { Id = 137, Name = "Mali", Iso = "ML" },
+                            new Country { Id = 138, Name = "Malta", Iso = "MT" },
+                            new Country { Id = 139, Name = "Marshall Islands", Iso = "MH" },
+                            new Country { Id = 140, Name = "Martinique", Iso = "MQ" },
+                            new Country { Id = 141, Name = "Mauritania", Iso = "MR" },
+                            new Country { Id = 142, Name = "Mauritius", Iso = "MU" },
+                            new Country { Id = 143, Name = "Mayotte", Iso = "YT" },
+                            new Country { Id = 144, Name = "Mexico", Iso = "MX" },
+                            new Country { Id = 145, Name = "Micronesia, Federated States of", Iso = "FM" },
+                            new Country { Id = 146, Name = "Moldova, Republic of", Iso = "MD" },
+                            new Country { Id = 147, Name = "Monaco", Iso = "MC" },
+                            new Country { Id = 148, Name = "Mongolia", Iso = "MN" },
+                            new Country { Id = 149, Name = "Montenegro", Iso = "ME" },
+                            new Country { Id = 150, Name = "Montserrat", Iso = "MS" },
+                            new Country { Id = 151, Name = "Morocco", Iso = "MA" },
+                            new Country { Id = 152, Name = "Mozambique", Iso = "MZ" },
+                            new Country { Id = 153, Name = "Myanmar", Iso = "MM" },
+                            new Country { Id = 154, Name = "Namibia", Iso = "NA" },
+                            new Country { Id = 155, Name = "Nauru", Iso = "NR" },
+                            new Country { Id = 156, Name = "Nepal", Iso = "NP" },
+                            new Country { Id = 157, Name = "Netherlands", Iso = "NL" },
+                            new Country { Id = 158, Name = "New Caledonia", Iso = "NC" },
+                            new Country { Id = 159, Name = "New Zealand", Iso = "NZ" },
+                            new Country { Id = 160, Name = "Nicaragua", Iso = "NI" },
+                            new Country { Id = 161, Name = "Niger", Iso = "NE" },
+                            new Country { Id = 162, Name = "Nigeria", Iso = "NG" },
+                            new Country { Id = 163, Name = "Niue", Iso = "NU" },
+                            new Country { Id = 164, Name = "Norfolk Island", Iso = "NF" },
+                            new Country { Id = 165, Name = "Northern Mariana Islands", Iso = "MP" },
+                            new Country { Id = 166, Name = "Norway", Iso = "NO" },
+                            new Country { Id = 167, Name = "Oman", Iso = "OM" },
+                            new Country { Id = 168, Name = "Pakistan", Iso = "PK" },
+                            new Country { Id = 169, Name = "Palau", Iso = "PW" },
+                            new Country { Id = 170, Name = "Palestine, State of", Iso = "PS" },
+                            new Country { Id = 171, Name = "Panama", Iso = "PA" },
+                            new Country { Id = 172, Name = "Papua New Guinea", Iso = "PG" },
+                            new Country { Id = 173, Name = "Paraguay", Iso = "PY" },
+                            new Country { Id = 174, Name = "Peru", Iso = "PE" },
+                            new Country { Id = 175, Name = "Philippines", Iso = "PH" },
+                            new Country { Id = 176, Name = "Pitcairn", Iso = "PN" },
+                            new Country { Id = 177, Name = "Poland", Iso = "PL" },
+                            new Country { Id = 178, Name = "Portugal", Iso = "PT" },
+                            new Country { Id = 179, Name = "Puerto Rico", Iso = "PR" },
+                            new Country { Id = 180, Name = "Qatar", Iso = "QA" },
+                            new Country { Id = 181, Name = "Réunion", Iso = "RE" },
+                            new Country { Id = 182, Name = "Romania", Iso = "RO" },
+                            new Country { Id = 183, Name = "Russian Federation", Iso = "RU" },
+                            new Country { Id = 184, Name = "Rwanda", Iso = "RW" },
+                            new Country { Id = 185, Name = "Saint Barthélemy", Iso = "BL" },
+                            new Country { Id = 186, Name = "Saint Helena, Ascension and Tristan da Cunha", Iso = "SH" },
+                            new Country { Id = 187, Name = "Saint Kitts and Nevis", Iso = "KN" },
+                            new Country { Id = 188, Name = "Saint Lucia", Iso = "LC" },
+                            new Country { Id = 189, Name = "Saint Martin (French part)", Iso = "MF" },
+                            new Country { Id = 190, Name = "Saint Pierre and Miquelon", Iso = "PM" },
+                            new Country { Id = 191, Name = "Saint Vincent and the Grenadines", Iso = "VC" },
+                            new Country { Id = 192, Name = "Samoa", Iso = "WS" },
+                            new Country { Id = 193, Name = "San Marino", Iso = "SM" },
+                            new Country { Id = 194, Name = "Sao Tome and Principe", Iso = "ST" },
+                            new Country { Id = 195, Name = "Saudi Arabia", Iso = "SA" },
+                            new Country { Id = 196, Name = "Senegal", Iso = "SN" },
+                            new Country { Id = 197, Name = "Serbia", Iso = "RS" },
+                            new Country { Id = 198, Name = "Seychelles", Iso = "SC" },
+                            new Country { Id = 199, Name = "Sierra Leone", Iso = "SL" },
+                            new Country { Id = 200, Name = "Singapore", Iso = "SG" },
+                            new Country { Id = 201, Name = "Sint Maarten (Dutch part)", Iso = "SX" },
+                            new Country { Id = 202, Name = "Slovakia", Iso = "SK" },
+                            new Country { Id = 203, Name = "Slovenia", Iso = "SI" },
+                            new Country { Id = 204, Name = "Solomon Islands", Iso = "SB" },
+                            new Country { Id = 205, Name = "Somalia", Iso = "SO" },
+                            new Country { Id = 206, Name = "South Africa", Iso = "ZA" },
+                            new Country { Id = 207, Name = "South Georgia and the South Sandwich Islands", Iso = "GS" },
+                            new Country { Id = 208, Name = "South Sudan", Iso = "SS" },
+                            new Country { Id = 209, Name = "Spain", Iso = "ES" },
+                            new Country { Id = 210, Name = "Sri Lanka", Iso = "LK" },
+                            new Country { Id = 211, Name = "Sudan", Iso = "SD" },
+                            new Country { Id = 212, Name = "Suriname", Iso = "SR" },
+                            new Country { Id = 213, Name = "Svalbard and Jan Mayen", Iso = "SJ" },
+                            new Country { Id = 214, Name = "Swaziland", Iso = "SZ" },
+                            new Country { Id = 215, Name = "Sweden", Iso = "SE" },
+                            new Country { Id = 216, Name = "Switzerland", Iso = "CH" },
+                            new Country { Id = 217, Name = "Syrian Arab Republic", Iso = "SY" },
+                            new Country { Id = 218, Name = "Taiwan, Province of China", Iso = "TW" },
+                            new Country { Id = 219, Name = "Tajikistan", Iso = "TJ" },
+                            new Country { Id = 220, Name = "Tanzania, United Republic of", Iso = "TZ" },
+                            new Country { Id = 221, Name = "Thailand", Iso = "TH" },
+                            new Country { Id = 222, Name = "Timor-Leste", Iso = "TL" },
+                            new Country { Id = 223, Name = "Togo", Iso = "TG" },
+                            new Country { Id = 224, Name = "Tokelau", Iso = "TK" },
+                            new Country { Id = 225, Name = "Tonga", Iso = "TO" },
+                            new Country { Id = 226, Name = "Trinidad and Tobago", Iso = "TT" },
+                            new Country { Id = 227, Name = "Tunisia", Iso = "TN" },
+                            new Country { Id = 228, Name = "Turkey", Iso = "TR" },
+                            new Country { Id = 229, Name = "Turkmenistan", Iso = "TM" },
+                            new Country { Id = 230, Name = "Turks and Caicos Islands", Iso = "TC" },
+                            new Country { Id = 231, Name = "Tuvalu", Iso = "TV" },
+                            new Country { Id = 232, Name = "Uganda", Iso = "UG" },
+                            new Country { Id = 233, Name = "Ukraine", Iso = "UA" },
+                            new Country { Id = 234, Name = "United Arab Emirates", Iso = "AE" },
+                            new Country { Id = 235, Name = "United Kingdom", Iso = "GB" },
+                            new Country { Id = 236, Name = "United States", Iso = "US" },
+                            new Country { Id = 237, Name = "United States Minor Outlying Islands", Iso = "UM" },
+                            new Country { Id = 238, Name = "Uruguay", Iso = "UY" },
+                            new Country { Id = 239, Name = "Uzbekistan", Iso = "UZ" },
+                            new Country { Id = 240, Name = "Vanuatu", Iso = "VU" },
+                            new Country { Id = 241, Name = "Venezuela, Bolivarian Republic of", Iso = "VE" },
+                            new Country { Id = 242, Name = "Viet Nam", Iso = "VN" },
+                            new Country { Id = 243, Name = "Virgin Islands, British", Iso = "VG" },
+                            new Country { Id = 244, Name = "Virgin Islands, U.S.", Iso = "VI" },
+                            new Country { Id = 245, Name = "Wallis and Futuna", Iso = "WF" },
+                            new Country { Id = 246, Name = "Western Sahara", Iso = "EH" },
+                            new Country { Id = 247, Name = "Yemen", Iso = "YE" },
+                            new Country { Id = 248, Name = "Zambia", Iso = "ZM" },
+                            new Country { Id = 249, Name = "Zimbabwe", Iso = "ZW" });
         }
     }
 }
