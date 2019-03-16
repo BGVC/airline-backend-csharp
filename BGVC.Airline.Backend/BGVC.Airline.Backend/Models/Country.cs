@@ -15,6 +15,6 @@ namespace BGVC.Airline.Backend.Models
         [MaxLength(3)] public string Iso3 { get; set; }
         [MaxLength(3)] public string NumCode { get; set; }
         [MaxLength(4)] public string PhoneCode { get; set; }
-        public virtual ICollection<City> Cities { get; set; }
+        public virtual ICollection<IsoRegion> IsoRegions { get; set; }
     }
 }
