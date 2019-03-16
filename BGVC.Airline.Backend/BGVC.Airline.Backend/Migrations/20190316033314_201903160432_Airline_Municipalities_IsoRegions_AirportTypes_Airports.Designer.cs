@@ -4,14 +4,16 @@ using BGVC.Airline.Backend;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BGVC.Airline.Backend.Migrations
 {
     [DbContext(typeof(AirlineDBContext))]
-    partial class AirlineDBContextModelSnapshot : ModelSnapshot
+    [Migration("20190316033314_201903160432_Airline_Municipalities_IsoRegions_AirportTypes_Airports")]
+    partial class _201903160432_Airline_Municipalities_IsoRegions_AirportTypes_Airports
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
