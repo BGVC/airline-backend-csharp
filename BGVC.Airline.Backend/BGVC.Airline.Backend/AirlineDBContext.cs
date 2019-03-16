@@ -15,7 +15,11 @@ namespace BGVC.Airline.Backend
         }
 
         public DbSet<Country> Countries { get; set; }
-        public DbSet<City> Cities { get; set; }
+        public DbSet<IsoRegion> IsoRegions { get; set; }
+        public DbSet<Municipality> Municipalities { get; set; }
+        public DbSet<AirportType> AirportTypes { get; set; }
+        public DbSet<Airport> Airports { get; set; }
+
 
         // TODO: VC -> BG: Please check if this should exist or should it be deleted?
         internal void EnsureSeedDataForContext()

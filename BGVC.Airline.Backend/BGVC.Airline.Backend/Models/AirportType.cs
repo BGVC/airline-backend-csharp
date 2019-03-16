@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace BGVC.Airline.Backend.Models
 {
-    public class City
+    public class AirportType
     {
         public int Id { get; set; }
         [Required]
-        [MaxLength(100)]
+        [MaxLength(32)]
         public string Name { get; set; }
-        public int CountryId { get; set; }
-
-        public virtual Country Country { get; set; }
+        public virtual ICollection<Airport> Airports { get; set; }
     }
 }
