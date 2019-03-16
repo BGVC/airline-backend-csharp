@@ -11,10 +11,13 @@ namespace BGVC.Airline.Backend.Controllers
     [Route("api/[controller]")]
     public class CountriesController : Controller
     {
+        // TODO: VC -> BG: Use dependency injection for controller, i.e. create CountriesController constructor with AirlineDBContext parameter
+
         // GET: api/<controller>
         [HttpGet]
         public ActionResult Get()
         {
+            // TODO: VC -> BG: Do not call Initialize.GetContext() but instead the context should be injected into countries controller
             var countries = Initialize.GetContext().Countries.Select(country =>
                 new
                 {
@@ -26,10 +29,15 @@ namespace BGVC.Airline.Backend.Controllers
             return Ok(countries);
         }
 
+
+
         // GET api/<controller>/5
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
+            // TODO: VC -> BG: Do not call Initialize.GetContext() but instead the context should be injected into countries controller
+            // TODO: VC -> BG: This should be SingleOrDefault, and if that is null then return NotFound
+
             var country = Initialize.GetContext().Countries.Single(x => x.Id == id);
             var result = new
             {
@@ -40,6 +48,8 @@ namespace BGVC.Airline.Backend.Controllers
 
             return Ok(result);
         }
+
+        // TODO: VC -> BG: Please remove Post, Put, Delete because we will not allow programatic change of countries due to our decision that we are seeding it because it's a fixed set of data
 
         // POST api/<controller>
         [HttpPost]
