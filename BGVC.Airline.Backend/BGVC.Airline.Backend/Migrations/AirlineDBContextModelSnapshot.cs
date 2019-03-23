@@ -1608,6 +1608,16844 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasIndex("CountryId");
 
                     b.ToTable("IsoRegions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Code = "US-NJ",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Code = "US-MI",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Code = "US-NC",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Code = "US-OH",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Code = "US-KS",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Code = "US-CO",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Code = "US-MA",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Code = "US-RI",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Code = "US-VA",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Code = "AR-B",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Code = "US-NY",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Code = "US-ID",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Code = "RU-U-A",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Code = "FR-N",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Code = "DE-ST",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Code = "BE-WBR",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Code = "US-CT",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Code = "BB-U-A",
+                            CountryId = 20
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Code = "AT-6",
+                            CountryId = 15
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Code = "AL-01",
+                            CountryId = 3
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Code = "AL-05",
+                            CountryId = 3
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Code = "AR-R",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Code = "BG-28",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Code = "BG-23",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Code = "BG-10",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Code = "BG-16",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Code = "BG-18",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Code = "BG-15",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Code = "BG-03",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Code = "BR-BA",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Code = "BR-RO",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Code = "BR-MG",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Code = "BR-TO",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Code = "BR-SP",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Code = "BR-U-A",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Code = "BR-PI",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Code = "BR-MS",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Code = "BR-AC",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Code = "CA-BC",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Code = "CA-NS",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Code = "CA-PE",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Code = "CA-NB",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Code = "CA-ON",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Code = "CA-NT",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Code = "CA-AB",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Code = "CA-QC",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Code = "CA-SK",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Code = "CA-MB",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Code = "CA-NU",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Code = "DE-BE",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Code = "DE-BR",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Code = "DE-HB",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Code = "FI-LS",
+                            CountryId = 75
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Code = "GB-ENG",
+                            CountryId = 235
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Code = "NL-UT",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 57,
+                            Code = "NL-ZH",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Code = "PL-PM",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Code = "SE-E",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Code = "SE-AB",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Code = "SE-H",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Code = "SE-X",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Code = "SE-Y",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Code = "DE-BY",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Code = "DE-HE",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Code = "DE-NW",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Code = "NA-KA",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Code = "GB-SCT",
+                            CountryId = 235
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Code = "GE-KA",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Code = "MR-NKC",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Code = "GR-06",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Code = "HU-FE",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Code = "US-PA",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 74,
+                            Code = "US-FL",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 75,
+                            Code = "KR-41",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 76,
+                            Code = "KR-47",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 77,
+                            Code = "AL-08",
+                            CountryId = 3
+                        },
+                        new
+                        {
+                            Id = 78,
+                            Code = "HR-19",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 79,
+                            Code = "HR-09",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 80,
+                            Code = "FR-L",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 81,
+                            Code = "FR-O",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 82,
+                            Code = "FR-A",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 83,
+                            Code = "FR-M",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 84,
+                            Code = "FR-G",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 85,
+                            Code = "GR-01",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 86,
+                            Code = "GR-43",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 87,
+                            Code = "IT-34",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 88,
+                            Code = "PT-05",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 89,
+                            Code = "TR-31",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 90,
+                            Code = "MK-001",
+                            CountryId = 132
+                        },
+                        new
+                        {
+                            Id = 91,
+                            Code = "MX-SON",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 92,
+                            Code = "MX-CHP",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 93,
+                            Code = "CU-02",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 94,
+                            Code = "CU-08",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 95,
+                            Code = "MX-SLP",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 96,
+                            Code = "MX-NLE",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 97,
+                            Code = "NZ-CAN",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 98,
+                            Code = "IR-06",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 99,
+                            Code = "PS-JEM",
+                            CountryId = 170
+                        },
+                        new
+                        {
+                            Id = 100,
+                            Code = "KR-46",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 101,
+                            Code = "KR-42",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 102,
+                            Code = "RO-OT",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 103,
+                            Code = "JP-47",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 104,
+                            Code = "PH-LAN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 105,
+                            Code = "PH-NEC",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 106,
+                            Code = "AR-F",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 107,
+                            Code = "AR-K",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 108,
+                            Code = "CL-AN",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 109,
+                            Code = "EC-P",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 110,
+                            Code = "CO-ANT",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 111,
+                            Code = "SY-QU",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 112,
+                            Code = "VC-04",
+                            CountryId = 191
+                        },
+                        new
+                        {
+                            Id = 113,
+                            Code = "UA-14",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 114,
+                            Code = "US-HI",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 115,
+                            Code = "BY-MI",
+                            CountryId = 21
+                        },
+                        new
+                        {
+                            Id = 116,
+                            Code = "RU-ROS",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 117,
+                            Code = "US-AR",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 118,
+                            Code = "US-MT",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 119,
+                            Code = "US-TX",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 120,
+                            Code = "US-UT",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 121,
+                            Code = "US-OK",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 122,
+                            Code = "US-OR",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 123,
+                            Code = "US-AZ",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 124,
+                            Code = "US-MO",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 125,
+                            Code = "US-TN",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 126,
+                            Code = "US-IN",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 127,
+                            Code = "US-IL",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 128,
+                            Code = "US-LA",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 129,
+                            Code = "US-WI",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 130,
+                            Code = "US-WA",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 131,
+                            Code = "US-AK",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 132,
+                            Code = "US-CA",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 133,
+                            Code = "US-KY",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 134,
+                            Code = "US-GA",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 135,
+                            Code = "US-MN",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 136,
+                            Code = "US-NM",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 137,
+                            Code = "US-AL",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 138,
+                            Code = "US-VT",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 139,
+                            Code = "US-IA",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 140,
+                            Code = "US-MD",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 141,
+                            Code = "US-MS",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 142,
+                            Code = "US-NE",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 143,
+                            Code = "US-NH",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 144,
+                            Code = "US-ND",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 145,
+                            Code = "US-SD",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 146,
+                            Code = "US-DE",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 147,
+                            Code = "US-WY",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 148,
+                            Code = "US-ME",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 149,
+                            Code = "US-NV",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 150,
+                            Code = "US-SC",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 151,
+                            Code = "US-WV",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 152,
+                            Code = "IN-MM",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 153,
+                            Code = "VN-34",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 154,
+                            Code = "ID-PB",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 155,
+                            Code = "AU-NSW",
+                            CountryId = 14
+                        },
+                        new
+                        {
+                            Id = 156,
+                            Code = "FI-OL",
+                            CountryId = 75
+                        },
+                        new
+                        {
+                            Id = 157,
+                            Code = "MZ-I",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 158,
+                            Code = "AU-VIC",
+                            CountryId = 14
+                        },
+                        new
+                        {
+                            Id = 159,
+                            Code = "AU-QLD",
+                            CountryId = 14
+                        },
+                        new
+                        {
+                            Id = 160,
+                            Code = "AU-WA",
+                            CountryId = 14
+                        },
+                        new
+                        {
+                            Id = 161,
+                            Code = "HK-U-A",
+                            CountryId = 100
+                        },
+                        new
+                        {
+                            Id = 162,
+                            Code = "NO-03",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 163,
+                            Code = "AT-9",
+                            CountryId = 15
+                        },
+                        new
+                        {
+                            Id = 164,
+                            Code = "DE-SH",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 165,
+                            Code = "DE-BW",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 166,
+                            Code = "DE-NI",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 167,
+                            Code = "FR-P",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 168,
+                            Code = "FR-B",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 169,
+                            Code = "FR-F",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 170,
+                            Code = "FR-I",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 171,
+                            Code = "FR-D",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 172,
+                            Code = "FR-K",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 173,
+                            Code = "FR-J",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 174,
+                            Code = "FR-R",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 175,
+                            Code = "FR-U",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 176,
+                            Code = "FR-T",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 177,
+                            Code = "FR-S",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 178,
+                            Code = "BE-VWV",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 179,
+                            Code = "BE-VOV",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 180,
+                            Code = "GB-NIR",
+                            CountryId = 235
+                        },
+                        new
+                        {
+                            Id = 181,
+                            Code = "IE-MO",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 182,
+                            Code = "DK-84",
+                            CountryId = 61
+                        },
+                        new
+                        {
+                            Id = 183,
+                            Code = "DK-83",
+                            CountryId = 61
+                        },
+                        new
+                        {
+                            Id = 184,
+                            Code = "NO-12",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 185,
+                            Code = "NO-U-A",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 186,
+                            Code = "SE-Q",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 187,
+                            Code = "SE-M",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 188,
+                            Code = "SE-G",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 189,
+                            Code = "SE-D",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 190,
+                            Code = "SE-C",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 191,
+                            Code = "SE-BD",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 192,
+                            Code = "SE-AC",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 193,
+                            Code = "ES-AR",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 194,
+                            Code = "PT-15",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 195,
+                            Code = "CH-BE",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 196,
+                            Code = "CH-VS",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 197,
+                            Code = "CH-ZH",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 198,
+                            Code = "CH-JU",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 199,
+                            Code = "NA-HA",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 200,
+                            Code = "ZA-EC",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 201,
+                            Code = "BR-MT",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 202,
+                            Code = "GR-A1",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 203,
+                            Code = "NZ-AUK",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 204,
+                            Code = "ZA-MP",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 205,
+                            Code = "MA-CAS",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 206,
+                            Code = "HR-07",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 207,
+                            Code = "CZ-JM",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 208,
+                            Code = "TR-67",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 209,
+                            Code = "IE-MH",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 210,
+                            Code = "PS-KYS",
+                            CountryId = 170
+                        },
+                        new
+                        {
+                            Id = 211,
+                            Code = "CZ-ZL",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 212,
+                            Code = "BR-RS",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 213,
+                            Code = "SE-S",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 214,
+                            Code = "HR-06",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 215,
+                            Code = "SK-BL",
+                            CountryId = 202
+                        },
+                        new
+                        {
+                            Id = 216,
+                            Code = "AR-Z",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 217,
+                            Code = "AT-3",
+                            CountryId = 15
+                        },
+                        new
+                        {
+                            Id = 218,
+                            Code = "DK-85",
+                            CountryId = 61
+                        },
+                        new
+                        {
+                            Id = 219,
+                            Code = "GR-11",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 220,
+                            Code = "PT-08",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 221,
+                            Code = "CL-RM",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 222,
+                            Code = "DO-01",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 223,
+                            Code = "CH-GR",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 224,
+                            Code = "BR-MA",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 225,
+                            Code = "FI-IS",
+                            CountryId = 75
+                        },
+                        new
+                        {
+                            Id = 226,
+                            Code = "FR-E",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 227,
+                            Code = "EE-59",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 228,
+                            Code = "NZ-STL",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 229,
+                            Code = "NO-18",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 230,
+                            Code = "HR-16",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 231,
+                            Code = "MW-RU",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 232,
+                            Code = "CH-TI",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 233,
+                            Code = "PA-4",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 234,
+                            Code = "CF-MP",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 235,
+                            Code = "RU-MOS",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 236,
+                            Code = "AU-NT",
+                            CountryId = 14
+                        },
+                        new
+                        {
+                            Id = 237,
+                            Code = "SA-01",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 238,
+                            Code = "BE-WLX",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 239,
+                            Code = "BE-WLG",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 240,
+                            Code = "BE-WHT",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 241,
+                            Code = "EE-57",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 242,
+                            Code = "EE-7B",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 243,
+                            Code = "IE-WW",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 244,
+                            Code = "IE-LD",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 245,
+                            Code = "IE-TA",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 246,
+                            Code = "IE-OY",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 247,
+                            Code = "UA-23",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 248,
+                            Code = "LV-LE",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 249,
+                            Code = "LT-MR",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 250,
+                            Code = "ZA-WC",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 251,
+                            Code = "ZA-NW",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 252,
+                            Code = "BW-KW",
+                            CountryId = 30
+                        },
+                        new
+                        {
+                            Id = 253,
+                            Code = "BW-SE",
+                            CountryId = 30
+                        },
+                        new
+                        {
+                            Id = 254,
+                            Code = "BW-CE",
+                            CountryId = 30
+                        },
+                        new
+                        {
+                            Id = 255,
+                            Code = "BW-KG",
+                            CountryId = 30
+                        },
+                        new
+                        {
+                            Id = 256,
+                            Code = "MW-DE",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 257,
+                            Code = "ES-AN",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 258,
+                            Code = "ES-L",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 259,
+                            Code = "IT-75",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 260,
+                            Code = "AT-1",
+                            CountryId = 15
+                        },
+                        new
+                        {
+                            Id = 261,
+                            Code = "PT-17",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 262,
+                            Code = "CR-P",
+                            CountryId = 54
+                        },
+                        new
+                        {
+                            Id = 263,
+                            Code = "PA-5",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 264,
+                            Code = "MX-OAX",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 265,
+                            Code = "RU-KHM",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 266,
+                            Code = "TW-TAO",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 267,
+                            Code = "PH-BUK",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 268,
+                            Code = "RU-LEN",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 269,
+                            Code = "AR-E",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 270,
+                            Code = "MY-13",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 271,
+                            Code = "CN-13",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 272,
+                            Code = "BG-19",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 273,
+                            Code = "TR-55",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 274,
+                            Code = "BR-RR",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 275,
+                            Code = "UA-74",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 276,
+                            Code = "IN-AP",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 277,
+                            Code = "MM-03",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 279,
+                            Code = "PS-RFH",
+                            CountryId = 170
+                        },
+                        new
+                        {
+                            Id = 280,
+                            Code = "RU-MUR",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 281,
+                            Code = "RU-ALT",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 282,
+                            Code = "RU-CHI",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 283,
+                            Code = "RU-ORE",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 284,
+                            Code = "EE-74",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 285,
+                            Code = "RU-TVE",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 286,
+                            Code = "RU-KGD",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 287,
+                            Code = "UA-32",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 288,
+                            Code = "RU-SA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 289,
+                            Code = "UA-59",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 290,
+                            Code = "RU-PSK",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 291,
+                            Code = "KZ-VOS",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 292,
+                            Code = "RU-CHU",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 293,
+                            Code = "RU-KR",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 294,
+                            Code = "RU-KHA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 295,
+                            Code = "RU-SAR",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 296,
+                            Code = "RU-ARK",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 297,
+                            Code = "RU-BRY",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 298,
+                            Code = "RU-KYA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 299,
+                            Code = "RU-KAM",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 300,
+                            Code = "LV-CE",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 301,
+                            Code = "UA-46",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 302,
+                            Code = "RU-KLU",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 303,
+                            Code = "UA-21",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 304,
+                            Code = "BY-VI",
+                            CountryId = 21
+                        },
+                        new
+                        {
+                            Id = 305,
+                            Code = "RU-VGG",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 306,
+                            Code = "RU-IVA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 307,
+                            Code = "BY-HR",
+                            CountryId = 21
+                        },
+                        new
+                        {
+                            Id = 308,
+                            Code = "LV-JL",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 309,
+                            Code = "RU-AMU",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 310,
+                            Code = "EE-84",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 311,
+                            Code = "EE-82",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 312,
+                            Code = "UA-53",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 313,
+                            Code = "RU-BU",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 314,
+                            Code = "RU-SAK",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 315,
+                            Code = "EE-51",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 316,
+                            Code = "CY-02",
+                            CountryId = 59
+                        },
+                        new
+                        {
+                            Id = 317,
+                            Code = "CN-44",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 318,
+                            Code = "UM-67",
+                            CountryId = 237
+                        },
+                        new
+                        {
+                            Id = 319,
+                            Code = "BR-AM",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 320,
+                            Code = "KP-09",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 321,
+                            Code = "KP-01",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 322,
+                            Code = "GL-U-A",
+                            CountryId = 87
+                        },
+                        new
+                        {
+                            Id = 323,
+                            Code = "CN-62",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 324,
+                            Code = "BS-RS",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 325,
+                            Code = "AL-11",
+                            CountryId = 3
+                        },
+                        new
+                        {
+                            Id = 326,
+                            Code = "AR-H",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 327,
+                            Code = "BR-RJ",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 328,
+                            Code = "BR-SC",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 329,
+                            Code = "BR-PR",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 330,
+                            Code = "BR-PA",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 331,
+                            Code = "BR-CE",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 332,
+                            Code = "BR-AP",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 333,
+                            Code = "BR-GO",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 334,
+                            Code = "BR-DF",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 335,
+                            Code = "ID-PA",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 336,
+                            Code = "AU-TAS",
+                            CountryId = 14
+                        },
+                        new
+                        {
+                            Id = 337,
+                            Code = "AR-W",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 338,
+                            Code = "CA-YT",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 339,
+                            Code = "CA-NL",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 340,
+                            Code = "VE-J",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 341,
+                            Code = "CO-COR",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 342,
+                            Code = "ZA-NP",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 343,
+                            Code = "ID-SN",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 344,
+                            Code = "ID-KI",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 345,
+                            Code = "ID-JI",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 346,
+                            Code = "UM-71",
+                            CountryId = 237
+                        },
+                        new
+                        {
+                            Id = 347,
+                            Code = "PK-SD",
+                            CountryId = 168
+                        },
+                        new
+                        {
+                            Id = 348,
+                            Code = "KG-C",
+                            CountryId = 121
+                        },
+                        new
+                        {
+                            Id = 349,
+                            Code = "KG-B",
+                            CountryId = 121
+                        },
+                        new
+                        {
+                            Id = 350,
+                            Code = "KG-J",
+                            CountryId = 121
+                        },
+                        new
+                        {
+                            Id = 351,
+                            Code = "KG-N",
+                            CountryId = 121
+                        },
+                        new
+                        {
+                            Id = 352,
+                            Code = "KG-O",
+                            CountryId = 121
+                        },
+                        new
+                        {
+                            Id = 353,
+                            Code = "KG-T",
+                            CountryId = 121
+                        },
+                        new
+                        {
+                            Id = 354,
+                            Code = "KG-Y",
+                            CountryId = 121
+                        },
+                        new
+                        {
+                            Id = 355,
+                            Code = "UZ-SA",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 356,
+                            Code = "UZ-TO",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 357,
+                            Code = "KZ-KAR",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 358,
+                            Code = "KZ-YUZ",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 359,
+                            Code = "HN-LP",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 360,
+                            Code = "HN-CL",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 361,
+                            Code = "HN-CP",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 362,
+                            Code = "HN-AT",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 363,
+                            Code = "PA-KY",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 364,
+                            Code = "IS-6",
+                            CountryId = 102
+                        },
+                        new
+                        {
+                            Id = 365,
+                            Code = "AE-AZ",
+                            CountryId = 234
+                        },
+                        new
+                        {
+                            Id = 366,
+                            Code = "SA-04",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 367,
+                            Code = "CU-12",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 368,
+                            Code = "DO-30",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 369,
+                            Code = "DO-22",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 370,
+                            Code = "DO-25",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 371,
+                            Code = "JM-13",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 372,
+                            Code = "PR-U-A",
+                            CountryId = 179
+                        },
+                        new
+                        {
+                            Id = 373,
+                            Code = "CD-OR",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 374,
+                            Code = "TW-PEN",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 375,
+                            Code = "GR-73",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 376,
+                            Code = "GR-83",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 377,
+                            Code = "NG-DE",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 378,
+                            Code = "BR-RN",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 379,
+                            Code = "KE-700",
+                            CountryId = 116
+                        },
+                        new
+                        {
+                            Id = 380,
+                            Code = "IN-TN",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 381,
+                            Code = "CU-14",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 382,
+                            Code = "MD-BL",
+                            CountryId = 146
+                        },
+                        new
+                        {
+                            Id = 383,
+                            Code = "PG-NSB",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 384,
+                            Code = "ME-20",
+                            CountryId = 149
+                        },
+                        new
+                        {
+                            Id = 385,
+                            Code = "ME-21",
+                            CountryId = 149
+                        },
+                        new
+                        {
+                            Id = 386,
+                            Code = "AR-X",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 387,
+                            Code = "AR-L",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 388,
+                            Code = "RU-MOW",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 389,
+                            Code = "RU-MAG",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 390,
+                            Code = "RU-NGR",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 391,
+                            Code = "RU-SVE",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 392,
+                            Code = "RU-TA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 393,
+                            Code = "PL-ZP",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 394,
+                            Code = "PL-OP",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 395,
+                            Code = "PL-LU",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 396,
+                            Code = "PL-WP",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 397,
+                            Code = "NO-11",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 398,
+                            Code = "PL-LD",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 399,
+                            Code = "PL-DS",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 400,
+                            Code = "PL-MZ",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 401,
+                            Code = "PL-WN",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 402,
+                            Code = "PL-LB",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 403,
+                            Code = "PL-PD",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 404,
+                            Code = "CZ-LI",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 405,
+                            Code = "GE-SZ",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 406,
+                            Code = "ES-CL",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 407,
+                            Code = "BG-02",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 408,
+                            Code = "GD-AN",
+                            CountryId = 88
+                        },
+                        new
+                        {
+                            Id = 409,
+                            Code = "FR-V",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 410,
+                            Code = "BE-VAN",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 411,
+                            Code = "BE-VBR",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 412,
+                            Code = "BE-VLI",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 413,
+                            Code = "BE-WNA",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 414,
+                            Code = "LU-D",
+                            CountryId = 130
+                        },
+                        new
+                        {
+                            Id = 415,
+                            Code = "LT-VL",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 416,
+                            Code = "UA-26",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 417,
+                            Code = "UA-61",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 418,
+                            Code = "BG-06",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 419,
+                            Code = "HU-BZ",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 420,
+                            Code = "HU-CS",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 421,
+                            Code = "HU-NO",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 422,
+                            Code = "IE-KY",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 423,
+                            Code = "IE-WX",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 424,
+                            Code = "IT-25",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 425,
+                            Code = "BM-U-A",
+                            CountryId = 25
+                        },
+                        new
+                        {
+                            Id = 426,
+                            Code = "CN-42",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 427,
+                            Code = "CN-31",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 428,
+                            Code = "CN-21",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 429,
+                            Code = "UA-43",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 430,
+                            Code = "RU-KDA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 431,
+                            Code = "UA-65",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 432,
+                            Code = "GE-SK",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 433,
+                            Code = "GE-SJ",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 434,
+                            Code = "KZ-ALM",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 435,
+                            Code = "RU-AST",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 436,
+                            Code = "RU-NVS",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 437,
+                            Code = "RU-AL",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 438,
+                            Code = "UA-51",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 439,
+                            Code = "BY-MA",
+                            CountryId = 21
+                        },
+                        new
+                        {
+                            Id = 440,
+                            Code = "TM-B",
+                            CountryId = 229
+                        },
+                        new
+                        {
+                            Id = 441,
+                            Code = "RU-TUL",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 442,
+                            Code = "RU-KL",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 443,
+                            Code = "KZ-AKT",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 444,
+                            Code = "UA-77",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 445,
+                            Code = "UA-09",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 446,
+                            Code = "LA-VI",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 447,
+                            Code = "LA-XI",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 448,
+                            Code = "IN-MN",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 449,
+                            Code = "RU-PER",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 450,
+                            Code = "IQ-NA",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 451,
+                            Code = "SM-06",
+                            CountryId = 193
+                        },
+                        new
+                        {
+                            Id = 452,
+                            Code = "RU-SPE",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 453,
+                            Code = "UA-40",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 454,
+                            Code = "UA-63",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 455,
+                            Code = "AM-SU",
+                            CountryId = 12
+                        },
+                        new
+                        {
+                            Id = 456,
+                            Code = "TR-38",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 457,
+                            Code = "TR-17",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 458,
+                            Code = "TR-26",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 459,
+                            Code = "MS-U-A",
+                            CountryId = 150
+                        },
+                        new
+                        {
+                            Id = 460,
+                            Code = "NO-02",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 461,
+                            Code = "HU-VA",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 462,
+                            Code = "RU-RYA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 463,
+                            Code = "TR-42",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 464,
+                            Code = "AZ-GOY",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 465,
+                            Code = "AZ-BIL",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 466,
+                            Code = "AM-GR",
+                            CountryId = 12
+                        },
+                        new
+                        {
+                            Id = 467,
+                            Code = "IR-10",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 468,
+                            Code = "SI-058",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 469,
+                            Code = "FJ-N",
+                            CountryId = 74
+                        },
+                        new
+                        {
+                            Id = 470,
+                            Code = "SC-14",
+                            CountryId = 198
+                        },
+                        new
+                        {
+                            Id = 471,
+                            Code = "RU-PRI",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 472,
+                            Code = "UA-12",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 473,
+                            Code = "UA-71",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 474,
+                            Code = "GT-HU",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 475,
+                            Code = "RU-VLA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 476,
+                            Code = "RU-ORL",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 477,
+                            Code = "RU-TAM",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 478,
+                            Code = "RU-PNZ",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 479,
+                            Code = "BS-EX",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 480,
+                            Code = "RU-STA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 481,
+                            Code = "UA-48",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 482,
+                            Code = "IN-AS",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 483,
+                            Code = "IN-WB",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 484,
+                            Code = "RU-VLG",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 485,
+                            Code = "RU-SAM",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 486,
+                            Code = "VN-15",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 487,
+                            Code = "RU-AD",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 488,
+                            Code = "UA-35",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 489,
+                            Code = "JP-13",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 490,
+                            Code = "ES-CM",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 491,
+                            Code = "IN-OR",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 492,
+                            Code = "IT-82",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 493,
+                            Code = "SB-ML",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 494,
+                            Code = "NL-LI",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 495,
+                            Code = "NL-DR",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 496,
+                            Code = "NL-NH",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 497,
+                            Code = "EE-37",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 498,
+                            Code = "RU-KC",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 499,
+                            Code = "GB-WLS",
+                            CountryId = 235
+                        },
+                        new
+                        {
+                            Id = 500,
+                            Code = "IN-MP",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 501,
+                            Code = "LA-PH",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 502,
+                            Code = "KR-28",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 503,
+                            Code = "IN-BR",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 504,
+                            Code = "CN-23",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 505,
+                            Code = "SB-CE",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 506,
+                            Code = "PG-SAN",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 507,
+                            Code = "UM-81",
+                            CountryId = 237
+                        },
+                        new
+                        {
+                            Id = 508,
+                            Code = "PH-DAO",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 509,
+                            Code = "PG-CPM",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 510,
+                            Code = "GT-BV",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 511,
+                            Code = "DE-SN",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 512,
+                            Code = "PG-MPL",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 513,
+                            Code = "EC-W",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 514,
+                            Code = "AQ-U-A",
+                            CountryId = 9
+                        },
+                        new
+                        {
+                            Id = 515,
+                            Code = "NO-05",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 516,
+                            Code = "PY-14",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 517,
+                            Code = "IN-RJ",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 518,
+                            Code = "KR-45",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 519,
+                            Code = "IE-C",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 520,
+                            Code = "RS-05",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 521,
+                            Code = "MX-BCS",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 522,
+                            Code = "IS-4",
+                            CountryId = 102
+                        },
+                        new
+                        {
+                            Id = 523,
+                            Code = "TC-AC",
+                            CountryId = 230
+                        },
+                        new
+                        {
+                            Id = 524,
+                            Code = "PG-EBR",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 525,
+                            Code = "MX-BCN",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 526,
+                            Code = "IT-21",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 527,
+                            Code = "MA-LAA",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 528,
+                            Code = "JP-40",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 529,
+                            Code = "BS-U-A",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 530,
+                            Code = "ID-MA",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 531,
+                            Code = "PG-WPD",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 532,
+                            Code = "PG-NCD",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 533,
+                            Code = "PG-MRL",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 534,
+                            Code = "MT-05",
+                            CountryId = 138
+                        },
+                        new
+                        {
+                            Id = 535,
+                            Code = "MT-25",
+                            CountryId = 138
+                        },
+                        new
+                        {
+                            Id = 536,
+                            Code = "MT-01",
+                            CountryId = 138
+                        },
+                        new
+                        {
+                            Id = 537,
+                            Code = "MT-44",
+                            CountryId = 138
+                        },
+                        new
+                        {
+                            Id = 538,
+                            Code = "MT-26",
+                            CountryId = 138
+                        },
+                        new
+                        {
+                            Id = 539,
+                            Code = "DZ-21",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 540,
+                            Code = "NL-NB",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 541,
+                            Code = "AO-LUA",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 542,
+                            Code = "DZ-33",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 543,
+                            Code = "PG-NIK",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 544,
+                            Code = "PG-MPM",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 545,
+                            Code = "IR-29",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 546,
+                            Code = "PG-GPK",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 547,
+                            Code = "PG-MBA",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 548,
+                            Code = "PG-CPK",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 549,
+                            Code = "PG-ESW",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 550,
+                            Code = "PG-JI",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 551,
+                            Code = "ET-SO",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 552,
+                            Code = "BD-4",
+                            CountryId = 19
+                        },
+                        new
+                        {
+                            Id = 553,
+                            Code = "PG-NPP",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 554,
+                            Code = "UG-102",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 555,
+                            Code = "KH-7",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 556,
+                            Code = "CF-BB",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 557,
+                            Code = "GY-UT",
+                            CountryId = 95
+                        },
+                        new
+                        {
+                            Id = 558,
+                            Code = "JM-U-A",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 559,
+                            Code = "PG-EPW",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 560,
+                            Code = "MH-NMU",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 561,
+                            Code = "PG-SHM",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 562,
+                            Code = "NO-21",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 563,
+                            Code = "JM-12",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 564,
+                            Code = "JM-06",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 565,
+                            Code = "DE-MV",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 566,
+                            Code = "IM-U-A",
+                            CountryId = 108
+                        },
+                        new
+                        {
+                            Id = 567,
+                            Code = "AU-SA",
+                            CountryId = 14
+                        },
+                        new
+                        {
+                            Id = 568,
+                            Code = "DE-RP",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 569,
+                            Code = "CL-MA",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 570,
+                            Code = "CN-53",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 571,
+                            Code = "NO-20",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 572,
+                            Code = "MX-SIN",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 573,
+                            Code = "UG-U-A",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 574,
+                            Code = "MX-AGU",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 575,
+                            Code = "MX-COA",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 576,
+                            Code = "ZA-NC",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 577,
+                            Code = "US-DC",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 578,
+                            Code = "BG-04",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 579,
+                            Code = "PT-18",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 580,
+                            Code = "UA-18",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 581,
+                            Code = "GA-7",
+                            CountryId = 80
+                        },
+                        new
+                        {
+                            Id = 582,
+                            Code = "PF-U-A",
+                            CountryId = 78
+                        },
+                        new
+                        {
+                            Id = 583,
+                            Code = "FJ-W",
+                            CountryId = 74
+                        },
+                        new
+                        {
+                            Id = 584,
+                            Code = "CZ-ST",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 585,
+                            Code = "VN-47",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 586,
+                            Code = "ES-NA",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 587,
+                            Code = "CZ-JC",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 588,
+                            Code = "CZ-US",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 589,
+                            Code = "MX-PUE",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 590,
+                            Code = "DO-04",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 591,
+                            Code = "KZ-ZHA",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 592,
+                            Code = "RS-16",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 593,
+                            Code = "GR-03",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 594,
+                            Code = "IE-G",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 595,
+                            Code = "HU-HE",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 596,
+                            Code = "IT-67",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 597,
+                            Code = "CN-43",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 598,
+                            Code = "MR-01",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 599,
+                            Code = "MR-03",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 600,
+                            Code = "BG-05",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 601,
+                            Code = "IT-72",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 602,
+                            Code = "BW-NW",
+                            CountryId = 30
+                        },
+                        new
+                        {
+                            Id = 603,
+                            Code = "AO-CCU",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 604,
+                            Code = "NA-CA",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 605,
+                            Code = "AO-MOX",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 606,
+                            Code = "AO-CUS",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 607,
+                            Code = "AO-LSU",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 608,
+                            Code = "AO-CNN",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 609,
+                            Code = "TZ-22",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 610,
+                            Code = "TZ-16",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 611,
+                            Code = "MZ-P",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 612,
+                            Code = "EH-U-A",
+                            CountryId = 246
+                        },
+                        new
+                        {
+                            Id = 613,
+                            Code = "BI-MA",
+                            CountryId = 37
+                        },
+                        new
+                        {
+                            Id = 614,
+                            Code = "BW-NE",
+                            CountryId = 30
+                        },
+                        new
+                        {
+                            Id = 615,
+                            Code = "ZM-06",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 616,
+                            Code = "MX-VER",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 617,
+                            Code = "IT-57",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 618,
+                            Code = "GG-U-A",
+                            CountryId = 92
+                        },
+                        new
+                        {
+                            Id = 619,
+                            Code = "IT-78",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 620,
+                            Code = "IT-45",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 621,
+                            Code = "VN-44",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 622,
+                            Code = "VN-13",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 623,
+                            Code = "MX-COL",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 624,
+                            Code = "MX-GRO",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 625,
+                            Code = "LT-PN",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 626,
+                            Code = "MX-MIC",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 627,
+                            Code = "PL-MA",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 628,
+                            Code = "IT-52",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 629,
+                            Code = "PL-U-A",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 630,
+                            Code = "RO-TR",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 631,
+                            Code = "IT-65",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 632,
+                            Code = "HR-08",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 633,
+                            Code = "CZ-U-A",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 634,
+                            Code = "IT-77",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 635,
+                            Code = "AU-U-A",
+                            CountryId = 14
+                        },
+                        new
+                        {
+                            Id = 636,
+                            Code = "IT-62",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 637,
+                            Code = "HR-18",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 638,
+                            Code = "DK-U-A",
+                            CountryId = 61
+                        },
+                        new
+                        {
+                            Id = 639,
+                            Code = "ES-S",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 640,
+                            Code = "LT-U-A",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 641,
+                            Code = "CZ-VY",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 642,
+                            Code = "ES-TE",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 643,
+                            Code = "HR-U-A",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 644,
+                            Code = "UA-68",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 645,
+                            Code = "ES-BI",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 646,
+                            Code = "ES-A",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 647,
+                            Code = "US-U-A",
+                            CountryId = 236
+                        },
+                        new
+                        {
+                            Id = 648,
+                            Code = "CF-LB",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 649,
+                            Code = "FK-U-A",
+                            CountryId = 72
+                        },
+                        new
+                        {
+                            Id = 650,
+                            Code = "SK-U-A",
+                            CountryId = 202
+                        },
+                        new
+                        {
+                            Id = 651,
+                            Code = "ST-S",
+                            CountryId = 194
+                        },
+                        new
+                        {
+                            Id = 652,
+                            Code = "KR-44",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 653,
+                            Code = "MX-NAY",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 654,
+                            Code = "KI-G",
+                            CountryId = 117
+                        },
+                        new
+                        {
+                            Id = 655,
+                            Code = "JP-01",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 656,
+                            Code = "CN-61",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 657,
+                            Code = "LV-DO",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 658,
+                            Code = "LV-RE",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 659,
+                            Code = "AL-10",
+                            CountryId = 3
+                        },
+                        new
+                        {
+                            Id = 660,
+                            Code = "BA-BIH",
+                            CountryId = 29
+                        },
+                        new
+                        {
+                            Id = 661,
+                            Code = "CN-22",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 662,
+                            Code = "SG-02",
+                            CountryId = 200
+                        },
+                        new
+                        {
+                            Id = 663,
+                            Code = "LU-L",
+                            CountryId = 130
+                        },
+                        new
+                        {
+                            Id = 664,
+                            Code = "JP-23",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 665,
+                            Code = "TL-LA",
+                            CountryId = 222
+                        },
+                        new
+                        {
+                            Id = 666,
+                            Code = "CA-U-A",
+                            CountryId = 40
+                        },
+                        new
+                        {
+                            Id = 667,
+                            Code = "KR-11",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 668,
+                            Code = "ZW-MN",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 669,
+                            Code = "TW-YUN",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 670,
+                            Code = "TW-ILA",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 671,
+                            Code = "GB-U-A",
+                            CountryId = 235
+                        },
+                        new
+                        {
+                            Id = 672,
+                            Code = "MX-QUE",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 673,
+                            Code = "AE-U-A",
+                            CountryId = 234
+                        },
+                        new
+                        {
+                            Id = 674,
+                            Code = "FR-U-A",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 675,
+                            Code = "AL-U-A",
+                            CountryId = 3
+                        },
+                        new
+                        {
+                            Id = 676,
+                            Code = "TV-NMA",
+                            CountryId = 231
+                        },
+                        new
+                        {
+                            Id = 677,
+                            Code = "TV-NKF",
+                            CountryId = 231
+                        },
+                        new
+                        {
+                            Id = 678,
+                            Code = "SA-11",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 679,
+                            Code = "PK-IS",
+                            CountryId = 168
+                        },
+                        new
+                        {
+                            Id = 680,
+                            Code = "AF-U-A",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 681,
+                            Code = "PH-ZMB",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 682,
+                            Code = "PH-BTG",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 683,
+                            Code = "PK-NW",
+                            CountryId = 168
+                        },
+                        new
+                        {
+                            Id = 684,
+                            Code = "PK-BA",
+                            CountryId = 168
+                        },
+                        new
+                        {
+                            Id = 685,
+                            Code = "PH-CAG",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 686,
+                            Code = "PH-ISA",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 687,
+                            Code = "PK-PB",
+                            CountryId = 168
+                        },
+                        new
+                        {
+                            Id = 688,
+                            Code = "ZA-GT",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 689,
+                            Code = "PH-PAN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 690,
+                            Code = "PH-NUE",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 691,
+                            Code = "PH-LAG",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 692,
+                            Code = "PH-PAM",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 693,
+                            Code = "PH-LUN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 694,
+                            Code = "PH-MSR",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 696,
+                            Code = "LV-U-A",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 697,
+                            Code = "IE-D",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 698,
+                            Code = "PT-14",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 699,
+                            Code = "PT-02",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 700,
+                            Code = "PT-12",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 701,
+                            Code = "PT-07",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 702,
+                            Code = "PT-10",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 703,
+                            Code = "KE-600",
+                            CountryId = 116
+                        },
+                        new
+                        {
+                            Id = 704,
+                            Code = "LV-TU",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 705,
+                            Code = "AR-G",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 706,
+                            Code = "BZ-CZL",
+                            CountryId = 23
+                        },
+                        new
+                        {
+                            Id = 707,
+                            Code = "BZ-OW",
+                            CountryId = 23
+                        },
+                        new
+                        {
+                            Id = 708,
+                            Code = "BZ-CY",
+                            CountryId = 23
+                        },
+                        new
+                        {
+                            Id = 709,
+                            Code = "CY-04",
+                            CountryId = 59
+                        },
+                        new
+                        {
+                            Id = 710,
+                            Code = "KZ-KUS",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 711,
+                            Code = "VN-60",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 712,
+                            Code = "MX-JAL",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 713,
+                            Code = "LY-DR",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 714,
+                            Code = "LY-BU",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 715,
+                            Code = "MX-TAM",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 716,
+                            Code = "LV-TA",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 717,
+                            Code = "UZ-QR",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 718,
+                            Code = "MX-DIF",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 719,
+                            Code = "AE-DU",
+                            CountryId = 234
+                        },
+                        new
+                        {
+                            Id = 720,
+                            Code = "ZW-MW",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 721,
+                            Code = "NG-TA",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 722,
+                            Code = "TD-MC",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 723,
+                            Code = "GU-U-A",
+                            CountryId = 90
+                        },
+                        new
+                        {
+                            Id = 724,
+                            Code = "MP-U-A",
+                            CountryId = 165
+                        },
+                        new
+                        {
+                            Id = 725,
+                            Code = "VI-U-A",
+                            CountryId = 244
+                        },
+                        new
+                        {
+                            Id = 726,
+                            Code = "IN-MZ",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 727,
+                            Code = "NL-GE",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 728,
+                            Code = "NZ-NTL",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 729,
+                            Code = "MC-U-A",
+                            CountryId = 147
+                        },
+                        new
+                        {
+                            Id = 730,
+                            Code = "NZ-TKI",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 731,
+                            Code = "JO-AZ",
+                            CountryId = 114
+                        },
+                        new
+                        {
+                            Id = 732,
+                            Code = "IN-JK",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 733,
+                            Code = "IN-AR",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 734,
+                            Code = "TL-DI",
+                            CountryId = 222
+                        },
+                        new
+                        {
+                            Id = 735,
+                            Code = "ES-CE",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 736,
+                            Code = "MT-62",
+                            CountryId = 138
+                        },
+                        new
+                        {
+                            Id = 737,
+                            Code = "SY-ID",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 738,
+                            Code = "BS-NP",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 739,
+                            Code = "AF-PKA",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 740,
+                            Code = "AF-TAK",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 741,
+                            Code = "AF-HER",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 742,
+                            Code = "BR-PE",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 743,
+                            Code = "BR-ES",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 744,
+                            Code = "BR-AL",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 745,
+                            Code = "BR-PB",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 746,
+                            Code = "AR-V",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 747,
+                            Code = "AR-C",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 748,
+                            Code = "AR-A",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 749,
+                            Code = "AR-Q",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 750,
+                            Code = "AR-D",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 751,
+                            Code = "AR-M",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 752,
+                            Code = "AR-S",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 753,
+                            Code = "AR-T",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 754,
+                            Code = "CL-LI",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 755,
+                            Code = "CL-AR",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 756,
+                            Code = "CL-VS",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 757,
+                            Code = "CL-AI",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 758,
+                            Code = "CL-ML",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 759,
+                            Code = "CL-BI",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 760,
+                            Code = "CL-AP",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 761,
+                            Code = "CL-TA",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 762,
+                            Code = "CL-LL",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 763,
+                            Code = "CL-LR",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 764,
+                            Code = "VE-Z",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 765,
+                            Code = "VE-P",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 766,
+                            Code = "VE-N",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 767,
+                            Code = "VE-R",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 768,
+                            Code = "VE-F",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 769,
+                            Code = "VE-M",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 770,
+                            Code = "VE-V",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 771,
+                            Code = "VE-B",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 772,
+                            Code = "VE-Y",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 773,
+                            Code = "VE-X",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 774,
+                            Code = "VE-A",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 775,
+                            Code = "VE-U",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 776,
+                            Code = "VE-T",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 777,
+                            Code = "VE-G",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 778,
+                            Code = "VE-D",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 779,
+                            Code = "EC-G",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 780,
+                            Code = "EC-M",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 781,
+                            Code = "EC-O",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 782,
+                            Code = "MY-08",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 783,
+                            Code = "ID-KU",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 784,
+                            Code = "PK-NA",
+                            CountryId = 168
+                        },
+                        new
+                        {
+                            Id = 785,
+                            Code = "AD-07",
+                            CountryId = 6
+                        },
+                        new
+                        {
+                            Id = 786,
+                            Code = "CR-SJ",
+                            CountryId = 54
+                        },
+                        new
+                        {
+                            Id = 787,
+                            Code = "CR-H",
+                            CountryId = 54
+                        },
+                        new
+                        {
+                            Id = 788,
+                            Code = "HN-CR",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 789,
+                            Code = "IN-LD",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 790,
+                            Code = "IN-SK",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 791,
+                            Code = "KW-AH",
+                            CountryId = 120
+                        },
+                        new
+                        {
+                            Id = 792,
+                            Code = "AR-J",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 793,
+                            Code = "AR-N",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 794,
+                            Code = "FI-ES",
+                            CountryId = 75
+                        },
+                        new
+                        {
+                            Id = 795,
+                            Code = "LI-01",
+                            CountryId = 128
+                        },
+                        new
+                        {
+                            Id = 796,
+                            Code = "CH-VD",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 797,
+                            Code = "CH-LU",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 798,
+                            Code = "CH-AG",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 799,
+                            Code = "CH-SG",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 800,
+                            Code = "SG-04",
+                            CountryId = 200
+                        },
+                        new
+                        {
+                            Id = 801,
+                            Code = "CH-SZ",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 802,
+                            Code = "NL-FR",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 803,
+                            Code = "ES-CT",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 804,
+                            Code = "ES-V",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 805,
+                            Code = "ES-PM",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 806,
+                            Code = "ES-PV",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 807,
+                            Code = "ES-GA",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 808,
+                            Code = "ES-M",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 809,
+                            Code = "ES-O",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 810,
+                            Code = "ES-CN",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 811,
+                            Code = "FR-C",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 812,
+                            Code = "FR-Q",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 813,
+                            Code = "RU-YAN",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 814,
+                            Code = "NL-GR",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 815,
+                            Code = "NL-OV",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 816,
+                            Code = "NL-ZL",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 817,
+                            Code = "BE-BRU",
+                            CountryId = 22
+                        },
+                        new
+                        {
+                            Id = 818,
+                            Code = "PT-11",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 819,
+                            Code = "PT-03",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 820,
+                            Code = "PT-09",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 821,
+                            Code = "PT-20",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 822,
+                            Code = "PT-13",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 823,
+                            Code = "PT-01",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 824,
+                            Code = "AT-2",
+                            CountryId = 15
+                        },
+                        new
+                        {
+                            Id = 825,
+                            Code = "AT-4",
+                            CountryId = 15
+                        },
+                        new
+                        {
+                            Id = 826,
+                            Code = "AT-5",
+                            CountryId = 15
+                        },
+                        new
+                        {
+                            Id = 827,
+                            Code = "AT-7",
+                            CountryId = 15
+                        },
+                        new
+                        {
+                            Id = 828,
+                            Code = "AT-8",
+                            CountryId = 15
+                        },
+                        new
+                        {
+                            Id = 829,
+                            Code = "CZ-KR",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 830,
+                            Code = "CZ-MO",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 831,
+                            Code = "CZ-OL",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 832,
+                            Code = "CZ-PA",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 833,
+                            Code = "CZ-PL",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 834,
+                            Code = "CZ-PR",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 835,
+                            Code = "HR-17",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 836,
+                            Code = "HU-BK",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 837,
+                            Code = "IE-LS",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 838,
+                            Code = "FI-LL",
+                            CountryId = 75
+                        },
+                        new
+                        {
+                            Id = 839,
+                            Code = "FO-U-A",
+                            CountryId = 73
+                        },
+                        new
+                        {
+                            Id = 840,
+                            Code = "RU-KO",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 841,
+                            Code = "BR-SE",
+                            CountryId = 32
+                        },
+                        new
+                        {
+                            Id = 842,
+                            Code = "TN-23",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 843,
+                            Code = "TR-06",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 844,
+                            Code = "VA-U-A",
+                            CountryId = 98
+                        },
+                        new
+                        {
+                            Id = 845,
+                            Code = "RU-YAR",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 846,
+                            Code = "NZ-WGN",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 847,
+                            Code = "GE-KK",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 848,
+                            Code = "TR-20",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 849,
+                            Code = "NZ-OTA",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 850,
+                            Code = "NZ-WTC",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 851,
+                            Code = "NZ-GIS",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 852,
+                            Code = "NZ-TAS",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 853,
+                            Code = "NZ-NSN",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 854,
+                            Code = "NZ-MWT",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 855,
+                            Code = "NZ-BOP",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 856,
+                            Code = "NZ-WKO",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 857,
+                            Code = "NZ-MBH",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 858,
+                            Code = "NZ-HKB",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 859,
+                            Code = "CL-CO",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 860,
+                            Code = "CO-NAR",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 861,
+                            Code = "CO-CHO",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 862,
+                            Code = "CO-VAC",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 863,
+                            Code = "CO-QUI",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 864,
+                            Code = "CO-BOL",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 865,
+                            Code = "CO-CAL",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 866,
+                            Code = "CO-TOL",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 867,
+                            Code = "CO-CUN",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 868,
+                            Code = "CO-ATL",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 869,
+                            Code = "CO-MAG",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 870,
+                            Code = "CO-SAN",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 871,
+                            Code = "RU-VOR",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 872,
+                            Code = "RU-KEM",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 873,
+                            Code = "RU-KGN",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 874,
+                            Code = "RU-BA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 875,
+                            Code = "RU-CHE",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 876,
+                            Code = "RU-DA",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 877,
+                            Code = "IN-ML",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 878,
+                            Code = "IN-PB",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 879,
+                            Code = "IN-NL",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 880,
+                            Code = "IN-UP",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 881,
+                            Code = "UA-30",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 882,
+                            Code = "ID-BA",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 883,
+                            Code = "RU-NIZ",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 884,
+                            Code = "JP-22",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 885,
+                            Code = "ES-SA",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 886,
+                            Code = "KR-30",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 887,
+                            Code = "BS-NB",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 888,
+                            Code = "IQ-BG",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 889,
+                            Code = "IQ-AN",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 890,
+                            Code = "JP-14",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 891,
+                            Code = "KR-27",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 892,
+                            Code = "KR-48",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 893,
+                            Code = "KR-26",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 894,
+                            Code = "KR-43",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 895,
+                            Code = "ES-CA",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 896,
+                            Code = "LK-5",
+                            CountryId = 210
+                        },
+                        new
+                        {
+                            Id = 897,
+                            Code = "SL-W",
+                            CountryId = 199
+                        },
+                        new
+                        {
+                            Id = 898,
+                            Code = "KR-49",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 899,
+                            Code = "BB-08",
+                            CountryId = 20
+                        },
+                        new
+                        {
+                            Id = 900,
+                            Code = "IN-HP",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 901,
+                            Code = "AE-UQ",
+                            CountryId = 234
+                        },
+                        new
+                        {
+                            Id = 902,
+                            Code = "CN-U-A",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 904,
+                            Code = "KR-29",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 905,
+                            Code = "BO-T",
+                            CountryId = 27
+                        },
+                        new
+                        {
+                            Id = 906,
+                            Code = "LV-JEL",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 907,
+                            Code = "AU-ACT",
+                            CountryId = 14
+                        },
+                        new
+                        {
+                            Id = 908,
+                            Code = "IN-UL",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 909,
+                            Code = "JP-26",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 910,
+                            Code = "JP-10",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 911,
+                            Code = "JP-36",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 912,
+                            Code = "SY-RD",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 913,
+                            Code = "ID-JB",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 914,
+                            Code = "IE-DL",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 915,
+                            Code = "QA-RA",
+                            CountryId = 180
+                        },
+                        new
+                        {
+                            Id = 916,
+                            Code = "JM-02",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 917,
+                            Code = "CN-46",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 918,
+                            Code = "VN-U-A",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 919,
+                            Code = "MY-12",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 920,
+                            Code = "NL-FL",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 921,
+                            Code = "HN-FM",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 922,
+                            Code = "IN-KL",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 923,
+                            Code = "RU-TOM",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 924,
+                            Code = "SD-12",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 925,
+                            Code = "DE-TH",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 926,
+                            Code = "KP-03",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 927,
+                            Code = "HU-PS",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 929,
+                            Code = "IL-TA",
+                            CountryId = 109
+                        },
+                        new
+                        {
+                            Id = 930,
+                            Code = "IL-M",
+                            CountryId = 109
+                        },
+                        new
+                        {
+                            Id = 931,
+                            Code = "IL-JM",
+                            CountryId = 109
+                        },
+                        new
+                        {
+                            Id = 932,
+                            Code = "IL-HA",
+                            CountryId = 109
+                        },
+                        new
+                        {
+                            Id = 933,
+                            Code = "IL-D",
+                            CountryId = 109
+                        },
+                        new
+                        {
+                            Id = 934,
+                            Code = "IL-Z",
+                            CountryId = 109
+                        },
+                        new
+                        {
+                            Id = 935,
+                            Code = "VN-59",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 936,
+                            Code = "IT-36",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 937,
+                            Code = "LV-OG",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 938,
+                            Code = "IN-JH",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 939,
+                            Code = "HU-GS",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 940,
+                            Code = "NO-01",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 941,
+                            Code = "AD-04",
+                            CountryId = 6
+                        },
+                        new
+                        {
+                            Id = 942,
+                            Code = "LV-LU",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 943,
+                            Code = "MX-TAB",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 944,
+                            Code = "MX-CAM",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 945,
+                            Code = "NO-16",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 946,
+                            Code = "NO-15",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 947,
+                            Code = "NO-09",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 948,
+                            Code = "NO-06",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 949,
+                            Code = "NO-04",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 950,
+                            Code = "NO-19",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 951,
+                            Code = "NO-10",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 952,
+                            Code = "NO-17",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 953,
+                            Code = "NO-14",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 954,
+                            Code = "NO-07",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 955,
+                            Code = "BH-14",
+                            CountryId = 17
+                        },
+                        new
+                        {
+                            Id = 956,
+                            Code = "OM-MA",
+                            CountryId = 167
+                        },
+                        new
+                        {
+                            Id = 957,
+                            Code = "DK-82",
+                            CountryId = 61
+                        },
+                        new
+                        {
+                            Id = 958,
+                            Code = "PL-PK",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 959,
+                            Code = "RO-U-A",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 960,
+                            Code = "PT-04",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 961,
+                            Code = "PT-30",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 962,
+                            Code = "PT-06",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 963,
+                            Code = "PT-16",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 964,
+                            Code = "MX-MOR",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 965,
+                            Code = "ES-CR",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 966,
+                            Code = "BT-15",
+                            CountryId = 26
+                        },
+                        new
+                        {
+                            Id = 967,
+                            Code = "NL-U-A",
+                            CountryId = 157
+                        },
+                        new
+                        {
+                            Id = 968,
+                            Code = "KR-U-A",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 969,
+                            Code = "MX-MEX",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 970,
+                            Code = "KP-07",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 971,
+                            Code = "KP-08",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 972,
+                            Code = "MX-CHH",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 973,
+                            Code = "JP-28",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 974,
+                            Code = "LT-KL",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 975,
+                            Code = "RO-BV",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 976,
+                            Code = "JP-37",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 977,
+                            Code = "JP-39",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 978,
+                            Code = "UA-19",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 979,
+                            Code = "JP-38",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 980,
+                            Code = "TW-TXG",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 981,
+                            Code = "TW-TPE",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 982,
+                            Code = "TW-HSZ",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 983,
+                            Code = "TW-HUA",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 984,
+                            Code = "TW-MIA",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 985,
+                            Code = "TW-KHH",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 986,
+                            Code = "TW-TPQ",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 987,
+                            Code = "TW-NAN",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 988,
+                            Code = "TW-X-KM",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 989,
+                            Code = "TW-PIF",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 990,
+                            Code = "PH-QUE",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 991,
+                            Code = "UY-MO",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 992,
+                            Code = "PH-ALB",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 993,
+                            Code = "PH-CAS",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 994,
+                            Code = "PH-AUR",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 995,
+                            Code = "PH-BAN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 996,
+                            Code = "PH-U-A",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 997,
+                            Code = "UY-CO",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 998,
+                            Code = "PH-CAV",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 999,
+                            Code = "PH-TAR",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1000,
+                            Code = "PH-DAS",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1001,
+                            Code = "IT-88",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 1002,
+                            Code = "FR-H",
+                            CountryId = 76
+                        },
+                        new
+                        {
+                            Id = 1003,
+                            Code = "PH-CEB",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1004,
+                            Code = "PH-ZAS",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1005,
+                            Code = "MX-DUR",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 1006,
+                            Code = "KP-13",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 1007,
+                            Code = "TW-TTT",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 1008,
+                            Code = "ES-MA",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 1009,
+                            Code = "ES-SE",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 1010,
+                            Code = "KR-31",
+                            CountryId = 119
+                        },
+                        new
+                        {
+                            Id = 1011,
+                            Code = "MX-HID",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 1012,
+                            Code = "SC-U-A",
+                            CountryId = 198
+                        },
+                        new
+                        {
+                            Id = 1013,
+                            Code = "GR-82",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1014,
+                            Code = "NO-08",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 1015,
+                            Code = "MX-GUA",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 1016,
+                            Code = "CN-33",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1017,
+                            Code = "BB-01",
+                            CountryId = 20
+                        },
+                        new
+                        {
+                            Id = 1018,
+                            Code = "MX-ROO",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 1019,
+                            Code = "IS-2",
+                            CountryId = 102
+                        },
+                        new
+                        {
+                            Id = 1020,
+                            Code = "DZ-35",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1021,
+                            Code = "BF-KAD",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 1022,
+                            Code = "GH-AA",
+                            CountryId = 84
+                        },
+                        new
+                        {
+                            Id = 1023,
+                            Code = "NG-FC",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1024,
+                            Code = "NG-KN",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1025,
+                            Code = "NG-LA",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1026,
+                            Code = "NE-8",
+                            CountryId = 161
+                        },
+                        new
+                        {
+                            Id = 1027,
+                            Code = "TN-11",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1028,
+                            Code = "DE-HH",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 1029,
+                            Code = "IE-CE",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 1030,
+                            Code = "DK-81",
+                            CountryId = 61
+                        },
+                        new
+                        {
+                            Id = 1031,
+                            Code = "PL-SL",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 1032,
+                            Code = "LV-RIX",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 1033,
+                            Code = "MU-GP",
+                            CountryId = 142
+                        },
+                        new
+                        {
+                            Id = 1034,
+                            Code = "ZM-09",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 1035,
+                            Code = "MG-T",
+                            CountryId = 133
+                        },
+                        new
+                        {
+                            Id = 1036,
+                            Code = "MZ-MPM",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 1037,
+                            Code = "SC-20",
+                            CountryId = 198
+                        },
+                        new
+                        {
+                            Id = 1038,
+                            Code = "TD-CB",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 1039,
+                            Code = "ZW-HA",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 1040,
+                            Code = "NA-KH",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 1041,
+                            Code = "CD-KN",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 1042,
+                            Code = "ML-2",
+                            CountryId = 137
+                        },
+                        new
+                        {
+                            Id = 1043,
+                            Code = "SL-N",
+                            CountryId = 199
+                        },
+                        new
+                        {
+                            Id = 1044,
+                            Code = "LR-MG",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 1045,
+                            Code = "SN-DK",
+                            CountryId = 196
+                        },
+                        new
+                        {
+                            Id = 1046,
+                            Code = "CV-B",
+                            CountryId = 41
+                        },
+                        new
+                        {
+                            Id = 1047,
+                            Code = "ET-AA",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 1048,
+                            Code = "EG-C",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1049,
+                            Code = "EG-BA",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1050,
+                            Code = "EG-KN",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1051,
+                            Code = "KE-110",
+                            CountryId = 116
+                        },
+                        new
+                        {
+                            Id = 1052,
+                            Code = "KE-300",
+                            CountryId = 116
+                        },
+                        new
+                        {
+                            Id = 1053,
+                            Code = "LY-TB",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1054,
+                            Code = "RW-01",
+                            CountryId = 184
+                        },
+                        new
+                        {
+                            Id = 1055,
+                            Code = "SS-17",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 1056,
+                            Code = "SD-03",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 1057,
+                            Code = "TZ-02",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 1058,
+                            Code = "TZ-07",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 1059,
+                            Code = "CY-06",
+                            CountryId = 59
+                        },
+                        new
+                        {
+                            Id = 1060,
+                            Code = "HR-21",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 1061,
+                            Code = "GR-91",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1062,
+                            Code = "GR-54",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1063,
+                            Code = "HU-PE",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 1064,
+                            Code = "IT-42",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 1065,
+                            Code = "SI-061",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 1066,
+                            Code = "RO-B",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1067,
+                            Code = "CH-GE",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 1068,
+                            Code = "TR-01",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1069,
+                            Code = "TR-07",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1070,
+                            Code = "TR-27",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1071,
+                            Code = "TR-34",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1072,
+                            Code = "TR-35",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1073,
+                            Code = "TR-48",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1074,
+                            Code = "TR-25",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1075,
+                            Code = "TR-61",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1076,
+                            Code = "TR-32",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1077,
+                            Code = "MK-004",
+                            CountryId = 132
+                        },
+                        new
+                        {
+                            Id = 1078,
+                            Code = "RS-00",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 1079,
+                            Code = "ME-16",
+                            CountryId = 149
+                        },
+                        new
+                        {
+                            Id = 1080,
+                            Code = "DO-11",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 1081,
+                            Code = "GT-GU",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 1082,
+                            Code = "JM-01",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 1083,
+                            Code = "PA-8",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 1084,
+                            Code = "CR-G",
+                            CountryId = 54
+                        },
+                        new
+                        {
+                            Id = 1085,
+                            Code = "SV-PA",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 1086,
+                            Code = "CU-03",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1087,
+                            Code = "CU-04",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1088,
+                            Code = "KY-U-A",
+                            CountryId = 42
+                        },
+                        new
+                        {
+                            Id = 1089,
+                            Code = "BZ-BZ",
+                            CountryId = 23
+                        },
+                        new
+                        {
+                            Id = 1090,
+                            Code = "CK-U-A",
+                            CountryId = 53
+                        },
+                        new
+                        {
+                            Id = 1091,
+                            Code = "BH-15",
+                            CountryId = 17
+                        },
+                        new
+                        {
+                            Id = 1092,
+                            Code = "SA-02",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1093,
+                            Code = "SA-03",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1094,
+                            Code = "IR-07",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1095,
+                            Code = "IR-30",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1096,
+                            Code = "IR-14",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1097,
+                            Code = "IR-01",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1098,
+                            Code = "JO-AM",
+                            CountryId = 114
+                        },
+                        new
+                        {
+                            Id = 1099,
+                            Code = "KW-FA",
+                            CountryId = 120
+                        },
+                        new
+                        {
+                            Id = 1100,
+                            Code = "LB-JL",
+                            CountryId = 124
+                        },
+                        new
+                        {
+                            Id = 1101,
+                            Code = "AE-SH",
+                            CountryId = 234
+                        },
+                        new
+                        {
+                            Id = 1102,
+                            Code = "IQ-BA",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 1103,
+                            Code = "SY-HL",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 1104,
+                            Code = "SY-DI",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 1105,
+                            Code = "SY-LA",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 1106,
+                            Code = "JP-12",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1107,
+                            Code = "JP-27",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1108,
+                            Code = "JP-46",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1109,
+                            Code = "PH-DAV",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1110,
+                            Code = "EC-X",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 1111,
+                            Code = "BO-S",
+                            CountryId = 27
+                        },
+                        new
+                        {
+                            Id = 1112,
+                            Code = "PE-LIM",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1113,
+                            Code = "PE-CUS",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1114,
+                            Code = "UY-CA",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 1115,
+                            Code = "GP-U-A",
+                            CountryId = 89
+                        },
+                        new
+                        {
+                            Id = 1116,
+                            Code = "SX-U-A",
+                            CountryId = 201
+                        },
+                        new
+                        {
+                            Id = 1117,
+                            Code = "KZ-AKM",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 1118,
+                            Code = "AZ-BA",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 1119,
+                            Code = "AM-ER",
+                            CountryId = 12
+                        },
+                        new
+                        {
+                            Id = 1120,
+                            Code = "GE-TB",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 1121,
+                            Code = "TM-A",
+                            CountryId = 229
+                        },
+                        new
+                        {
+                            Id = 1122,
+                            Code = "IN-GA",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1123,
+                            Code = "LK-1",
+                            CountryId = 210
+                        },
+                        new
+                        {
+                            Id = 1124,
+                            Code = "KH-8",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 1125,
+                            Code = "KH-17",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 1126,
+                            Code = "BD-3",
+                            CountryId = 19
+                        },
+                        new
+                        {
+                            Id = 1127,
+                            Code = "IN-DL",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1128,
+                            Code = "MO-U-A",
+                            CountryId = 131
+                        },
+                        new
+                        {
+                            Id = 1129,
+                            Code = "NP-BA",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 1130,
+                            Code = "MV-MLE",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 1131,
+                            Code = "TH-10",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1132,
+                            Code = "TH-50",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1133,
+                            Code = "TH-83",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1134,
+                            Code = "VN-23",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1135,
+                            Code = "MM-04",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 1136,
+                            Code = "MM-06",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 1137,
+                            Code = "BN-BM",
+                            CountryId = 34
+                        },
+                        new
+                        {
+                            Id = 1138,
+                            Code = "ID-BT",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1139,
+                            Code = "MY-14",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1140,
+                            Code = "CN-11",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1141,
+                            Code = "CN-15",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1142,
+                            Code = "CN-12",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1143,
+                            Code = "CN-14",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1144,
+                            Code = "CN-45",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1145,
+                            Code = "CN-41",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1146,
+                            Code = "MN-1",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1147,
+                            Code = "CN-35",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1148,
+                            Code = "CN-37",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1149,
+                            Code = "CN-32",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1150,
+                            Code = "CN-50",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1151,
+                            Code = "CN-52",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1152,
+                            Code = "CN-51",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1153,
+                            Code = "CN-65",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1154,
+                            Code = "IN-TG",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1155,
+                            Code = "IN-KA",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1156,
+                            Code = "RU-LIP",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1157,
+                            Code = "RU-CE",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1158,
+                            Code = "TN-51",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1159,
+                            Code = "QA-DA",
+                            CountryId = 180
+                        },
+                        new
+                        {
+                            Id = 1160,
+                            Code = "OM-WU",
+                            CountryId = 167
+                        },
+                        new
+                        {
+                            Id = 1161,
+                            Code = "OM-BA",
+                            CountryId = 167
+                        },
+                        new
+                        {
+                            Id = 1162,
+                            Code = "ZA-NL",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 1163,
+                            Code = "ID-SU",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1164,
+                            Code = "LK-3",
+                            CountryId = 210
+                        },
+                        new
+                        {
+                            Id = 1165,
+                            Code = "NG-AK",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1166,
+                            Code = "TR-33",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1167,
+                            Code = "MA-U-A",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1168,
+                            Code = "IT-U-A",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 1169,
+                            Code = "SA-U-A",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1170,
+                            Code = "MX-U-A",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 1171,
+                            Code = "NG-U-A",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1172,
+                            Code = "SB-CT",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 1173,
+                            Code = "SB-WE",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 1174,
+                            Code = "NR-14",
+                            CountryId = 155
+                        },
+                        new
+                        {
+                            Id = 1175,
+                            Code = "PG-EHG",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 1176,
+                            Code = "PG-WBK",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 1177,
+                            Code = "PG-WHM",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 1178,
+                            Code = "AZ-SM",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 1179,
+                            Code = "AZ-XCI",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 1180,
+                            Code = "AZ-KUR",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 1181,
+                            Code = "AZ-SKR",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 1182,
+                            Code = "BG-26",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 1183,
+                            Code = "BG-12",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 1184,
+                            Code = "IS-7",
+                            CountryId = 102
+                        },
+                        new
+                        {
+                            Id = 1185,
+                            Code = "IS-8",
+                            CountryId = 102
+                        },
+                        new
+                        {
+                            Id = 1186,
+                            Code = "IS-1",
+                            CountryId = 102
+                        },
+                        new
+                        {
+                            Id = 1187,
+                            Code = "DZ-09",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1188,
+                            Code = "DZ-28",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1189,
+                            Code = "DZ-06",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1190,
+                            Code = "DZ-11",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1191,
+                            Code = "DZ-18",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1192,
+                            Code = "DZ-45",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1193,
+                            Code = "DZ-48",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1194,
+                            Code = "DZ-36",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1195,
+                            Code = "DZ-25",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1196,
+                            Code = "DZ-12",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1197,
+                            Code = "DZ-05",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1198,
+                            Code = "DZ-03",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1199,
+                            Code = "DZ-14",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1200,
+                            Code = "DZ-37",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1201,
+                            Code = "DZ-02",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1202,
+                            Code = "DZ-31",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1203,
+                            Code = "DZ-13",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1204,
+                            Code = "DZ-08",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1205,
+                            Code = "DZ-29",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1206,
+                            Code = "DZ-01",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1207,
+                            Code = "DZ-07",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1208,
+                            Code = "DZ-47",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1209,
+                            Code = "DZ-30",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1210,
+                            Code = "DZ-39",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1211,
+                            Code = "BJ-AQ",
+                            CountryId = 24
+                        },
+                        new
+                        {
+                            Id = 1212,
+                            Code = "BF-HOU",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 1213,
+                            Code = "GH-NP",
+                            CountryId = 84
+                        },
+                        new
+                        {
+                            Id = 1214,
+                            Code = "GH-AH",
+                            CountryId = 84
+                        },
+                        new
+                        {
+                            Id = 1215,
+                            Code = "GH-BA",
+                            CountryId = 84
+                        },
+                        new
+                        {
+                            Id = 1216,
+                            Code = "GH-WP",
+                            CountryId = 84
+                        },
+                        new
+                        {
+                            Id = 1217,
+                            Code = "CI-01",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 1218,
+                            Code = "CI-04",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 1219,
+                            Code = "CI-02",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 1220,
+                            Code = "CI-03",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 1221,
+                            Code = "CI-06",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 1222,
+                            Code = "CI-09",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 1223,
+                            Code = "CI-07",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 1224,
+                            Code = "NG-ON",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1225,
+                            Code = "NG-ED",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1226,
+                            Code = "NG-CR",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1227,
+                            Code = "NG-EN",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1228,
+                            Code = "NG-ZA",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1229,
+                            Code = "NG-OY",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1230,
+                            Code = "NG-KW",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1231,
+                            Code = "NG-IM",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1232,
+                            Code = "NG-PL",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1233,
+                            Code = "NG-KD",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1234,
+                            Code = "NG-BO",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1235,
+                            Code = "NG-BE",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1236,
+                            Code = "NG-NI",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1237,
+                            Code = "NG-RI",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1238,
+                            Code = "NG-SO",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1239,
+                            Code = "NG-AD",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 1240,
+                            Code = "NE-4",
+                            CountryId = 161
+                        },
+                        new
+                        {
+                            Id = 1241,
+                            Code = "NE-5",
+                            CountryId = 161
+                        },
+                        new
+                        {
+                            Id = 1242,
+                            Code = "NE-1",
+                            CountryId = 161
+                        },
+                        new
+                        {
+                            Id = 1243,
+                            Code = "NE-7",
+                            CountryId = 161
+                        },
+                        new
+                        {
+                            Id = 1244,
+                            Code = "TN-32",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1245,
+                            Code = "TN-52",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1246,
+                            Code = "TN-83",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1247,
+                            Code = "TN-71",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1248,
+                            Code = "TN-81",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1249,
+                            Code = "TN-82",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1250,
+                            Code = "TN-61",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1251,
+                            Code = "TN-72",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 1252,
+                            Code = "TG-K",
+                            CountryId = 223
+                        },
+                        new
+                        {
+                            Id = 1253,
+                            Code = "TG-M",
+                            CountryId = 223
+                        },
+                        new
+                        {
+                            Id = 1254,
+                            Code = "DE-SL",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 1255,
+                            Code = "EE-39",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 1256,
+                            Code = "EE-67",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 1257,
+                            Code = "FI-AL",
+                            CountryId = 75
+                        },
+                        new
+                        {
+                            Id = 1258,
+                            Code = "EG-BH",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1259,
+                            Code = "EG-IS",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1260,
+                            Code = "EG-SHR",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1261,
+                            Code = "JE-U-A",
+                            CountryId = 113
+                        },
+                        new
+                        {
+                            Id = 1262,
+                            Code = "IE-SO",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 1263,
+                            Code = "IE-WD",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 1264,
+                            Code = "PL-KP",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 1265,
+                            Code = "SE-K",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 1266,
+                            Code = "SE-F",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 1267,
+                            Code = "SE-T",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 1268,
+                            Code = "SE-W",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 1269,
+                            Code = "SE-N",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 1270,
+                            Code = "SE-Z",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 1271,
+                            Code = "SE-U",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 1272,
+                            Code = "SE-I",
+                            CountryId = 215
+                        },
+                        new
+                        {
+                            Id = 1273,
+                            Code = "LV-VEN",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 1274,
+                            Code = "LT-KU",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 1275,
+                            Code = "LT-SA",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 1276,
+                            Code = "ZA-FS",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 1277,
+                            Code = "BW-SO",
+                            CountryId = 30
+                        },
+                        new
+                        {
+                            Id = 1278,
+                            Code = "CG-12",
+                            CountryId = 51
+                        },
+                        new
+                        {
+                            Id = 1279,
+                            Code = "CG-8",
+                            CountryId = 51
+                        },
+                        new
+                        {
+                            Id = 1280,
+                            Code = "CG-13",
+                            CountryId = 51
+                        },
+                        new
+                        {
+                            Id = 1281,
+                            Code = "CG-5",
+                            CountryId = 51
+                        },
+                        new
+                        {
+                            Id = 1282,
+                            Code = "SZ-MA",
+                            CountryId = 214
+                        },
+                        new
+                        {
+                            Id = 1283,
+                            Code = "CF-HS",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 1284,
+                            Code = "GQ-LI",
+                            CountryId = 68
+                        },
+                        new
+                        {
+                            Id = 1285,
+                            Code = "GQ-BN",
+                            CountryId = 68
+                        },
+                        new
+                        {
+                            Id = 1286,
+                            Code = "SH-AC",
+                            CountryId = 186
+                        },
+                        new
+                        {
+                            Id = 1287,
+                            Code = "MU-VP",
+                            CountryId = 142
+                        },
+                        new
+                        {
+                            Id = 1288,
+                            Code = "IO-U-A",
+                            CountryId = 33
+                        },
+                        new
+                        {
+                            Id = 1289,
+                            Code = "CM-SW",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 1290,
+                            Code = "CM-LT",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 1291,
+                            Code = "CM-EN",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 1292,
+                            Code = "CM-OU",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 1293,
+                            Code = "CM-AD",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 1294,
+                            Code = "CM-NO",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 1295,
+                            Code = "CM-NW",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 1296,
+                            Code = "CM-CE",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 1297,
+                            Code = "ZM-08",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 1298,
+                            Code = "ZM-07",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 1299,
+                            Code = "ZM-03",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 1300,
+                            Code = "ZM-01",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 1301,
+                            Code = "KM-G",
+                            CountryId = 50
+                        },
+                        new
+                        {
+                            Id = 1302,
+                            Code = "KM-M",
+                            CountryId = 50
+                        },
+                        new
+                        {
+                            Id = 1303,
+                            Code = "KM-A",
+                            CountryId = 50
+                        },
+                        new
+                        {
+                            Id = 1304,
+                            Code = "YT-U-A",
+                            CountryId = 143
+                        },
+                        new
+                        {
+                            Id = 1305,
+                            Code = "RE-U-A",
+                            CountryId = 181
+                        },
+                        new
+                        {
+                            Id = 1306,
+                            Code = "MG-U",
+                            CountryId = 133
+                        },
+                        new
+                        {
+                            Id = 1307,
+                            Code = "MG-A",
+                            CountryId = 133
+                        },
+                        new
+                        {
+                            Id = 1308,
+                            Code = "MG-D",
+                            CountryId = 133
+                        },
+                        new
+                        {
+                            Id = 1309,
+                            Code = "MG-M",
+                            CountryId = 133
+                        },
+                        new
+                        {
+                            Id = 1310,
+                            Code = "MG-F",
+                            CountryId = 133
+                        },
+                        new
+                        {
+                            Id = 1311,
+                            Code = "AO-ZAI",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1312,
+                            Code = "AO-BGU",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1313,
+                            Code = "AO-CAB",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1314,
+                            Code = "AO-LNO",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1315,
+                            Code = "AO-HUA",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1316,
+                            Code = "AO-BIE",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1317,
+                            Code = "AO-MAL",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1318,
+                            Code = "AO-NAM",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1319,
+                            Code = "AO-UIG",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1320,
+                            Code = "AO-HUI",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 1321,
+                            Code = "GA-4",
+                            CountryId = 80
+                        },
+                        new
+                        {
+                            Id = 1322,
+                            Code = "GA-9",
+                            CountryId = 80
+                        },
+                        new
+                        {
+                            Id = 1323,
+                            Code = "GA-2",
+                            CountryId = 80
+                        },
+                        new
+                        {
+                            Id = 1324,
+                            Code = "GA-3",
+                            CountryId = 80
+                        },
+                        new
+                        {
+                            Id = 1325,
+                            Code = "GA-8",
+                            CountryId = 80
+                        },
+                        new
+                        {
+                            Id = 1326,
+                            Code = "GA-6",
+                            CountryId = 80
+                        },
+                        new
+                        {
+                            Id = 1327,
+                            Code = "GA-1",
+                            CountryId = 80
+                        },
+                        new
+                        {
+                            Id = 1328,
+                            Code = "ST-P",
+                            CountryId = 194
+                        },
+                        new
+                        {
+                            Id = 1329,
+                            Code = "MZ-S",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 1330,
+                            Code = "MZ-B",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 1331,
+                            Code = "MZ-A",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 1332,
+                            Code = "MZ-N",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 1333,
+                            Code = "MZ-Q",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 1334,
+                            Code = "MZ-T",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 1335,
+                            Code = "TD-OD",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 1336,
+                            Code = "TD-LO",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 1337,
+                            Code = "TD-BET",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 1338,
+                            Code = "ZW-BU",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 1339,
+                            Code = "ZW-MV",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 1340,
+                            Code = "ZW-ME",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 1341,
+                            Code = "ZW-MI",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 1342,
+                            Code = "MW-BL",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 1343,
+                            Code = "MW-KR",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 1344,
+                            Code = "MW-LI",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 1345,
+                            Code = "MW-MZ",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 1346,
+                            Code = "LS-A",
+                            CountryId = 125
+                        },
+                        new
+                        {
+                            Id = 1347,
+                            Code = "NA-ER",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 1348,
+                            Code = "NA-OD",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 1349,
+                            Code = "NA-ON",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 1350,
+                            Code = "NA-KE",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 1351,
+                            Code = "NA-OT",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 1352,
+                            Code = "CD-BN",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 1353,
+                            Code = "CD-EQ",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 1354,
+                            Code = "CD-SK",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 1355,
+                            Code = "CD-NK",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 1356,
+                            Code = "CD-MA",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 1357,
+                            Code = "CD-KA",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 1358,
+                            Code = "CD-KW",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 1359,
+                            Code = "CD-KE",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 1360,
+                            Code = "ML-7",
+                            CountryId = 137
+                        },
+                        new
+                        {
+                            Id = 1361,
+                            Code = "ML-1",
+                            CountryId = 137
+                        },
+                        new
+                        {
+                            Id = 1362,
+                            Code = "ML-5",
+                            CountryId = 137
+                        },
+                        new
+                        {
+                            Id = 1363,
+                            Code = "GM-W",
+                            CountryId = 81
+                        },
+                        new
+                        {
+                            Id = 1364,
+                            Code = "GE-AB",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 1365,
+                            Code = "ES-ML",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 1366,
+                            Code = "GW-BS",
+                            CountryId = 94
+                        },
+                        new
+                        {
+                            Id = 1367,
+                            Code = "LR-MO",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 1368,
+                            Code = "MA-AGD",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1369,
+                            Code = "MA-TNT",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1370,
+                            Code = "MA-FES",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1371,
+                            Code = "MA-ERR",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1372,
+                            Code = "MA-MEK",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1373,
+                            Code = "MA-OUJ",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1374,
+                            Code = "MA-RBA",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1375,
+                            Code = "MA-NAD",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1376,
+                            Code = "MA-MAR",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1377,
+                            Code = "MA-KEN",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1378,
+                            Code = "MA-OUA",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1379,
+                            Code = "MA-HOC",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1380,
+                            Code = "MA-TET",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1381,
+                            Code = "MA-TNG",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 1382,
+                            Code = "SN-ZG",
+                            CountryId = 196
+                        },
+                        new
+                        {
+                            Id = 1383,
+                            Code = "SN-FK",
+                            CountryId = 196
+                        },
+                        new
+                        {
+                            Id = 1384,
+                            Code = "SN-SL",
+                            CountryId = 196
+                        },
+                        new
+                        {
+                            Id = 1385,
+                            Code = "SN-TC",
+                            CountryId = 196
+                        },
+                        new
+                        {
+                            Id = 1386,
+                            Code = "MR-07",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 1387,
+                            Code = "MR-08",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 1388,
+                            Code = "GN-C",
+                            CountryId = 93
+                        },
+                        new
+                        {
+                            Id = 1389,
+                            Code = "CV-S",
+                            CountryId = 41
+                        },
+                        new
+                        {
+                            Id = 1390,
+                            Code = "ET-SN",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 1391,
+                            Code = "ET-TI",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 1392,
+                            Code = "ET-AM",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 1393,
+                            Code = "ET-DD",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 1394,
+                            Code = "ET-GA",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 1395,
+                            Code = "ET-OR",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 1396,
+                            Code = "ET-BE",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 1397,
+                            Code = "BI-BJ",
+                            CountryId = 37
+                        },
+                        new
+                        {
+                            Id = 1398,
+                            Code = "SO-WO",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 1399,
+                            Code = "SO-JH",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 1400,
+                            Code = "DJ-DJ",
+                            CountryId = 62
+                        },
+                        new
+                        {
+                            Id = 1401,
+                            Code = "EG-MT",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1402,
+                            Code = "EG-SIN",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1403,
+                            Code = "EG-WAD",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1404,
+                            Code = "EG-ALX",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1405,
+                            Code = "EG-ASN",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1406,
+                            Code = "EG-BNS",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1407,
+                            Code = "EG-GZ",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1408,
+                            Code = "EG-JS",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 1409,
+                            Code = "ER-SK",
+                            CountryId = 69
+                        },
+                        new
+                        {
+                            Id = 1410,
+                            Code = "ER-DK",
+                            CountryId = 69
+                        },
+                        new
+                        {
+                            Id = 1411,
+                            Code = "KE-500",
+                            CountryId = 116
+                        },
+                        new
+                        {
+                            Id = 1412,
+                            Code = "LY-SR",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1413,
+                            Code = "LY-GT",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1414,
+                            Code = "LY-KF",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1415,
+                            Code = "LY-BA",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1416,
+                            Code = "LY-JA",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1417,
+                            Code = "LY-SB",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1418,
+                            Code = "LY-WA",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1419,
+                            Code = "LY-NL",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1420,
+                            Code = "RW-04",
+                            CountryId = 184
+                        },
+                        new
+                        {
+                            Id = 1421,
+                            Code = "SD-01",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 1422,
+                            Code = "SD-02",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 1423,
+                            Code = "SD-05",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 1424,
+                            Code = "SD-09",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 1425,
+                            Code = "SD-26",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 1426,
+                            Code = "SS-23",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 1427,
+                            Code = "TZ-01",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 1428,
+                            Code = "TZ-03",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 1429,
+                            Code = "TZ-04",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 1430,
+                            Code = "TZ-26",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 1431,
+                            Code = "TZ-17",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 1432,
+                            Code = "TZ-18",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 1433,
+                            Code = "TZ-25",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 1434,
+                            Code = "UG-304",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 1435,
+                            Code = "UG-211",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 1436,
+                            Code = "AL-12",
+                            CountryId = 3
+                        },
+                        new
+                        {
+                            Id = 1437,
+                            Code = "HR-14",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 1438,
+                            Code = "HR-13",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 1439,
+                            Code = "ES-EX",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 1440,
+                            Code = "ES-GE",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 1441,
+                            Code = "ES-MU",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 1442,
+                            Code = "PM-ML",
+                            CountryId = 190
+                        },
+                        new
+                        {
+                            Id = 1443,
+                            Code = "PM-SP",
+                            CountryId = 190
+                        },
+                        new
+                        {
+                            Id = 1444,
+                            Code = "GR-14",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1445,
+                            Code = "GR-71",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1446,
+                            Code = "GR-85",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1447,
+                            Code = "GR-33",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1448,
+                            Code = "GR-23",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1449,
+                            Code = "GR-17",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1450,
+                            Code = "GR-81",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1451,
+                            Code = "GR-22",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1452,
+                            Code = "GR-55",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1453,
+                            Code = "GR-58",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1454,
+                            Code = "GR-34",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1455,
+                            Code = "GR-13",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1456,
+                            Code = "GR-94",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1457,
+                            Code = "GR-84",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1458,
+                            Code = "GR-92",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1459,
+                            Code = "GR-21",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 1460,
+                            Code = "HU-HB",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 1461,
+                            Code = "HU-BA",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 1462,
+                            Code = "HU-ZA",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 1463,
+                            Code = "HU-JN",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 1464,
+                            Code = "IT-32",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 1465,
+                            Code = "IT-23",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 1466,
+                            Code = "IT-55",
+                            CountryId = 110
+                        },
+                        new
+                        {
+                            Id = 1467,
+                            Code = "SI-009",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 1468,
+                            Code = "SI-070",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 1469,
+                            Code = "SI-090",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 1470,
+                            Code = "CZ-KA",
+                            CountryId = 60
+                        },
+                        new
+                        {
+                            Id = 1471,
+                            Code = "BA-SRP",
+                            CountryId = 29
+                        },
+                        new
+                        {
+                            Id = 1472,
+                            Code = "RO-AR",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1473,
+                            Code = "RO-BC",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1474,
+                            Code = "RO-MM",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1475,
+                            Code = "RO-CT",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1476,
+                            Code = "RO-CJ",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1477,
+                            Code = "RO-CS",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1478,
+                            Code = "RO-DJ",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1479,
+                            Code = "RO-IS",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1480,
+                            Code = "RO-BH",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1481,
+                            Code = "RO-SB",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1482,
+                            Code = "RO-SM",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1483,
+                            Code = "RO-SV",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1484,
+                            Code = "RO-TL",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1485,
+                            Code = "RO-MS",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1486,
+                            Code = "RO-TM",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1487,
+                            Code = "CH-NE",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 1488,
+                            Code = "CH-OW",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 1489,
+                            Code = "CH-GL",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 1490,
+                            Code = "CH-FR",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 1491,
+                            Code = "CH-SO",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 1492,
+                            Code = "TR-03",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1493,
+                            Code = "TR-44",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1494,
+                            Code = "TR-60",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1495,
+                            Code = "TR-10",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1496,
+                            Code = "TR-41",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1497,
+                            Code = "TR-16",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1498,
+                            Code = "TR-45",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1499,
+                            Code = "TR-59",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1500,
+                            Code = "TR-23",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1501,
+                            Code = "TR-21",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1502,
+                            Code = "TR-24",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1503,
+                            Code = "TR-36",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1504,
+                            Code = "TR-63",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1505,
+                            Code = "TR-65",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1506,
+                            Code = "TR-72",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1507,
+                            Code = "TR-49",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1508,
+                            Code = "TR-56",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1509,
+                            Code = "TR-46",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1510,
+                            Code = "TR-04",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1511,
+                            Code = "TR-02",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1512,
+                            Code = "TR-47",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 1513,
+                            Code = "MD-RS",
+                            CountryId = 146
+                        },
+                        new
+                        {
+                            Id = 1514,
+                            Code = "MD-C",
+                            CountryId = 146
+                        },
+                        new
+                        {
+                            Id = 1515,
+                            Code = "MK-003",
+                            CountryId = 132
+                        },
+                        new
+                        {
+                            Id = 1516,
+                            Code = "GI-U-A",
+                            CountryId = 85
+                        },
+                        new
+                        {
+                            Id = 1517,
+                            Code = "LY-NQ",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1518,
+                            Code = "RS-07",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 1519,
+                            Code = "RS-20",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 1520,
+                            Code = "ME-19",
+                            CountryId = 149
+                        },
+                        new
+                        {
+                            Id = 1521,
+                            Code = "SK-KI",
+                            CountryId = 202
+                        },
+                        new
+                        {
+                            Id = 1522,
+                            Code = "SK-TA",
+                            CountryId = 202
+                        },
+                        new
+                        {
+                            Id = 1523,
+                            Code = "SK-BC",
+                            CountryId = 202
+                        },
+                        new
+                        {
+                            Id = 1524,
+                            Code = "SK-TC",
+                            CountryId = 202
+                        },
+                        new
+                        {
+                            Id = 1525,
+                            Code = "SK-ZI",
+                            CountryId = 202
+                        },
+                        new
+                        {
+                            Id = 1526,
+                            Code = "TC-GT",
+                            CountryId = 230
+                        },
+                        new
+                        {
+                            Id = 1527,
+                            Code = "TC-NC",
+                            CountryId = 230
+                        },
+                        new
+                        {
+                            Id = 1528,
+                            Code = "TC-PR",
+                            CountryId = 230
+                        },
+                        new
+                        {
+                            Id = 1529,
+                            Code = "TC-SC",
+                            CountryId = 230
+                        },
+                        new
+                        {
+                            Id = 1530,
+                            Code = "MD-FR",
+                            CountryId = 146
+                        },
+                        new
+                        {
+                            Id = 1531,
+                            Code = "DO-16",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 1532,
+                            Code = "DO-12",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 1533,
+                            Code = "DO-18",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 1534,
+                            Code = "GT-AV",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 1535,
+                            Code = "GT-IZ",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 1536,
+                            Code = "GT-RE",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 1537,
+                            Code = "GT-ES",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 1538,
+                            Code = "GT-PE",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 1539,
+                            Code = "HN-IB",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 1540,
+                            Code = "HN-CM",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 1541,
+                            Code = "JM-05",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 1542,
+                            Code = "JM-08",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 1543,
+                            Code = "JM-04",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 1544,
+                            Code = "MX-YUC",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 1545,
+                            Code = "MX-ZAC",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 1546,
+                            Code = "NI-AS",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 1547,
+                            Code = "NI-MN",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 1548,
+                            Code = "NI-AN",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 1549,
+                            Code = "PA-1",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 1550,
+                            Code = "PA-6",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 1551,
+                            Code = "PA-3",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 1552,
+                            Code = "PA-9",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 1553,
+                            Code = "CR-L",
+                            CountryId = 54
+                        },
+                        new
+                        {
+                            Id = 1554,
+                            Code = "CR-A",
+                            CountryId = 54
+                        },
+                        new
+                        {
+                            Id = 1555,
+                            Code = "SV-SS",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 1556,
+                            Code = "HT-SD",
+                            CountryId = 96
+                        },
+                        new
+                        {
+                            Id = 1557,
+                            Code = "HT-ND",
+                            CountryId = 96
+                        },
+                        new
+                        {
+                            Id = 1558,
+                            Code = "HT-SE",
+                            CountryId = 96
+                        },
+                        new
+                        {
+                            Id = 1559,
+                            Code = "HT-OU",
+                            CountryId = 96
+                        },
+                        new
+                        {
+                            Id = 1560,
+                            Code = "CU-06",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1561,
+                            Code = "CU-99",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1562,
+                            Code = "CU-09",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1563,
+                            Code = "CU-13",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1564,
+                            Code = "CU-11",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1565,
+                            Code = "CU-01",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1566,
+                            Code = "CU-05",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1567,
+                            Code = "CU-07",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1568,
+                            Code = "CU-10",
+                            CountryId = 57
+                        },
+                        new
+                        {
+                            Id = 1569,
+                            Code = "BS-KB",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1570,
+                            Code = "BS-MH",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1571,
+                            Code = "BS-AC",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1572,
+                            Code = "BS-BI",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1573,
+                            Code = "BS-CI",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1574,
+                            Code = "BS-HI",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1575,
+                            Code = "BS-GH",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1576,
+                            Code = "BS-FP",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1577,
+                            Code = "BS-IN",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1578,
+                            Code = "BS-LI",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1579,
+                            Code = "BS-MG",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1580,
+                            Code = "BS-RI",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1581,
+                            Code = "BS-SR",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 1582,
+                            Code = "FJ-C",
+                            CountryId = 74
+                        },
+                        new
+                        {
+                            Id = 1583,
+                            Code = "TO-04",
+                            CountryId = 225
+                        },
+                        new
+                        {
+                            Id = 1584,
+                            Code = "TO-02",
+                            CountryId = 225
+                        },
+                        new
+                        {
+                            Id = 1585,
+                            Code = "TO-05",
+                            CountryId = 225
+                        },
+                        new
+                        {
+                            Id = 1586,
+                            Code = "NU-U-A",
+                            CountryId = 163
+                        },
+                        new
+                        {
+                            Id = 1587,
+                            Code = "WF-U-A",
+                            CountryId = 245
+                        },
+                        new
+                        {
+                            Id = 1588,
+                            Code = "WS-AA",
+                            CountryId = 192
+                        },
+                        new
+                        {
+                            Id = 1589,
+                            Code = "AS-U-A",
+                            CountryId = 5
+                        },
+                        new
+                        {
+                            Id = 1590,
+                            Code = "VU-SAM",
+                            CountryId = 240
+                        },
+                        new
+                        {
+                            Id = 1591,
+                            Code = "VU-SEE",
+                            CountryId = 240
+                        },
+                        new
+                        {
+                            Id = 1592,
+                            Code = "VU-TAE",
+                            CountryId = 240
+                        },
+                        new
+                        {
+                            Id = 1593,
+                            Code = "NC-U-A",
+                            CountryId = 158
+                        },
+                        new
+                        {
+                            Id = 1594,
+                            Code = "AF-PAR",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 1595,
+                            Code = "AF-NAN",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 1596,
+                            Code = "AF-KAB",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 1597,
+                            Code = "AF-KAN",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 1598,
+                            Code = "AF-FYB",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 1599,
+                            Code = "AF-BAL",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 1600,
+                            Code = "AF-KDZ",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 1601,
+                            Code = "SA-14",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1602,
+                            Code = "SA-09",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1603,
+                            Code = "SA-05",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1604,
+                            Code = "SA-08",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1605,
+                            Code = "SA-06",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1606,
+                            Code = "SA-10",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1607,
+                            Code = "SA-12",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1608,
+                            Code = "SA-07",
+                            CountryId = 195
+                        },
+                        new
+                        {
+                            Id = 1609,
+                            Code = "IR-18",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1610,
+                            Code = "IR-23",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1611,
+                            Code = "IR-17",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1612,
+                            Code = "IR-05",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1613,
+                            Code = "IR-20",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1614,
+                            Code = "IR-16",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1615,
+                            Code = "IR-04",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1616,
+                            Code = "IR-08",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1617,
+                            Code = "IR-19",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1618,
+                            Code = "IR-24",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1619,
+                            Code = "IR-28",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1620,
+                            Code = "IR-U-A",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1621,
+                            Code = "IR-15",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1622,
+                            Code = "IR-31",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1623,
+                            Code = "IR-25",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1624,
+                            Code = "IR-27",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1625,
+                            Code = "IR-21",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1626,
+                            Code = "IR-03",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1627,
+                            Code = "IR-02",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1628,
+                            Code = "IR-11",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1629,
+                            Code = "IR-13",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 1630,
+                            Code = "JO-AQ",
+                            CountryId = 114
+                        },
+                        new
+                        {
+                            Id = 1631,
+                            Code = "KW-JA",
+                            CountryId = 120
+                        },
+                        new
+                        {
+                            Id = 1632,
+                            Code = "LB-AS",
+                            CountryId = 124
+                        },
+                        new
+                        {
+                            Id = 1633,
+                            Code = "LB-BI",
+                            CountryId = 124
+                        },
+                        new
+                        {
+                            Id = 1634,
+                            Code = "AE-FU",
+                            CountryId = 234
+                        },
+                        new
+                        {
+                            Id = 1635,
+                            Code = "AE-RK",
+                            CountryId = 234
+                        },
+                        new
+                        {
+                            Id = 1636,
+                            Code = "OM-MU",
+                            CountryId = 167
+                        },
+                        new
+                        {
+                            Id = 1637,
+                            Code = "OM-SH",
+                            CountryId = 167
+                        },
+                        new
+                        {
+                            Id = 1638,
+                            Code = "OM-ZU",
+                            CountryId = 167
+                        },
+                        new
+                        {
+                            Id = 1639,
+                            Code = "PK-JK",
+                            CountryId = 168
+                        },
+                        new
+                        {
+                            Id = 1640,
+                            Code = "IQ-SD",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 1641,
+                            Code = "IQ-NI",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 1642,
+                            Code = "IQ-AR",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 1643,
+                            Code = "IQ-TS",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 1644,
+                            Code = "IQ-SW",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 1645,
+                            Code = "IQ-DQ",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 1646,
+                            Code = "IQ-WA",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 1647,
+                            Code = "SY-DY",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 1648,
+                            Code = "SY-HA",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 1649,
+                            Code = "SY-HI",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 1650,
+                            Code = "YE-AD",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 1651,
+                            Code = "YE-AB",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 1652,
+                            Code = "YE-MR",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 1653,
+                            Code = "YE-HU",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 1654,
+                            Code = "YE-HD",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 1655,
+                            Code = "YE-SN",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 1656,
+                            Code = "YE-TA",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 1657,
+                            Code = "KI-P",
+                            CountryId = 117
+                        },
+                        new
+                        {
+                            Id = 1658,
+                            Code = "MH-MAJ",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 1659,
+                            Code = "MH-KWA",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 1660,
+                            Code = "KI-L",
+                            CountryId = 117
+                        },
+                        new
+                        {
+                            Id = 1661,
+                            Code = "FM-TRK",
+                            CountryId = 145
+                        },
+                        new
+                        {
+                            Id = 1662,
+                            Code = "FM-PNI",
+                            CountryId = 145
+                        },
+                        new
+                        {
+                            Id = 1663,
+                            Code = "PW-004",
+                            CountryId = 169
+                        },
+                        new
+                        {
+                            Id = 1664,
+                            Code = "FM-KSA",
+                            CountryId = 145
+                        },
+                        new
+                        {
+                            Id = 1665,
+                            Code = "FM-YAP",
+                            CountryId = 145
+                        },
+                        new
+                        {
+                            Id = 1666,
+                            Code = "UM-79",
+                            CountryId = 237
+                        },
+                        new
+                        {
+                            Id = 1667,
+                            Code = "TW-KHQ",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 1668,
+                            Code = "TW-X-LK",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 1669,
+                            Code = "TW-CYQ",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 1670,
+                            Code = "TW-TNN",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 1671,
+                            Code = "JP-20",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1672,
+                            Code = "JP-08",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1673,
+                            Code = "JP-30",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1674,
+                            Code = "JP-34",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1675,
+                            Code = "JP-42",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1676,
+                            Code = "JP-35",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1677,
+                            Code = "JP-45",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1678,
+                            Code = "JP-44",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1679,
+                            Code = "JP-41",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1680,
+                            Code = "JP-43",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1681,
+                            Code = "JP-16",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1682,
+                            Code = "JP-18",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1683,
+                            Code = "JP-21",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1684,
+                            Code = "JP-17",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1685,
+                            Code = "JP-32",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1686,
+                            Code = "JP-33",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1687,
+                            Code = "JP-31",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1688,
+                            Code = "JP-02",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1689,
+                            Code = "JP-06",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1690,
+                            Code = "JP-15",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1691,
+                            Code = "JP-07",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1692,
+                            Code = "JP-03",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1693,
+                            Code = "JP-05",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1694,
+                            Code = "JP-04",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1695,
+                            Code = "JP-09",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 1696,
+                            Code = "RO-BR",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1697,
+                            Code = "RO-IL",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1698,
+                            Code = "RO-BZ",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 1699,
+                            Code = "PH-ILN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1700,
+                            Code = "PH-MDC",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1701,
+                            Code = "PH-SCO",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1702,
+                            Code = "PH-MAG",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1703,
+                            Code = "PH-AGN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1704,
+                            Code = "PH-SUR",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1705,
+                            Code = "PH-ZAN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1706,
+                            Code = "PH-CAM",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1707,
+                            Code = "PH-SLU",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1708,
+                            Code = "PH-TAW",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1709,
+                            Code = "PH-MSC",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1710,
+                            Code = "PH-SUN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1711,
+                            Code = "PH-BEN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1712,
+                            Code = "PH-CAN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1713,
+                            Code = "PH-BTN",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1714,
+                            Code = "PH-CAT",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1715,
+                            Code = "PH-MAD",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1716,
+                            Code = "PH-LEY",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1717,
+                            Code = "PH-WSA",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1718,
+                            Code = "PH-NER",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1719,
+                            Code = "PH-AKL",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1720,
+                            Code = "PH-NSA",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1721,
+                            Code = "PH-ILI",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1722,
+                            Code = "PH-MAS",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1723,
+                            Code = "PH-PLW",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1724,
+                            Code = "PH-CAP",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1725,
+                            Code = "PH-ANT",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1726,
+                            Code = "PH-BOH",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1727,
+                            Code = "PH-ROM",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 1728,
+                            Code = "AR-P",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 1729,
+                            Code = "AR-Y",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 1730,
+                            Code = "AR-U",
+                            CountryId = 11
+                        },
+                        new
+                        {
+                            Id = 1731,
+                            Code = "CL-AT",
+                            CountryId = 45
+                        },
+                        new
+                        {
+                            Id = 1732,
+                            Code = "EC-T",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 1733,
+                            Code = "EC-D",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 1734,
+                            Code = "EC-A",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 1735,
+                            Code = "EC-L",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 1736,
+                            Code = "EC-S",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 1737,
+                            Code = "EC-U",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 1738,
+                            Code = "EC-C",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 1739,
+                            Code = "PY-11",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 1740,
+                            Code = "PY-8",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 1741,
+                            Code = "PY-10",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 1742,
+                            Code = "PY-19",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 1743,
+                            Code = "PY-12",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 1744,
+                            Code = "CO-MET",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1745,
+                            Code = "CO-PUT",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1746,
+                            Code = "CO-NSA",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1747,
+                            Code = "CO-SUC",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1748,
+                            Code = "CO-CAQ",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1749,
+                            Code = "CO-CAU",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1750,
+                            Code = "CO-LAG",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1751,
+                            Code = "CO-AMA",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1752,
+                            Code = "CO-VAU",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1753,
+                            Code = "CO-HUI",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1754,
+                            Code = "CO-VID",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1755,
+                            Code = "CO-GUA",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1756,
+                            Code = "CO-RIS",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1757,
+                            Code = "CO-SAP",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1758,
+                            Code = "CO-CAS",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1759,
+                            Code = "CO-GUV",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1760,
+                            Code = "CO-BOY",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1761,
+                            Code = "CO-ARA",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1762,
+                            Code = "CO-CES",
+                            CountryId = 49
+                        },
+                        new
+                        {
+                            Id = 1763,
+                            Code = "BO-C",
+                            CountryId = 27
+                        },
+                        new
+                        {
+                            Id = 1764,
+                            Code = "BO-N",
+                            CountryId = 27
+                        },
+                        new
+                        {
+                            Id = 1765,
+                            Code = "BO-L",
+                            CountryId = 27
+                        },
+                        new
+                        {
+                            Id = 1766,
+                            Code = "BO-O",
+                            CountryId = 27
+                        },
+                        new
+                        {
+                            Id = 1767,
+                            Code = "BO-P",
+                            CountryId = 27
+                        },
+                        new
+                        {
+                            Id = 1768,
+                            Code = "BO-B",
+                            CountryId = 27
+                        },
+                        new
+                        {
+                            Id = 1769,
+                            Code = "BO-H",
+                            CountryId = 27
+                        },
+                        new
+                        {
+                            Id = 1770,
+                            Code = "SR-PR",
+                            CountryId = 212
+                        },
+                        new
+                        {
+                            Id = 1771,
+                            Code = "GF-CY",
+                            CountryId = 77
+                        },
+                        new
+                        {
+                            Id = 1772,
+                            Code = "PE-UCA",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1773,
+                            Code = "PE-LOR",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1774,
+                            Code = "PE-MDD",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1775,
+                            Code = "PE-ANC",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1776,
+                            Code = "PE-LAM",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1777,
+                            Code = "PE-AYA",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1778,
+                            Code = "PE-SAM",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1779,
+                            Code = "PE-CAJ",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1780,
+                            Code = "PE-JUN",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1781,
+                            Code = "PE-PUN",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1782,
+                            Code = "PE-MOQ",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1783,
+                            Code = "PE-TUM",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1784,
+                            Code = "PE-HUC",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1785,
+                            Code = "PE-AMA",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1786,
+                            Code = "PE-ARE",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1787,
+                            Code = "PE-LAL",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1788,
+                            Code = "PE-ICA",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1789,
+                            Code = "PE-TAC",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1790,
+                            Code = "PE-PIU",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 1791,
+                            Code = "UY-DU",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 1792,
+                            Code = "UY-MA",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 1793,
+                            Code = "UY-SA",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 1794,
+                            Code = "VE-E",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 1795,
+                            Code = "VE-K",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 1796,
+                            Code = "VE-I",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 1797,
+                            Code = "VE-C",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 1798,
+                            Code = "VE-S",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 1799,
+                            Code = "VE-L",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 1800,
+                            Code = "VE-O",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 1801,
+                            Code = "SY-SU",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 1802,
+                            Code = "GY-DE",
+                            CountryId = 95
+                        },
+                        new
+                        {
+                            Id = 1803,
+                            Code = "AG-03",
+                            CountryId = 10
+                        },
+                        new
+                        {
+                            Id = 1804,
+                            Code = "DM-10",
+                            CountryId = 63
+                        },
+                        new
+                        {
+                            Id = 1805,
+                            Code = "DM-02",
+                            CountryId = 63
+                        },
+                        new
+                        {
+                            Id = 1806,
+                            Code = "MQ-U-A",
+                            CountryId = 140
+                        },
+                        new
+                        {
+                            Id = 1807,
+                            Code = "MF-U-A",
+                            CountryId = 189
+                        },
+                        new
+                        {
+                            Id = 1808,
+                            Code = "GD-GE",
+                            CountryId = 88
+                        },
+                        new
+                        {
+                            Id = 1809,
+                            Code = "TJ-RR",
+                            CountryId = 219
+                        },
+                        new
+                        {
+                            Id = 1810,
+                            Code = "TJ-KT",
+                            CountryId = 219
+                        },
+                        new
+                        {
+                            Id = 1811,
+                            Code = "KN-U-A",
+                            CountryId = 187
+                        },
+                        new
+                        {
+                            Id = 1812,
+                            Code = "LC-02",
+                            CountryId = 188
+                        },
+                        new
+                        {
+                            Id = 1813,
+                            Code = "LC-11",
+                            CountryId = 188
+                        },
+                        new
+                        {
+                            Id = 1814,
+                            Code = "TM-M",
+                            CountryId = 229
+                        },
+                        new
+                        {
+                            Id = 1815,
+                            Code = "AW-U-A",
+                            CountryId = 13
+                        },
+                        new
+                        {
+                            Id = 1816,
+                            Code = "BQ-U-A",
+                            CountryId = 28
+                        },
+                        new
+                        {
+                            Id = 1817,
+                            Code = "CW-U-A",
+                            CountryId = 58
+                        },
+                        new
+                        {
+                            Id = 1818,
+                            Code = "AI-U-A",
+                            CountryId = 8
+                        },
+                        new
+                        {
+                            Id = 1819,
+                            Code = "TT-WTO",
+                            CountryId = 226
+                        },
+                        new
+                        {
+                            Id = 1820,
+                            Code = "TT-TUP",
+                            CountryId = 226
+                        },
+                        new
+                        {
+                            Id = 1821,
+                            Code = "VG-U-A",
+                            CountryId = 243
+                        },
+                        new
+                        {
+                            Id = 1822,
+                            Code = "VC-06",
+                            CountryId = 191
+                        },
+                        new
+                        {
+                            Id = 1823,
+                            Code = "KZ-ZAP",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 1824,
+                            Code = "KZ-PAV",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 1825,
+                            Code = "KZ-MAN",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 1826,
+                            Code = "KZ-ATY",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 1827,
+                            Code = "AZ-GA",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 1828,
+                            Code = "AZ-NX",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 1829,
+                            Code = "AM-SH",
+                            CountryId = 12
+                        },
+                        new
+                        {
+                            Id = 1830,
+                            Code = "GE-IM",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 1831,
+                            Code = "GE-AJ",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 1832,
+                            Code = "RU-IRK",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1833,
+                            Code = "BY-BR",
+                            CountryId = 21
+                        },
+                        new
+                        {
+                            Id = 1834,
+                            Code = "BY-HO",
+                            CountryId = 21
+                        },
+                        new
+                        {
+                            Id = 1835,
+                            Code = "RU-KK",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1836,
+                            Code = "RU-OMS",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1837,
+                            Code = "RU-KB",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1838,
+                            Code = "RU-SE",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1839,
+                            Code = "RU-TYU",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1840,
+                            Code = "TM-D",
+                            CountryId = 229
+                        },
+                        new
+                        {
+                            Id = 1841,
+                            Code = "TM-L",
+                            CountryId = 229
+                        },
+                        new
+                        {
+                            Id = 1842,
+                            Code = "TJ-SU",
+                            CountryId = 219
+                        },
+                        new
+                        {
+                            Id = 1843,
+                            Code = "UZ-XO",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 1844,
+                            Code = "UZ-BU",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 1845,
+                            Code = "UZ-SU",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 1846,
+                            Code = "RU-BEL",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1847,
+                            Code = "RU-KRS",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1848,
+                            Code = "RU-CU",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1849,
+                            Code = "RU-ULY",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1850,
+                            Code = "IN-GJ",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1851,
+                            Code = "IN-CT",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1852,
+                            Code = "IN-DD",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1853,
+                            Code = "LK-7",
+                            CountryId = 210
+                        },
+                        new
+                        {
+                            Id = 1854,
+                            Code = "LK-4",
+                            CountryId = 210
+                        },
+                        new
+                        {
+                            Id = 1855,
+                            Code = "KH-2",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 1856,
+                            Code = "KH-4",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 1857,
+                            Code = "KH-19",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 1858,
+                            Code = "IN-TR",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1859,
+                            Code = "BD-1",
+                            CountryId = 19
+                        },
+                        new
+                        {
+                            Id = 1860,
+                            Code = "BD-2",
+                            CountryId = 19
+                        },
+                        new
+                        {
+                            Id = 1861,
+                            Code = "BD-5",
+                            CountryId = 19
+                        },
+                        new
+                        {
+                            Id = 1862,
+                            Code = "BD-6",
+                            CountryId = 19
+                        },
+                        new
+                        {
+                            Id = 1863,
+                            Code = "IN-HR",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1864,
+                            Code = "IN-CH",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1865,
+                            Code = "LA-LP",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 1866,
+                            Code = "LA-CH",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 1867,
+                            Code = "LA-SV",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 1868,
+                            Code = "LA-HO",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 1869,
+                            Code = "LA-VT",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 1870,
+                            Code = "NP-LU",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 1871,
+                            Code = "NP-JA",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 1872,
+                            Code = "NP-BH",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 1873,
+                            Code = "NP-GA",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 1874,
+                            Code = "NP-KO",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 1875,
+                            Code = "IN-AN",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 1876,
+                            Code = "BT-11",
+                            CountryId = 26
+                        },
+                        new
+                        {
+                            Id = 1877,
+                            Code = "MV-01",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 1878,
+                            Code = "MV-23",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 1879,
+                            Code = "MV-05",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 1880,
+                            Code = "MV-28",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 1881,
+                            Code = "TH-72",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1882,
+                            Code = "TH-16",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1883,
+                            Code = "TH-23",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1884,
+                            Code = "TH-21",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1885,
+                            Code = "TH-58",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1886,
+                            Code = "TH-52",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1887,
+                            Code = "TH-55",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1888,
+                            Code = "TH-54",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1889,
+                            Code = "TH-57",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1890,
+                            Code = "TH-67",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1891,
+                            Code = "TH-76",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1892,
+                            Code = "TH-60",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1893,
+                            Code = "TH-63",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1894,
+                            Code = "TH-64",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1895,
+                            Code = "TH-65",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1896,
+                            Code = "TH-84",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1897,
+                            Code = "TH-96",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1898,
+                            Code = "TH-86",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1899,
+                            Code = "TH-80",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1900,
+                            Code = "TH-81",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1901,
+                            Code = "TH-90",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1902,
+                            Code = "TH-94",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1903,
+                            Code = "TH-85",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1904,
+                            Code = "TH-92",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1905,
+                            Code = "TH-41",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1906,
+                            Code = "TH-47",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1907,
+                            Code = "TH-32",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1908,
+                            Code = "TH-40",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1909,
+                            Code = "TH-42",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1910,
+                            Code = "TH-31",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1911,
+                            Code = "TH-30",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1912,
+                            Code = "TH-34",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1913,
+                            Code = "TH-45",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1914,
+                            Code = "TH-48",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 1915,
+                            Code = "VN-33",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1916,
+                            Code = "VN-61",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1917,
+                            Code = "VN-43",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1918,
+                            Code = "VN-02",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1919,
+                            Code = "VN-01",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1920,
+                            Code = "VN-56",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1921,
+                            Code = "VN-31",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1922,
+                            Code = "VN-30",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1923,
+                            Code = "VN-49",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1924,
+                            Code = "VN-26",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1925,
+                            Code = "MM-05",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 1926,
+                            Code = "MM-17",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 1927,
+                            Code = "MM-16",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 1928,
+                            Code = "MM-12",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 1929,
+                            Code = "MM-11",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 1930,
+                            Code = "ID-SA",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1931,
+                            Code = "ID-ST",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1932,
+                            Code = "ID-MU",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1933,
+                            Code = "ID-KS",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1934,
+                            Code = "MY-15",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1935,
+                            Code = "ID-RI",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1936,
+                            Code = "ID-LA",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1937,
+                            Code = "ID-JK",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1938,
+                            Code = "ID-JT",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1939,
+                            Code = "ID-SB",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1940,
+                            Code = "ID-KB",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1941,
+                            Code = "ID-BE",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1942,
+                            Code = "ID-SS",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1943,
+                            Code = "ID-AC",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 1944,
+                            Code = "MY-01",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1945,
+                            Code = "MY-06",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1946,
+                            Code = "MY-02",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1947,
+                            Code = "MY-07",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1948,
+                            Code = "MY-03",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1949,
+                            Code = "MY-11",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1950,
+                            Code = "MY-04",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1951,
+                            Code = "MY-10",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 1952,
+                            Code = "TL-CO",
+                            CountryId = 222
+                        },
+                        new
+                        {
+                            Id = 1953,
+                            Code = "TL-BA",
+                            CountryId = 222
+                        },
+                        new
+                        {
+                            Id = 1954,
+                            Code = "SG-03",
+                            CountryId = 200
+                        },
+                        new
+                        {
+                            Id = 1955,
+                            Code = "YE-LA",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 1956,
+                            Code = "CC-U-A",
+                            CountryId = 48
+                        },
+                        new
+                        {
+                            Id = 1957,
+                            Code = "CX-U-A",
+                            CountryId = 47
+                        },
+                        new
+                        {
+                            Id = 1958,
+                            Code = "NF-U-A",
+                            CountryId = 164
+                        },
+                        new
+                        {
+                            Id = 1959,
+                            Code = "MN-069",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1960,
+                            Code = "MN-051",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1961,
+                            Code = "MN-061",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1962,
+                            Code = "MN-053",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1963,
+                            Code = "MN-043",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1964,
+                            Code = "MN-041",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1965,
+                            Code = "CN-36",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1966,
+                            Code = "CN-34",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1967,
+                            Code = "IE-KE",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 1968,
+                            Code = "MN-065",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1969,
+                            Code = "MN-055",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1970,
+                            Code = "MN-067",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 1971,
+                            Code = "HU-SO",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 1972,
+                            Code = "SS-14",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 1973,
+                            Code = "MW-NK",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 1974,
+                            Code = "MW-MG",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 1975,
+                            Code = "RU-NEN",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1976,
+                            Code = "DO-20",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 1977,
+                            Code = "LY-SH",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 1978,
+                            Code = "CN-54",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1979,
+                            Code = "SL-S",
+                            CountryId = 199
+                        },
+                        new
+                        {
+                            Id = 1980,
+                            Code = "CG-9",
+                            CountryId = 51
+                        },
+                        new
+                        {
+                            Id = 1981,
+                            Code = "VN-35",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 1982,
+                            Code = "LV-JK",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 1983,
+                            Code = "RU-UD",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1984,
+                            Code = "CN-64",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 1985,
+                            Code = "HT-GA",
+                            CountryId = 96
+                        },
+                        new
+                        {
+                            Id = 1986,
+                            Code = "RU-ME",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1987,
+                            Code = "SL-E",
+                            CountryId = 199
+                        },
+                        new
+                        {
+                            Id = 1988,
+                            Code = "RU-KOS",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1989,
+                            Code = "RU-TY",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 1990,
+                            Code = "AL-07",
+                            CountryId = 3
+                        },
+                        new
+                        {
+                            Id = 1991,
+                            Code = "MD-TR",
+                            CountryId = 146
+                        },
+                        new
+                        {
+                            Id = 1992,
+                            Code = "SO-BN",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 1993,
+                            Code = "KE-200",
+                            CountryId = 116
+                        },
+                        new
+                        {
+                            Id = 1994,
+                            Code = "HT-NO",
+                            CountryId = 96
+                        },
+                        new
+                        {
+                            Id = 1995,
+                            Code = "DZ-19",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 1996,
+                            Code = "UG-303",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 1997,
+                            Code = "BL-U-A",
+                            CountryId = 185
+                        },
+                        new
+                        {
+                            Id = 1998,
+                            Code = "KZ-SEV",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 1999,
+                            Code = "CN-63",
+                            CountryId = 46
+                        },
+                        new
+                        {
+                            Id = 2000,
+                            Code = "RU-MO",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 2001,
+                            Code = "RU-SMO",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 2002,
+                            Code = "VN-24",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2003,
+                            Code = "VN-28",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2004,
+                            Code = "VU-TOB",
+                            CountryId = 240
+                        },
+                        new
+                        {
+                            Id = 2005,
+                            Code = "KP-05",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 2006,
+                            Code = "KP-06",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 2007,
+                            Code = "KP-02",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 2008,
+                            Code = "KP-10",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 2009,
+                            Code = "BZ-TOL",
+                            CountryId = 23
+                        },
+                        new
+                        {
+                            Id = 2010,
+                            Code = "KH-16",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 2011,
+                            Code = "BZ-SC",
+                            CountryId = 23
+                        },
+                        new
+                        {
+                            Id = 2012,
+                            Code = "EG-GH",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 2013,
+                            Code = "RU-KIR",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 2014,
+                            Code = "GY-PT",
+                            CountryId = 95
+                        },
+                        new
+                        {
+                            Id = 2015,
+                            Code = "RU-IN",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 2016,
+                            Code = "SO-SH",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2017,
+                            Code = "LV-DA",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 2018,
+                            Code = "KZ-BAY",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 2019,
+                            Code = "RU-YEV",
+                            CountryId = 183
+                        },
+                        new
+                        {
+                            Id = 2020,
+                            Code = "AM-VD",
+                            CountryId = 12
+                        },
+                        new
+                        {
+                            Id = 2021,
+                            Code = "IQ-MA",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 2022,
+                            Code = "IQ-DI",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 2023,
+                            Code = "GE-GU",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 2024,
+                            Code = "TV-FUN",
+                            CountryId = 231
+                        },
+                        new
+                        {
+                            Id = 2025,
+                            Code = "NG-GO",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 2026,
+                            Code = "CY-03",
+                            CountryId = 59
+                        },
+                        new
+                        {
+                            Id = 2027,
+                            Code = "TR-76",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2028,
+                            Code = "TR-22",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2029,
+                            Code = "AZ-XIZ",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2030,
+                            Code = "AZ-MAS",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2031,
+                            Code = "ID-NB",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 2032,
+                            Code = "MA-FIG",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 2033,
+                            Code = "AZ-QAB",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2034,
+                            Code = "ES-CS",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2035,
+                            Code = "EG-SHG",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 2036,
+                            Code = "MV-13",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 2037,
+                            Code = "SZ-LU",
+                            CountryId = 214
+                        },
+                        new
+                        {
+                            Id = 2038,
+                            Code = "NP-ME",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 2039,
+                            Code = "BT-31",
+                            CountryId = 26
+                        },
+                        new
+                        {
+                            Id = 2040,
+                            Code = "EC-N",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 2041,
+                            Code = "TR-73",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2042,
+                            Code = "TR-30",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2043,
+                            Code = "TZ-14",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2044,
+                            Code = "VC-U-A",
+                            CountryId = 191
+                        },
+                        new
+                        {
+                            Id = 2045,
+                            Code = "CG-14",
+                            CountryId = 51
+                        },
+                        new
+                        {
+                            Id = 2046,
+                            Code = "NG-BA",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 2047,
+                            Code = "LK-2",
+                            CountryId = 210
+                        },
+                        new
+                        {
+                            Id = 2048,
+                            Code = "LK-6",
+                            CountryId = 210
+                        },
+                        new
+                        {
+                            Id = 2049,
+                            Code = "ES-IB",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2050,
+                            Code = "AO-BGO",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 2051,
+                            Code = "AZ-LA",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2052,
+                            Code = "AZ-BAL",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2053,
+                            Code = "BG-14",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2054,
+                            Code = "BG-25",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2055,
+                            Code = "BG-01",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2056,
+                            Code = "BT-41",
+                            CountryId = 26
+                        },
+                        new
+                        {
+                            Id = 2057,
+                            Code = "RS-04",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2058,
+                            Code = "RS-14",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2059,
+                            Code = "DZ-17",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 2060,
+                            Code = "DZ-22",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 2061,
+                            Code = "GH-UW",
+                            CountryId = 84
+                        },
+                        new
+                        {
+                            Id = 2062,
+                            Code = "NE-2",
+                            CountryId = 161
+                        },
+                        new
+                        {
+                            Id = 2063,
+                            Code = "TN-13",
+                            CountryId = 227
+                        },
+                        new
+                        {
+                            Id = 2064,
+                            Code = "DZ-32",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 2065,
+                            Code = "DZ-27",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 2066,
+                            Code = "DZ-20",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 2067,
+                            Code = "EC-R",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 2068,
+                            Code = "EC-F",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 2069,
+                            Code = "EG-PTS",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 2070,
+                            Code = "EG-MN",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 2071,
+                            Code = "EG-FYM",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 2072,
+                            Code = "EG-DK",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 2073,
+                            Code = "EG-SUZ",
+                            CountryId = 66
+                        },
+                        new
+                        {
+                            Id = 2074,
+                            Code = "SC-15",
+                            CountryId = 198
+                        },
+                        new
+                        {
+                            Id = 2075,
+                            Code = "ZW-MC",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 2076,
+                            Code = "ZW-MA",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 2077,
+                            Code = "MW-KS",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2078,
+                            Code = "MW-ZO",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2079,
+                            Code = "NA-OW",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 2080,
+                            Code = "NA-KU",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 2081,
+                            Code = "CD-BC",
+                            CountryId = 52
+                        },
+                        new
+                        {
+                            Id = 2082,
+                            Code = "ML-3",
+                            CountryId = 137
+                        },
+                        new
+                        {
+                            Id = 2083,
+                            Code = "GW-TO",
+                            CountryId = 94
+                        },
+                        new
+                        {
+                            Id = 2084,
+                            Code = "MA-IFR",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 2085,
+                            Code = "MA-ESI",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 2086,
+                            Code = "MR-02",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 2087,
+                            Code = "MR-09",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 2088,
+                            Code = "MR-04",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 2089,
+                            Code = "MR-10",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 2090,
+                            Code = "MR-11",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 2091,
+                            Code = "GN-B",
+                            CountryId = 93
+                        },
+                        new
+                        {
+                            Id = 2092,
+                            Code = "GN-F",
+                            CountryId = 93
+                        },
+                        new
+                        {
+                            Id = 2093,
+                            Code = "GN-L",
+                            CountryId = 93
+                        },
+                        new
+                        {
+                            Id = 2094,
+                            Code = "KE-900",
+                            CountryId = 116
+                        },
+                        new
+                        {
+                            Id = 2095,
+                            Code = "LY-JU",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 2096,
+                            Code = "SD-24",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 2097,
+                            Code = "SD-13",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 2098,
+                            Code = "SD-11",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 2099,
+                            Code = "UG-301",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2100,
+                            Code = "ID-SG",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 2101,
+                            Code = "ID-YO",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 2102,
+                            Code = "IR-12",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 2103,
+                            Code = "AL-06",
+                            CountryId = 3
+                        },
+                        new
+                        {
+                            Id = 2104,
+                            Code = "BG-24",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2105,
+                            Code = "HR-05",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 2106,
+                            Code = "GR-53",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2107,
+                            Code = "GR-56",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2108,
+                            Code = "GR-42",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2109,
+                            Code = "GR-16",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2110,
+                            Code = "GR-04",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2111,
+                            Code = "GR-12",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2112,
+                            Code = "HU-SZ",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 2113,
+                            Code = "HU-TO",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 2114,
+                            Code = "HU-VE",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 2115,
+                            Code = "SI-112",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2116,
+                            Code = "TR-05",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2117,
+                            Code = "TR-58",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2118,
+                            Code = "TR-50",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2119,
+                            Code = "TR-43",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2120,
+                            Code = "TR-64",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2121,
+                            Code = "TR-77",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2122,
+                            Code = "LY-MI",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 2123,
+                            Code = "LY-MQ",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 2124,
+                            Code = "LY-MJ",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 2125,
+                            Code = "LY-JG",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 2126,
+                            Code = "MH-UTI",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2127,
+                            Code = "MH-ARN",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2128,
+                            Code = "MH-KIL",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2129,
+                            Code = "MK-005",
+                            CountryId = 132
+                        },
+                        new
+                        {
+                            Id = 2130,
+                            Code = "MK-007",
+                            CountryId = 132
+                        },
+                        new
+                        {
+                            Id = 2131,
+                            Code = "MK-002",
+                            CountryId = 132
+                        },
+                        new
+                        {
+                            Id = 2132,
+                            Code = "MX-TLA",
+                            CountryId = 144
+                        },
+                        new
+                        {
+                            Id = 2133,
+                            Code = "NI-LE",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 2134,
+                            Code = "SV-UN",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2135,
+                            Code = "SV-MO",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2136,
+                            Code = "BS-SP",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 2137,
+                            Code = "BS-GT",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 2138,
+                            Code = "NG-KO",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 2139,
+                            Code = "NG-KT",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 2140,
+                            Code = "AF-FRA",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2141,
+                            Code = "AF-JOW",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2142,
+                            Code = "IR-22",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 2143,
+                            Code = "IR-26",
+                            CountryId = 105
+                        },
+                        new
+                        {
+                            Id = 2144,
+                            Code = "JO-MA",
+                            CountryId = 114
+                        },
+                        new
+                        {
+                            Id = 2145,
+                            Code = "PK-TA",
+                            CountryId = 168
+                        },
+                        new
+                        {
+                            Id = 2146,
+                            Code = "QA-KH",
+                            CountryId = 180
+                        },
+                        new
+                        {
+                            Id = 2147,
+                            Code = "PA-7",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 2148,
+                            Code = "PA-2",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 2149,
+                            Code = "PA-10",
+                            CountryId = 171
+                        },
+                        new
+                        {
+                            Id = 2150,
+                            Code = "PH-BAS",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2151,
+                            Code = "MH-ENI",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2152,
+                            Code = "PW-010",
+                            CountryId = 169
+                        },
+                        new
+                        {
+                            Id = 2153,
+                            Code = "PW-350",
+                            CountryId = 169
+                        },
+                        new
+                        {
+                            Id = 2154,
+                            Code = "PY-13",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2155,
+                            Code = "PH-MDR",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2156,
+                            Code = "PH-SLE",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2157,
+                            Code = "PH-ILS",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2158,
+                            Code = "PH-NUV",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2159,
+                            Code = "PH-EAS",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2160,
+                            Code = "EC-I",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 2161,
+                            Code = "EC-E",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 2162,
+                            Code = "EC-Y",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 2163,
+                            Code = "EC-H",
+                            CountryId = 65
+                        },
+                        new
+                        {
+                            Id = 2164,
+                            Code = "PY-1",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2165,
+                            Code = "SN-LG",
+                            CountryId = 196
+                        },
+                        new
+                        {
+                            Id = 2166,
+                            Code = "SN-KD",
+                            CountryId = 196
+                        },
+                        new
+                        {
+                            Id = 2167,
+                            Code = "PE-APU",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 2168,
+                            Code = "VE-H",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 2169,
+                            Code = "VE-W",
+                            CountryId = 241
+                        },
+                        new
+                        {
+                            Id = 2170,
+                            Code = "SY-HM",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 2171,
+                            Code = "SY-RA",
+                            CountryId = 217
+                        },
+                        new
+                        {
+                            Id = 2172,
+                            Code = "GY-UD",
+                            CountryId = 95
+                        },
+                        new
+                        {
+                            Id = 2173,
+                            Code = "TJ-GB",
+                            CountryId = 219
+                        },
+                        new
+                        {
+                            Id = 2174,
+                            Code = "AM-LO",
+                            CountryId = 12
+                        },
+                        new
+                        {
+                            Id = 2175,
+                            Code = "UM-95",
+                            CountryId = 237
+                        },
+                        new
+                        {
+                            Id = 2176,
+                            Code = "UZ-QA",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 2177,
+                            Code = "UZ-JI",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 2178,
+                            Code = "KH-18",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 2179,
+                            Code = "LA-BK",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 2180,
+                            Code = "VN-21",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2181,
+                            Code = "VN-39",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2182,
+                            Code = "NP-NA",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 2183,
+                            Code = "TH-25",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2184,
+                            Code = "TH-77",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2185,
+                            Code = "TH-91",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2186,
+                            Code = "VN-29",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2187,
+                            Code = "VN-54",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2188,
+                            Code = "VN-07",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2189,
+                            Code = "MM-01",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 2190,
+                            Code = "MM-15",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 2191,
+                            Code = "MM-13",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 2192,
+                            Code = "MM-07",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 2193,
+                            Code = "MM-02",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 2194,
+                            Code = "ID-NT",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 2195,
+                            Code = "ID-GO",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 2196,
+                            Code = "ID-KT",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 2197,
+                            Code = "ID-BB",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 2198,
+                            Code = "ID-JA",
+                            CountryId = 104
+                        },
+                        new
+                        {
+                            Id = 2199,
+                            Code = "UA-07",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 2200,
+                            Code = "NP-SA",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 2201,
+                            Code = "IE-LK",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 2202,
+                            Code = "IE-CW",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 2203,
+                            Code = "IE-KK",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 2204,
+                            Code = "CH-BL",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 2205,
+                            Code = "CH-SH",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 2206,
+                            Code = "CH-TG",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 2207,
+                            Code = "NA-OH",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 2208,
+                            Code = "SI-001",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2209,
+                            Code = "JP-24",
+                            CountryId = 112
+                        },
+                        new
+                        {
+                            Id = 2210,
+                            Code = "LT-AL",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 2211,
+                            Code = "TR-09",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2212,
+                            Code = "MW-NS",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2213,
+                            Code = "ZW-MS",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 2214,
+                            Code = "HU-BE",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 2215,
+                            Code = "MA-BEM",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 2216,
+                            Code = "MZ-G",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 2217,
+                            Code = "SI-006",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2218,
+                            Code = "HU-BU",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 2219,
+                            Code = "HR-01",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 2220,
+                            Code = "HR-20",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 2221,
+                            Code = "SI-011",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2222,
+                            Code = "DO-13",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2223,
+                            Code = "DO-05",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2224,
+                            Code = "MA-JDI",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 2225,
+                            Code = "PY-7",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2226,
+                            Code = "BW-GH",
+                            CountryId = 30
+                        },
+                        new
+                        {
+                            Id = 2227,
+                            Code = "MZ-L",
+                            CountryId = 152
+                        },
+                        new
+                        {
+                            Id = 2228,
+                            Code = "ZM-05",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 2229,
+                            Code = "TR-37",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2230,
+                            Code = "LS-K",
+                            CountryId = 125
+                        },
+                        new
+                        {
+                            Id = 2231,
+                            Code = "PL-SK",
+                            CountryId = 177
+                        },
+                        new
+                        {
+                            Id = 2232,
+                            Code = "LS-C",
+                            CountryId = 125
+                        },
+                        new
+                        {
+                            Id = 2233,
+                            Code = "SI-003",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2234,
+                            Code = "LS-J",
+                            CountryId = 125
+                        },
+                        new
+                        {
+                            Id = 2235,
+                            Code = "ES-LO",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2236,
+                            Code = "LS-E",
+                            CountryId = 125
+                        },
+                        new
+                        {
+                            Id = 2237,
+                            Code = "ZM-04",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 2238,
+                            Code = "MW-MC",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2239,
+                            Code = "LT-UT",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 2240,
+                            Code = "DO-15",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2241,
+                            Code = "SI-080",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2242,
+                            Code = "EE-44",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 2243,
+                            Code = "MW-CK",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2244,
+                            Code = "SZ-SH",
+                            CountryId = 214
+                        },
+                        new
+                        {
+                            Id = 2245,
+                            Code = "SK-NJ",
+                            CountryId = 202
+                        },
+                        new
+                        {
+                            Id = 2246,
+                            Code = "MW-NI",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2247,
+                            Code = "UY-PA",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2248,
+                            Code = "SZ-HH",
+                            CountryId = 214
+                        },
+                        new
+                        {
+                            Id = 2249,
+                            Code = "SK-PV",
+                            CountryId = 202
+                        },
+                        new
+                        {
+                            Id = 2250,
+                            Code = "LS-H",
+                            CountryId = 125
+                        },
+                        new
+                        {
+                            Id = 2251,
+                            Code = "EE-70",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 2252,
+                            Code = "EE-65",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 2253,
+                            Code = "MA-TIZ",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 2254,
+                            Code = "MN-063",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 2255,
+                            Code = "MA-BAH",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 2256,
+                            Code = "TR-57",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2257,
+                            Code = "HR-12",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 2258,
+                            Code = "MA-TAR",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 2259,
+                            Code = "MA-TAZ",
+                            CountryId = 151
+                        },
+                        new
+                        {
+                            Id = 2260,
+                            Code = "LT-TE",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 2261,
+                            Code = "MN-071",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 2262,
+                            Code = "SI-126",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2263,
+                            Code = "PY-15",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2264,
+                            Code = "UA-05",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 2265,
+                            Code = "JO-MN",
+                            CountryId = 114
+                        },
+                        new
+                        {
+                            Id = 2266,
+                            Code = "SR-SI",
+                            CountryId = 212
+                        },
+                        new
+                        {
+                            Id = 2267,
+                            Code = "WS-VS",
+                            CountryId = 192
+                        },
+                        new
+                        {
+                            Id = 2268,
+                            Code = "GT-QZ",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 2269,
+                            Code = "HN-GD",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2270,
+                            Code = "CF-HK",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2271,
+                            Code = "MR-12",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 2272,
+                            Code = "SO-BR",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2273,
+                            Code = "TD-SA",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 2274,
+                            Code = "TD-KA",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 2275,
+                            Code = "CG-2",
+                            CountryId = 51
+                        },
+                        new
+                        {
+                            Id = 2276,
+                            Code = "LA-AT",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 2277,
+                            Code = "GT-QC",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 2278,
+                            Code = "BF-TAP",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2279,
+                            Code = "SD-04",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 2280,
+                            Code = "UY-AR",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2281,
+                            Code = "TD-BA",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 2282,
+                            Code = "MH-AUR",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2283,
+                            Code = "UZ-AN",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 2284,
+                            Code = "CF-UK",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2285,
+                            Code = "CF-AC",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2286,
+                            Code = "CI-08",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 2287,
+                            Code = "MR-05",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 2288,
+                            Code = "NP-DH",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 2289,
+                            Code = "CF-MB",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2290,
+                            Code = "SO-BY",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2291,
+                            Code = "IS-3",
+                            CountryId = 102
+                        },
+                        new
+                        {
+                            Id = 2292,
+                            Code = "IS-5",
+                            CountryId = 102
+                        },
+                        new
+                        {
+                            Id = 2293,
+                            Code = "MH-BIK",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2294,
+                            Code = "AF-BAM",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2295,
+                            Code = "NP-MA",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 2296,
+                            Code = "NP-SE",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 2297,
+                            Code = "TZ-05",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2298,
+                            Code = "IQ-DA",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 2299,
+                            Code = "BF-COM",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2300,
+                            Code = "CF-NM",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2301,
+                            Code = "CF-OP",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2302,
+                            Code = "AF-HEL",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2303,
+                            Code = "CM-ES",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 2304,
+                            Code = "CG-7",
+                            CountryId = 51
+                        },
+                        new
+                        {
+                            Id = 2305,
+                            Code = "RW-05",
+                            CountryId = 184
+                        },
+                        new
+                        {
+                            Id = 2306,
+                            Code = "SO-TO",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2307,
+                            Code = "HN-OL",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2308,
+                            Code = "AF-GHO",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2309,
+                            Code = "VU-MAP",
+                            CountryId = 240
+                        },
+                        new
+                        {
+                            Id = 2310,
+                            Code = "SO-MU",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2311,
+                            Code = "LR-MY",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 2312,
+                            Code = "GD-PA",
+                            CountryId = 88
+                        },
+                        new
+                        {
+                            Id = 2313,
+                            Code = "DZ-43",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 2314,
+                            Code = "AF-BDS",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2315,
+                            Code = "BJ-ZO",
+                            CountryId = 24
+                        },
+                        new
+                        {
+                            Id = 2316,
+                            Code = "BJ-AK",
+                            CountryId = 24
+                        },
+                        new
+                        {
+                            Id = 2317,
+                            Code = "BJ-BO",
+                            CountryId = 24
+                        },
+                        new
+                        {
+                            Id = 2318,
+                            Code = "BF-SMT",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2319,
+                            Code = "BF-SNG",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2320,
+                            Code = "BF-NOU",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2321,
+                            Code = "BF-BAM",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2322,
+                            Code = "BF-LOR",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2323,
+                            Code = "BF-BLK",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2324,
+                            Code = "BF-ZOU",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2325,
+                            Code = "BF-BAL",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2326,
+                            Code = "BF-YAT",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2327,
+                            Code = "BF-ZON",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2328,
+                            Code = "BF-PAS",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2329,
+                            Code = "BF-KOP",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2330,
+                            Code = "BF-KOT",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2331,
+                            Code = "BF-GAN",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2332,
+                            Code = "BF-IOB",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2333,
+                            Code = "BF-MOU",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2334,
+                            Code = "BF-TUI",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2335,
+                            Code = "BF-KEN",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2336,
+                            Code = "GH-UE",
+                            CountryId = 84
+                        },
+                        new
+                        {
+                            Id = 2337,
+                            Code = "CI-11",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 2338,
+                            Code = "NG-OS",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 2339,
+                            Code = "NP-RA",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 2340,
+                            Code = "SD-25",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 2341,
+                            Code = "NP-KA",
+                            CountryId = 156
+                        },
+                        new
+                        {
+                            Id = 2342,
+                            Code = "BF-SEN",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2343,
+                            Code = "NE-3",
+                            CountryId = 161
+                        },
+                        new
+                        {
+                            Id = 2344,
+                            Code = "NE-6",
+                            CountryId = 161
+                        },
+                        new
+                        {
+                            Id = 2345,
+                            Code = "TG-P",
+                            CountryId = 223
+                        },
+                        new
+                        {
+                            Id = 2346,
+                            Code = "TG-S",
+                            CountryId = 223
+                        },
+                        new
+                        {
+                            Id = 2347,
+                            Code = "TG-C",
+                            CountryId = 223
+                        },
+                        new
+                        {
+                            Id = 2348,
+                            Code = "CM-SU",
+                            CountryId = 39
+                        },
+                        new
+                        {
+                            Id = 2349,
+                            Code = "SO-SA",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2350,
+                            Code = "TO-01",
+                            CountryId = 225
+                        },
+                        new
+                        {
+                            Id = 2351,
+                            Code = "CG-11",
+                            CountryId = 51
+                        },
+                        new
+                        {
+                            Id = 2352,
+                            Code = "CF-BK",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2353,
+                            Code = "CF-KB",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2354,
+                            Code = "CF-KG",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2355,
+                            Code = "UZ-FA",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 2356,
+                            Code = "CF-HM",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2357,
+                            Code = "WS-TU",
+                            CountryId = 192
+                        },
+                        new
+                        {
+                            Id = 2358,
+                            Code = "ZM-02",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 2359,
+                            Code = "AO-CNO",
+                            CountryId = 7
+                        },
+                        new
+                        {
+                            Id = 2360,
+                            Code = "BF-GOU",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2361,
+                            Code = "TD-BI",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 2362,
+                            Code = "MW-CT",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2363,
+                            Code = "LS-F",
+                            CountryId = 125
+                        },
+                        new
+                        {
+                            Id = 2364,
+                            Code = "ML-8",
+                            CountryId = 137
+                        },
+                        new
+                        {
+                            Id = 2365,
+                            Code = "ML-4",
+                            CountryId = 137
+                        },
+                        new
+                        {
+                            Id = 2366,
+                            Code = "ML-6",
+                            CountryId = 137
+                        },
+                        new
+                        {
+                            Id = 2367,
+                            Code = "SD-06",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 2368,
+                            Code = "CI-19",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 2369,
+                            Code = "BI-GI",
+                            CountryId = 37
+                        },
+                        new
+                        {
+                            Id = 2370,
+                            Code = "GN-K",
+                            CountryId = 93
+                        },
+                        new
+                        {
+                            Id = 2371,
+                            Code = "LR-GB",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 2372,
+                            Code = "LR-CM",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 2373,
+                            Code = "SO-NU",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2374,
+                            Code = "SO-HI",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2375,
+                            Code = "DJ-AR",
+                            CountryId = 62
+                        },
+                        new
+                        {
+                            Id = 2376,
+                            Code = "KE-400",
+                            CountryId = 116
+                        },
+                        new
+                        {
+                            Id = 2377,
+                            Code = "RW-02",
+                            CountryId = 184
+                        },
+                        new
+                        {
+                            Id = 2378,
+                            Code = "SS-15",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 2379,
+                            Code = "SS-20",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 2380,
+                            Code = "SS-22",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 2381,
+                            Code = "SS-19",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 2382,
+                            Code = "SS-16",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 2383,
+                            Code = "SS-18",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 2384,
+                            Code = "SS-21",
+                            CountryId = 208
+                        },
+                        new
+                        {
+                            Id = 2385,
+                            Code = "TZ-23",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2386,
+                            Code = "TZ-20",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2387,
+                            Code = "TZ-09",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2388,
+                            Code = "TZ-21",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2389,
+                            Code = "TZ-24",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2390,
+                            Code = "UG-307",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2391,
+                            Code = "FJ-E",
+                            CountryId = 74
+                        },
+                        new
+                        {
+                            Id = 2392,
+                            Code = "SR-NI",
+                            CountryId = 212
+                        },
+                        new
+                        {
+                            Id = 2393,
+                            Code = "GY-CU",
+                            CountryId = 95
+                        },
+                        new
+                        {
+                            Id = 2394,
+                            Code = "PH-ZSI",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2395,
+                            Code = "SB-MK",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 2396,
+                            Code = "CF-VR",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2397,
+                            Code = "UG-204",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2398,
+                            Code = "UG-409",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2399,
+                            Code = "MH-MAL",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2400,
+                            Code = "BJ-AL",
+                            CountryId = 24
+                        },
+                        new
+                        {
+                            Id = 2401,
+                            Code = "CI-10",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 2402,
+                            Code = "AF-PIA",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2403,
+                            Code = "TZ-12",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2404,
+                            Code = "UG-406",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2405,
+                            Code = "SD-08",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 2406,
+                            Code = "KH-10",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 2407,
+                            Code = "KZ-KZY",
+                            CountryId = 115
+                        },
+                        new
+                        {
+                            Id = 2408,
+                            Code = "GF-SL",
+                            CountryId = 77
+                        },
+                        new
+                        {
+                            Id = 2409,
+                            Code = "HN-IN",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2410,
+                            Code = "MW-LK",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2411,
+                            Code = "MW-SA",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2412,
+                            Code = "MH-LAE",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2413,
+                            Code = "VU-PAM",
+                            CountryId = 240
+                        },
+                        new
+                        {
+                            Id = 2414,
+                            Code = "AF-BDG",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2415,
+                            Code = "TD-TA",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 2416,
+                            Code = "LA-LM",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 2417,
+                            Code = "RS-18",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2418,
+                            Code = "UG-410",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2419,
+                            Code = "SB-GU",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 2420,
+                            Code = "GN-N",
+                            CountryId = 93
+                        },
+                        new
+                        {
+                            Id = 2421,
+                            Code = "TC-MC",
+                            CountryId = 230
+                        },
+                        new
+                        {
+                            Id = 2422,
+                            Code = "TZ-19",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2423,
+                            Code = "GA-5",
+                            CountryId = 80
+                        },
+                        new
+                        {
+                            Id = 2424,
+                            Code = "GT-ZA",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 2425,
+                            Code = "MH-MIL",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2426,
+                            Code = "MH-MEJ",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2427,
+                            Code = "PH-LAS",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2428,
+                            Code = "UY-CL",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2429,
+                            Code = "SV-SM",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2430,
+                            Code = "TZ-13",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2431,
+                            Code = "TD-GR",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 2432,
+                            Code = "MN-059",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 2433,
+                            Code = "BS-HR",
+                            CountryId = 18
+                        },
+                        new
+                        {
+                            Id = 2434,
+                            Code = "YE-MA",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 2435,
+                            Code = "MH-NMK",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2436,
+                            Code = "JM-09",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 2437,
+                            Code = "TO-03",
+                            CountryId = 225
+                        },
+                        new
+                        {
+                            Id = 2438,
+                            Code = "LR-NI",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 2439,
+                            Code = "UZ-NG",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 2440,
+                            Code = "DJ-OB",
+                            CountryId = 62
+                        },
+                        new
+                        {
+                            Id = 2441,
+                            Code = "CI-05",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 2442,
+                            Code = "TD-MK",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 2443,
+                            Code = "OM-ZA",
+                            CountryId = 167
+                        },
+                        new
+                        {
+                            Id = 2444,
+                            Code = "OM-DA",
+                            CountryId = 167
+                        },
+                        new
+                        {
+                            Id = 2445,
+                            Code = "SR-PM",
+                            CountryId = 212
+                        },
+                        new
+                        {
+                            Id = 2446,
+                            Code = "TD-LC",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 2447,
+                            Code = "MR-06",
+                            CountryId = 141
+                        },
+                        new
+                        {
+                            Id = 2448,
+                            Code = "YE-BA",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 2449,
+                            Code = "YE-SD",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 2450,
+                            Code = "YE-JA",
+                            CountryId = 247
+                        },
+                        new
+                        {
+                            Id = 2451,
+                            Code = "VN-40",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2452,
+                            Code = "TC-PN",
+                            CountryId = 230
+                        },
+                        new
+                        {
+                            Id = 2453,
+                            Code = "BF-NAO",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2454,
+                            Code = "RS-06",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2455,
+                            Code = "RW-03",
+                            CountryId = 184
+                        },
+                        new
+                        {
+                            Id = 2456,
+                            Code = "OM-BU",
+                            CountryId = 167
+                        },
+                        new
+                        {
+                            Id = 2457,
+                            Code = "MH-RON",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2458,
+                            Code = "PH-SOR",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2459,
+                            Code = "PH-BUL",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2460,
+                            Code = "FJ-R",
+                            CountryId = 74
+                        },
+                        new
+                        {
+                            Id = 2461,
+                            Code = "UY-RV",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2462,
+                            Code = "SB-TE",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 2463,
+                            Code = "CI-14",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 2464,
+                            Code = "TC-SL",
+                            CountryId = 230
+                        },
+                        new
+                        {
+                            Id = 2465,
+                            Code = "LR-SI",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 2466,
+                            Code = "PE-PAS",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 2467,
+                            Code = "VN-05",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2468,
+                            Code = "UY-RN",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2469,
+                            Code = "UY-TA",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2470,
+                            Code = "DJ-TA",
+                            CountryId = 62
+                        },
+                        new
+                        {
+                            Id = 2471,
+                            Code = "BF-BLG",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2472,
+                            Code = "ER-GB",
+                            CountryId = 69
+                        },
+                        new
+                        {
+                            Id = 2473,
+                            Code = "LR-GG",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 2474,
+                            Code = "LA-KH",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 2475,
+                            Code = "AF-ORU",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2476,
+                            Code = "PG-HE",
+                            CountryId = 172
+                        },
+                        new
+                        {
+                            Id = 2477,
+                            Code = "TZ-08",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2478,
+                            Code = "BF-OUD",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2479,
+                            Code = "SR-CR",
+                            CountryId = 212
+                        },
+                        new
+                        {
+                            Id = 2480,
+                            Code = "UG-212",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2481,
+                            Code = "BF-SOR",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2482,
+                            Code = "UY-TT",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2483,
+                            Code = "AZ-YE",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2484,
+                            Code = "MH-JAL",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2485,
+                            Code = "MH-UJA",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2486,
+                            Code = "MN-057",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 2487,
+                            Code = "LS-G",
+                            CountryId = 125
+                        },
+                        new
+                        {
+                            Id = 2488,
+                            Code = "TH-53",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2489,
+                            Code = "UZ-NW",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 2490,
+                            Code = "SB-IS",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 2491,
+                            Code = "KH-3",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 2492,
+                            Code = "TL-VI",
+                            CountryId = 222
+                        },
+                        new
+                        {
+                            Id = 2493,
+                            Code = "LA-OU",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 2494,
+                            Code = "LA-SL",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 2495,
+                            Code = "LR-LO",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 2496,
+                            Code = "TH-20",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2497,
+                            Code = "TH-56",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2498,
+                            Code = "TH-70",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2499,
+                            Code = "MM-14",
+                            CountryId = 153
+                        },
+                        new
+                        {
+                            Id = 2500,
+                            Code = "BN-BE",
+                            CountryId = 34
+                        },
+                        new
+                        {
+                            Id = 2501,
+                            Code = "MH-WTJ",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2502,
+                            Code = "MH-WTN",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2503,
+                            Code = "BF-SOM",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2504,
+                            Code = "BF-GNA",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2505,
+                            Code = "BF-NAM",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2506,
+                            Code = "BF-BGR",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2507,
+                            Code = "BF-PON",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2508,
+                            Code = "BF-SIS",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2509,
+                            Code = "BF-KOS",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2510,
+                            Code = "BF-KMP",
+                            CountryId = 36
+                        },
+                        new
+                        {
+                            Id = 2511,
+                            Code = "AF-NIM",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2512,
+                            Code = "LA-XA",
+                            CountryId = 122
+                        },
+                        new
+                        {
+                            Id = 2513,
+                            Code = "MN-039",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 2514,
+                            Code = "RS-21",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2515,
+                            Code = "TL-BO",
+                            CountryId = 222
+                        },
+                        new
+                        {
+                            Id = 2516,
+                            Code = "TL-OE",
+                            CountryId = 222
+                        },
+                        new
+                        {
+                            Id = 2517,
+                            Code = "UG-309",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2518,
+                            Code = "SB-CH",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 2519,
+                            Code = "SB-RB",
+                            CountryId = 204
+                        },
+                        new
+                        {
+                            Id = 2520,
+                            Code = "WS-PA",
+                            CountryId = 192
+                        },
+                        new
+                        {
+                            Id = 2521,
+                            Code = "MH-ALK",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2522,
+                            Code = "MH-ALL",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2523,
+                            Code = "MH-LIK",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2524,
+                            Code = "KP-04",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 2525,
+                            Code = "AG-10",
+                            CountryId = 10
+                        },
+                        new
+                        {
+                            Id = 2526,
+                            Code = "AZ-AGA",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2527,
+                            Code = "BJ-CO",
+                            CountryId = 24
+                        },
+                        new
+                        {
+                            Id = 2528,
+                            Code = "AF-KAP",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2529,
+                            Code = "AF-LOW",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2530,
+                            Code = "AF-GHA",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2531,
+                            Code = "AF-SAM",
+                            CountryId = 1
+                        },
+                        new
+                        {
+                            Id = 2532,
+                            Code = "UY-RO",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2533,
+                            Code = "PY-4",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2534,
+                            Code = "PY-5",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2535,
+                            Code = "PY-3",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2536,
+                            Code = "PY-2",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2537,
+                            Code = "PY-9",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2538,
+                            Code = "DJ-AS",
+                            CountryId = 62
+                        },
+                        new
+                        {
+                            Id = 2539,
+                            Code = "DJ-DI",
+                            CountryId = 62
+                        },
+                        new
+                        {
+                            Id = 2540,
+                            Code = "GW-BL",
+                            CountryId = 94
+                        },
+                        new
+                        {
+                            Id = 2541,
+                            Code = "GW-BA",
+                            CountryId = 94
+                        },
+                        new
+                        {
+                            Id = 2542,
+                            Code = "PE-HUV",
+                            CountryId = 174
+                        },
+                        new
+                        {
+                            Id = 2543,
+                            Code = "TT-CTT",
+                            CountryId = 226
+                        },
+                        new
+                        {
+                            Id = 2544,
+                            Code = "MY-05",
+                            CountryId = 135
+                        },
+                        new
+                        {
+                            Id = 2545,
+                            Code = "GY-BA",
+                            CountryId = 95
+                        },
+                        new
+                        {
+                            Id = 2546,
+                            Code = "SR-MA",
+                            CountryId = 212
+                        },
+                        new
+                        {
+                            Id = 2547,
+                            Code = "GY-EB",
+                            CountryId = 95
+                        },
+                        new
+                        {
+                            Id = 2548,
+                            Code = "PY-16",
+                            CountryId = 173
+                        },
+                        new
+                        {
+                            Id = 2549,
+                            Code = "KG-GO",
+                            CountryId = 121
+                        },
+                        new
+                        {
+                            Id = 2550,
+                            Code = "UZ-SI",
+                            CountryId = 239
+                        },
+                        new
+                        {
+                            Id = 2551,
+                            Code = "CR-C",
+                            CountryId = 54
+                        },
+                        new
+                        {
+                            Id = 2552,
+                            Code = "SV-US",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2553,
+                            Code = "SV-SO",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2554,
+                            Code = "SV-LI",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2555,
+                            Code = "SV-CU",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2556,
+                            Code = "SV-SA",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2557,
+                            Code = "SV-AH",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2558,
+                            Code = "SV-SV",
+                            CountryId = 67
+                        },
+                        new
+                        {
+                            Id = 2559,
+                            Code = "HN-CH",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2560,
+                            Code = "HN-LE",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2561,
+                            Code = "HN-VA",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2562,
+                            Code = "HN-EP",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2563,
+                            Code = "HN-SB",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2564,
+                            Code = "HN-YO",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2565,
+                            Code = "HN-OC",
+                            CountryId = 99
+                        },
+                        new
+                        {
+                            Id = 2566,
+                            Code = "NI-BO",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 2567,
+                            Code = "NI-CI",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 2568,
+                            Code = "NI-CO",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 2569,
+                            Code = "NI-ES",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 2570,
+                            Code = "NI-JI",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 2571,
+                            Code = "NI-MT",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 2572,
+                            Code = "NI-RI",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 2573,
+                            Code = "NI-SJ",
+                            CountryId = 160
+                        },
+                        new
+                        {
+                            Id = 2574,
+                            Code = "GT-CQ",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 2575,
+                            Code = "GT-SM",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 2576,
+                            Code = "DO-02",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2577,
+                            Code = "DO-24",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2578,
+                            Code = "DO-08",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2579,
+                            Code = "DO-23",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2580,
+                            Code = "GR-59",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2581,
+                            Code = "GR-63",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2582,
+                            Code = "GR-57",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2583,
+                            Code = "TZ-U-A",
+                            CountryId = 220
+                        },
+                        new
+                        {
+                            Id = 2584,
+                            Code = "DZ-04",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 2585,
+                            Code = "MU-AG",
+                            CountryId = 142
+                        },
+                        new
+                        {
+                            Id = 2586,
+                            Code = "ME-03",
+                            CountryId = 149
+                        },
+                        new
+                        {
+                            Id = 2587,
+                            Code = "ME-12",
+                            CountryId = 149
+                        },
+                        new
+                        {
+                            Id = 2588,
+                            Code = "HU-KE",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 2589,
+                            Code = "SG-05",
+                            CountryId = 200
+                        },
+                        new
+                        {
+                            Id = 2590,
+                            Code = "LR-GK",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 2591,
+                            Code = "LT-TA",
+                            CountryId = 129
+                        },
+                        new
+                        {
+                            Id = 2592,
+                            Code = "AZ-ZAQ",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2593,
+                            Code = "LV-RI",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 2594,
+                            Code = "IQ-BB",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 2595,
+                            Code = "IQ-MU",
+                            CountryId = 106
+                        },
+                        new
+                        {
+                            Id = 2596,
+                            Code = "CY-01",
+                            CountryId = 59
+                        },
+                        new
+                        {
+                            Id = 2597,
+                            Code = "LV-DGV",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 2598,
+                            Code = "SI-019",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2599,
+                            Code = "SI-085",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2600,
+                            Code = "SI-096",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2601,
+                            Code = "TR-68",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2602,
+                            Code = "TR-12",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2603,
+                            Code = "TR-14",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2604,
+                            Code = "TR-52",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2605,
+                            Code = "TR-51",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2606,
+                            Code = "TR-39",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2607,
+                            Code = "TR-29",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2608,
+                            Code = "TR-13",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2609,
+                            Code = "TF-U-A",
+                            CountryId = 79
+                        },
+                        new
+                        {
+                            Id = 2610,
+                            Code = "SI-094",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2611,
+                            Code = "SI-059",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2612,
+                            Code = "SI-188",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2613,
+                            Code = "SI-078",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2614,
+                            Code = "AM-AV",
+                            CountryId = 12
+                        },
+                        new
+                        {
+                            Id = 2615,
+                            Code = "AZ-XAC",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2616,
+                            Code = "AZ-SA",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2617,
+                            Code = "AM-TV",
+                            CountryId = 12
+                        },
+                        new
+                        {
+                            Id = 2618,
+                            Code = "AZ-GOR",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2619,
+                            Code = "AZ-AGS",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2620,
+                            Code = "AZ-AGC",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2621,
+                            Code = "AZ-FUZ",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2622,
+                            Code = "AZ-AGM",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2623,
+                            Code = "AZ-HAC",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2624,
+                            Code = "AZ-SAL",
+                            CountryId = 16
+                        },
+                        new
+                        {
+                            Id = 2625,
+                            Code = "SI-073",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2626,
+                            Code = "SI-048",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2627,
+                            Code = "SI-153",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2628,
+                            Code = "PS-NBS",
+                            CountryId = 170
+                        },
+                        new
+                        {
+                            Id = 2629,
+                            Code = "GE-MM",
+                            CountryId = 82
+                        },
+                        new
+                        {
+                            Id = 2630,
+                            Code = "GT-SO",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 2631,
+                            Code = "LV-SA",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 2632,
+                            Code = "JM-14",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 2633,
+                            Code = "JM-11",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 2634,
+                            Code = "CH-NW",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 2635,
+                            Code = "KH-9",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 2636,
+                            Code = "KH-11",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 2637,
+                            Code = "SM-03",
+                            CountryId = 193
+                        },
+                        new
+                        {
+                            Id = 2638,
+                            Code = "MV-29",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 2639,
+                            Code = "NO-22",
+                            CountryId = 166
+                        },
+                        new
+                        {
+                            Id = 2640,
+                            Code = "MW-MH",
+                            CountryId = 134
+                        },
+                        new
+                        {
+                            Id = 2641,
+                            Code = "RS-02",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2642,
+                            Code = "DO-27",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2643,
+                            Code = "DO-10",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2644,
+                            Code = "DO-21",
+                            CountryId = 64
+                        },
+                        new
+                        {
+                            Id = 2645,
+                            Code = "BJ-DO",
+                            CountryId = 24
+                        },
+                        new
+                        {
+                            Id = 2646,
+                            Code = "RS-19",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2647,
+                            Code = "SO-GE",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2648,
+                            Code = "UG-404",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2649,
+                            Code = "MD-U-A",
+                            CountryId = 146
+                        },
+                        new
+                        {
+                            Id = 2650,
+                            Code = "TH-51",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2651,
+                            Code = "MN-046",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 2652,
+                            Code = "MN-035",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 2653,
+                            Code = "BI-U-A",
+                            CountryId = 37
+                        },
+                        new
+                        {
+                            Id = 2654,
+                            Code = "SR-BR",
+                            CountryId = 212
+                        },
+                        new
+                        {
+                            Id = 2655,
+                            Code = "RS-09",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2656,
+                            Code = "RS-01",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2657,
+                            Code = "TH-26",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2658,
+                            Code = "MN-073",
+                            CountryId = 148
+                        },
+                        new
+                        {
+                            Id = 2659,
+                            Code = "LV-LM",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 2660,
+                            Code = "MV-27",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 2661,
+                            Code = "SI-124",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2662,
+                            Code = "SD-DE",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 2663,
+                            Code = "RO-PH",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 2664,
+                            Code = "PH-SIG",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2665,
+                            Code = "PH-BIL",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2666,
+                            Code = "ES-ZA",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2667,
+                            Code = "ES-P",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2668,
+                            Code = "ES-OR",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2669,
+                            Code = "ES-C",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2670,
+                            Code = "ES-PO",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2671,
+                            Code = "RS-17",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2672,
+                            Code = "ZA-U-A",
+                            CountryId = 206
+                        },
+                        new
+                        {
+                            Id = 2673,
+                            Code = "SI-043",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2674,
+                            Code = "SI-039",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2675,
+                            Code = "BI-RT",
+                            CountryId = 37
+                        },
+                        new
+                        {
+                            Id = 2676,
+                            Code = "LR-RI",
+                            CountryId = 126
+                        },
+                        new
+                        {
+                            Id = 2677,
+                            Code = "SI-083",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2678,
+                            Code = "SI-174",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2679,
+                            Code = "SI-104",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2680,
+                            Code = "SI-100",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2681,
+                            Code = "DZ-42",
+                            CountryId = 4
+                        },
+                        new
+                        {
+                            Id = 2682,
+                            Code = "LY-WD",
+                            CountryId = 127
+                        },
+                        new
+                        {
+                            Id = 2683,
+                            Code = "MH-EBO",
+                            CountryId = 139
+                        },
+                        new
+                        {
+                            Id = 2684,
+                            Code = "KH-15",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 2685,
+                            Code = "KH-13",
+                            CountryId = 38
+                        },
+                        new
+                        {
+                            Id = 2686,
+                            Code = "BG-09",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2687,
+                            Code = "UG-113",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2688,
+                            Code = "RO-BN",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 2689,
+                            Code = "GQ-AN",
+                            CountryId = 68
+                        },
+                        new
+                        {
+                            Id = 2690,
+                            Code = "UG-408",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2691,
+                            Code = "VN-06",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2692,
+                            Code = "NG-KE",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 2693,
+                            Code = "PH-SUK",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2694,
+                            Code = "GQ-CS",
+                            CountryId = 68
+                        },
+                        new
+                        {
+                            Id = 2695,
+                            Code = "IN-U-A",
+                            CountryId = 103
+                        },
+                        new
+                        {
+                            Id = 2696,
+                            Code = "TH-24",
+                            CountryId = 221
+                        },
+                        new
+                        {
+                            Id = 2697,
+                            Code = "JM-03",
+                            CountryId = 111
+                        },
+                        new
+                        {
+                            Id = 2698,
+                            Code = "ET-AF",
+                            CountryId = 71
+                        },
+                        new
+                        {
+                            Id = 2699,
+                            Code = "ES-AB",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2700,
+                            Code = "UG-405",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2701,
+                            Code = "UG-414",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2702,
+                            Code = "UG-305",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2703,
+                            Code = "UG-306",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2704,
+                            Code = "UG-308",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2705,
+                            Code = "UG-110",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2706,
+                            Code = "UG-109",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2707,
+                            Code = "ES-B",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2708,
+                            Code = "RO-GJ",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 2709,
+                            Code = "HR-03",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 2710,
+                            Code = "BG-17",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2711,
+                            Code = "BT-33",
+                            CountryId = 26
+                        },
+                        new
+                        {
+                            Id = 2712,
+                            Code = "BG-13",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2713,
+                            Code = "RO-AG",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 2714,
+                            Code = "LV-MA",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 2715,
+                            Code = "RS-10",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2716,
+                            Code = "BG-07",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2717,
+                            Code = "SI-114",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2718,
+                            Code = "ES-LE",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2719,
+                            Code = "ES-H",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2720,
+                            Code = "HR-02",
+                            CountryId = 56
+                        },
+                        new
+                        {
+                            Id = 2721,
+                            Code = "TR-53",
+                            CountryId = 228
+                        },
+                        new
+                        {
+                            Id = 2722,
+                            Code = "SI-050",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2723,
+                            Code = "BG-11",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2724,
+                            Code = "MV-08",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 2725,
+                            Code = "MV-20",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 2726,
+                            Code = "CI-17",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 2727,
+                            Code = "VN-52",
+                            CountryId = 242
+                        },
+                        new
+                        {
+                            Id = 2728,
+                            Code = "EE-U-A",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 2729,
+                            Code = "FI-U-A",
+                            CountryId = 75
+                        },
+                        new
+                        {
+                            Id = 2730,
+                            Code = "SD-07",
+                            CountryId = 211
+                        },
+                        new
+                        {
+                            Id = 2731,
+                            Code = "EE-86",
+                            CountryId = 70
+                        },
+                        new
+                        {
+                            Id = 2732,
+                            Code = "BW-KL",
+                            CountryId = 30
+                        },
+                        new
+                        {
+                            Id = 2733,
+                            Code = "UG-312",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2734,
+                            Code = "SH-SH",
+                            CountryId = 186
+                        },
+                        new
+                        {
+                            Id = 2735,
+                            Code = "GQ-WN",
+                            CountryId = 68
+                        },
+                        new
+                        {
+                            Id = 2736,
+                            Code = "NA-OS",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 2737,
+                            Code = "KE-U-A",
+                            CountryId = 116
+                        },
+                        new
+                        {
+                            Id = 2738,
+                            Code = "GW-GA",
+                            CountryId = 94
+                        },
+                        new
+                        {
+                            Id = 2739,
+                            Code = "SN-TH",
+                            CountryId = 196
+                        },
+                        new
+                        {
+                            Id = 2740,
+                            Code = "UG-401",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2741,
+                            Code = "GT-SR",
+                            CountryId = 91
+                        },
+                        new
+                        {
+                            Id = 2742,
+                            Code = "BI-RY",
+                            CountryId = 37
+                        },
+                        new
+                        {
+                            Id = 2743,
+                            Code = "BI-NG",
+                            CountryId = 37
+                        },
+                        new
+                        {
+                            Id = 2744,
+                            Code = "ZM-U-A",
+                            CountryId = 248
+                        },
+                        new
+                        {
+                            Id = 2745,
+                            Code = "UG-403",
+                            CountryId = 232
+                        },
+                        new
+                        {
+                            Id = 2746,
+                            Code = "TD-LR",
+                            CountryId = 44
+                        },
+                        new
+                        {
+                            Id = 2747,
+                            Code = "NA-KW",
+                            CountryId = 154
+                        },
+                        new
+                        {
+                            Id = 2748,
+                            Code = "BZ-U-A",
+                            CountryId = 23
+                        },
+                        new
+                        {
+                            Id = 2749,
+                            Code = "SI-013",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2750,
+                            Code = "SI-060",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2751,
+                            Code = "SI-025",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2752,
+                            Code = "SI-142",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2753,
+                            Code = "ES-AL",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2754,
+                            Code = "ES-AV",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2755,
+                            Code = "SI-U-A",
+                            CountryId = 203
+                        },
+                        new
+                        {
+                            Id = 2756,
+                            Code = "GR-U-A",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2757,
+                            Code = "HU-U-A",
+                            CountryId = 101
+                        },
+                        new
+                        {
+                            Id = 2758,
+                            Code = "DE-U-A",
+                            CountryId = 83
+                        },
+                        new
+                        {
+                            Id = 2759,
+                            Code = "RS-U-A",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2760,
+                            Code = "RS-23",
+                            CountryId = 197
+                        },
+                        new
+                        {
+                            Id = 2761,
+                            Code = "CH-U-A",
+                            CountryId = 216
+                        },
+                        new
+                        {
+                            Id = 2762,
+                            Code = "UA-U-A",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 2763,
+                            Code = "UA-56",
+                            CountryId = 233
+                        },
+                        new
+                        {
+                            Id = 2764,
+                            Code = "BG-08",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2765,
+                            Code = "BG-27",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2766,
+                            Code = "IE-WH",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 2767,
+                            Code = "ES-U-A",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2768,
+                            Code = "RO-GR",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 2769,
+                            Code = "ES-J",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2770,
+                            Code = "ES-HU",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2771,
+                            Code = "ES-T",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2772,
+                            Code = "ES-GR",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2773,
+                            Code = "IE-CN",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 2774,
+                            Code = "IE-RN",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 2775,
+                            Code = "IE-U-A",
+                            CountryId = 107
+                        },
+                        new
+                        {
+                            Id = 2776,
+                            Code = "ES-BU",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2777,
+                            Code = "ES-GU",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2778,
+                            Code = "GR-62",
+                            CountryId = 86
+                        },
+                        new
+                        {
+                            Id = 2779,
+                            Code = "ES-SG",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2780,
+                            Code = "ES-BA",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2781,
+                            Code = "ES-CC",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2782,
+                            Code = "ES-Z",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2783,
+                            Code = "ES-CU",
+                            CountryId = 209
+                        },
+                        new
+                        {
+                            Id = 2784,
+                            Code = "RO-HR",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 2785,
+                            Code = "CF-SE",
+                            CountryId = 43
+                        },
+                        new
+                        {
+                            Id = 2786,
+                            Code = "GH-EP",
+                            CountryId = 84
+                        },
+                        new
+                        {
+                            Id = 2787,
+                            Code = "NZ-U-A",
+                            CountryId = 159
+                        },
+                        new
+                        {
+                            Id = 2788,
+                            Code = "NG-JI",
+                            CountryId = 162
+                        },
+                        new
+                        {
+                            Id = 2789,
+                            Code = "KP-U-A",
+                            CountryId = 118
+                        },
+                        new
+                        {
+                            Id = 2790,
+                            Code = "RO-AB",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 2791,
+                            Code = "SR-SA",
+                            CountryId = 212
+                        },
+                        new
+                        {
+                            Id = 2792,
+                            Code = "CI-13",
+                            CountryId = 55
+                        },
+                        new
+                        {
+                            Id = 2793,
+                            Code = "SO-GA",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2794,
+                            Code = "ZW-U-A",
+                            CountryId = 249
+                        },
+                        new
+                        {
+                            Id = 2795,
+                            Code = "TW-TNQ",
+                            CountryId = 218
+                        },
+                        new
+                        {
+                            Id = 2796,
+                            Code = "UY-SJ",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2797,
+                            Code = "UY-SO",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2798,
+                            Code = "UY-LA",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2799,
+                            Code = "PH-APA",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2800,
+                            Code = "PH-RIZ",
+                            CountryId = 175
+                        },
+                        new
+                        {
+                            Id = 2801,
+                            Code = "RO-DB",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 2802,
+                            Code = "UY-FD",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2803,
+                            Code = "UY-FS",
+                            CountryId = 238
+                        },
+                        new
+                        {
+                            Id = 2804,
+                            Code = "PT-U-A",
+                            CountryId = 178
+                        },
+                        new
+                        {
+                            Id = 2805,
+                            Code = "LV-KU",
+                            CountryId = 123
+                        },
+                        new
+                        {
+                            Id = 2806,
+                            Code = "MU-RP",
+                            CountryId = 142
+                        },
+                        new
+                        {
+                            Id = 2807,
+                            Code = "SO-U-A",
+                            CountryId = 205
+                        },
+                        new
+                        {
+                            Id = 2808,
+                            Code = "RO-SJ",
+                            CountryId = 182
+                        },
+                        new
+                        {
+                            Id = 2809,
+                            Code = "BG-U-A",
+                            CountryId = 35
+                        },
+                        new
+                        {
+                            Id = 2810,
+                            Code = "MV-17",
+                            CountryId = 136
+                        },
+                        new
+                        {
+                            Id = 2811,
+                            Code = "DZ-U-A",
+                            CountryId = 4
+                        });
                 });
 
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Municipality", b =>

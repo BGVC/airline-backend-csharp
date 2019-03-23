@@ -11,6 +11,12 @@ namespace BGVC.Airline.Backend.Controllers
     [Route("api/[controller]")]
     public class CountriesController : Controller
     {
+        public CountriesController(AirlineDBContext context)
+        {
+            _context = context;
+        }
+
+        private AirlineDBContext _context;
         // TODO: VC -> BG: Implement CountriesController constructor, accepting AirlineDBContext parameter
 
         // GET: api/<controller>
@@ -19,7 +25,7 @@ namespace BGVC.Airline.Backend.Controllers
         {
             // TODO: VC -> BG: Do not use Initialize.GetContext() but instead use the injected context
 
-            var countries = Initialize.GetContext().Countries.Select(country =>
+            var countries = _context.Countries.Select(country =>
                 new
                 {
                     country.Id,
