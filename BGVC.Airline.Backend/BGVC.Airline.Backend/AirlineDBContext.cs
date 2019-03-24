@@ -34,11 +34,13 @@ namespace BGVC.Airline.Backend
             var municipalititesPart1 = CreateMunicipalitiesPart1(isoRegions);
             var municipalitiesPart2 = CreateMunicipalitiesPart2(isoRegions);
             var municipalitiesPart3 = CreateMunicipalitiesPart3(isoRegions);
+            var airportTypes = CreateAirportTypes();
             SeedCountries(modelBuilder, countries);
             SeedIsoRegions(modelBuilder, isoRegions);
             SeedMunicipalities(modelBuilder, municipalititesPart1);
             SeedMunicipalities(modelBuilder, municipalitiesPart2);
             SeedMunicipalities(modelBuilder, municipalitiesPart3);
+            SeedAirportTypes(modelBuilder, airportTypes);
         }
 
         private static List<Municipality> CreateMunicipalitiesPart1(List<IsoRegion> isoRegions)
@@ -30198,6 +30200,22 @@ namespace BGVC.Airline.Backend
             return countries;
         }
 
+        private static List<AirportType> CreateAirportTypes()
+        {
+            var airportTypes = new List<AirportType>
+            {
+                new AirportType { Id = 1, Name = "heliport" },
+                new AirportType { Id = 2, Name = "small_airport" },
+                new AirportType { Id = 3, Name = "closed" },
+                new AirportType { Id = 4, Name = "seaplane_base" },
+                new AirportType { Id = 5, Name = "balloonport" },
+                new AirportType { Id = 6, Name = "medium_airport" },
+                new AirportType { Id = 7, Name = "large_airport" }
+            };
+
+            return airportTypes;
+        }
+
         private static void SeedCountries(ModelBuilder modelBuilder, List<Country> countries)
         {
             modelBuilder.Entity<Country>().HasData(countries);
@@ -30213,11 +30231,9 @@ namespace BGVC.Airline.Backend
             modelBuilder.Entity<Municipality>().HasData(municipalities);
         }
 
-        //private static void SeedAirports(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Airp>().HasData(
-        //                                new Country { Id = 1, Name = "Afghanistan", Iso = "AF" },
-        //}
-
+        private static void SeedAirportTypes(ModelBuilder modelBuilder, List<AirportType> airportTypes)
+        {
+            modelBuilder.Entity<AirportType>().HasData(airportTypes);
+        }
     }
 }
