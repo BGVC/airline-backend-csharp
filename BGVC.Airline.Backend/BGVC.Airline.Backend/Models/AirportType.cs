@@ -10,8 +10,7 @@ namespace BGVC.Airline.Backend.Models
     public class AirportType
     {
         public int Id { get; set; }
-        [Required]
-        [MaxLength(32)]
+        [MaxLength(32), Required]
         public string Name { get; set; }
         public virtual ICollection<Airport> Airports { get; set; }
     }

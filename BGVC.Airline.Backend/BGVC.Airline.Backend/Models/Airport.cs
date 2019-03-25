@@ -11,15 +11,17 @@ namespace BGVC.Airline.Backend.Models
     public class Airport
     {
         public int Id { get; set; }
+        [MaxLength(7), Required]
         public string Code { get; set; }
         [ForeignKey("AirportType")]
         public int TypeId { get; set; }
-        [MaxLength(256)]
+        [MaxLength(256), Required]
         public string Name { get; set; }
-        public int LatitudeDegrees { get; set; }
-        public int LongitudeDegrees { get; set; }
-        public int ElevationFeet { get; set; }
+        public int? LatitudeDegrees { get; set; }
+        public int? LongitudeDegrees { get; set; }
+        public int? ElevationFeet { get; set; }
         public int MunicipalityId { get; set; }
         public Municipality Municipality { get; set; }
+        public AirportType AirportType { get; set; }
     }
 }

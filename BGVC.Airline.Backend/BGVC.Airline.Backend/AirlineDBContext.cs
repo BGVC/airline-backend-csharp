@@ -31,16 +31,26 @@ namespace BGVC.Airline.Backend
             var countries = CreateCountries();
             var isoRegions = CreateIsoRegions(countries);
             //var municipalities = CreateMunicipalitiesPart1(isoRegions);
-            var municipalititesPart1 = CreateMunicipalitiesPart1(isoRegions);
+            var municipalitiesPart1 = CreateMunicipalitiesPart1(isoRegions);
             var municipalitiesPart2 = CreateMunicipalitiesPart2(isoRegions);
             var municipalitiesPart3 = CreateMunicipalitiesPart3(isoRegions);
             var airportTypes = CreateAirportTypes();
+            var municipalities = municipalitiesPart1.Union(municipalitiesPart2).Union(municipalitiesPart3).ToList();
+            var airportsPart1 = CreateAirportsPart1(municipalities, airportTypes);
+            var airportsPart2 = CreateAirportsPart2(municipalities, airportTypes);
+            var airportsPart3 = CreateAirportsPart3(municipalities, airportTypes);
+            var airportsPart4 = CreateAirportsPart4(municipalities, airportTypes);
+            var airportsPart5 = CreateAirportsPart5(municipalities, airportTypes);
+            var airportsPart6 = CreateAirportsPart6(municipalities, airportTypes);
+            //var airports = airportsPart1.Union(airportsPart2).Union(airportsPart3).Union(airportsPart4).Union(airportsPart5).Union(airportsPart6);
+
             SeedCountries(modelBuilder, countries);
             SeedIsoRegions(modelBuilder, isoRegions);
-            SeedMunicipalities(modelBuilder, municipalititesPart1);
+            SeedMunicipalities(modelBuilder, municipalitiesPart1);
             SeedMunicipalities(modelBuilder, municipalitiesPart2);
             SeedMunicipalities(modelBuilder, municipalitiesPart3);
             SeedAirportTypes(modelBuilder, airportTypes);
+            //SeedAirports(modelBuilder, airports);
         }
 
         private static List<Municipality> CreateMunicipalitiesPart1(List<IsoRegion> isoRegions)
@@ -30234,6 +30244,41 @@ namespace BGVC.Airline.Backend
         private static void SeedAirportTypes(ModelBuilder modelBuilder, List<AirportType> airportTypes)
         {
             modelBuilder.Entity<AirportType>().HasData(airportTypes);
+        }
+
+        private static void SeedAirports(ModelBuilder modelBuilder, List<Airport> airports)
+        {
+            modelBuilder.Entity<Airport>().HasData(airports);
+        }
+
+        private static List<Airport> CreateAirportsPart1(List<Municipality> municipalities, List<AirportType> airportTypes)
+        {
+            return null;
+        }
+
+        private static List<Airport> CreateAirportsPart2(List<Municipality> municipalities, List<AirportType> airportTypes)
+        {
+            return null;
+        }
+
+        private static List<Airport> CreateAirportsPart3(List<Municipality> municipalities, List<AirportType> airportTypes)
+        {
+            return null;
+        }
+
+        private static List<Airport> CreateAirportsPart4(List<Municipality> municipalities, List<AirportType> airportTypes)
+        {
+            return null;
+        }
+
+        private static List<Airport> CreateAirportsPart5(List<Municipality> municipalities, List<AirportType> airportTypes)
+        {
+            return null;
+        }
+
+        private static List<Airport> CreateAirportsPart6(List<Municipality> municipalities, List<AirportType> airportTypes)
+        {
+            return null;
         }
     }
 }

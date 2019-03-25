@@ -9,8 +9,7 @@ namespace BGVC.Airline.Backend.Models
     public class Municipality
     {
         public int Id { get; set; }
-        [Required]
-        [MaxLength(100)]
+        [MaxLength(100), Required]
         public string Name { get; set; }
         public int IsoRegionId { get; set; }
         public virtual IsoRegion IsoRegion { get; set; }

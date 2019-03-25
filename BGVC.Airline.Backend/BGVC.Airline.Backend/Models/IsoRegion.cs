@@ -9,8 +9,7 @@ namespace BGVC.Airline.Backend.Models
     public class IsoRegion
     {
         public int Id { get; set; }
-        [Required]
-        [MaxLength(16)]
+        [MaxLength(16), Required]
         public string Code { get; set; }
         public int CountryId { get; set; }
         public virtual Country Country { get; set; }
