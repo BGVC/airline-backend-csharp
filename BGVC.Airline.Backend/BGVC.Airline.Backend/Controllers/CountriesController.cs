@@ -16,15 +16,13 @@ namespace BGVC.Airline.Backend.Controllers
             _context = context;
         }
 
+        // TODO: VC -> BG: Private should go at top, and make this readonly
         private AirlineDBContext _context;
-        // TODO: VC -> BG: Implement CountriesController constructor, accepting AirlineDBContext parameter
 
         // GET: api/<controller>
         [HttpGet]
         public ActionResult Get()
         {
-            // TODO: VC -> BG: Do not use Initialize.GetContext() but instead use the injected context
-
             var countries = _context.Countries.Select(country =>
                 new
                 {
