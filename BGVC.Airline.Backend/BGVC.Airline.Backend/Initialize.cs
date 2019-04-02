@@ -8,7 +8,7 @@ namespace BGVC.Airline.Backend
 {
     public class Initialize
     {
-        // TODO: VC -> BG: This should be deleted this because we have it in startup 
+        // TODO: VC -> BG: This should be deleted this because you should use the injected AirlineDBContext context, like in CountriesController -> do that for all the other controllers
 
         public static AirlineDBContext GetContext()
         {
