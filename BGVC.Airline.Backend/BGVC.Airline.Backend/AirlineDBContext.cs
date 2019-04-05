@@ -12,7 +12,7 @@ namespace BGVC.Airline.Backend
 {
     public class AirlineDBContext : DbContext
     {
-        static string _airportsSeedFilePath = @"C:\Users\bgx\Downloads\airports.xlsx";
+        static string _airportsSeedFilePath = $"{Environment.CurrentDirectory}\\airports.xlsx";
         static int _airportCodeColumnIndex = 1;
         static int _airportTypeColumnIndex = 2;
         static int _airportNameColumnIndex = 3;
