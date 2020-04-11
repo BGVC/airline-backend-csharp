@@ -12,7 +12,7 @@ namespace BGVC.Airline.Backend
 
         public static AirlineDBContext GetContext()
         {
-            var connectionString = @"Server=localhost\MSSQLSERVER01;Database=Airline;Integrated Security=True";
+            var connectionString = @"Server=localhost;Database=Airline;Integrated Security=True";
             var options = new DbContextOptionsBuilder<AirlineDBContext>();
             options.UseSqlServer(connectionString);
             return new AirlineDBContext(options.Options);
