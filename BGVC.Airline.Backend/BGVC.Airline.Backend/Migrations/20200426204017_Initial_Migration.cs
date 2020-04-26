@@ -1,18 +1,32 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BGVC.Airline.Backend.Migrations
 {
-    public partial class InitialSeed : Migration
+    public partial class Initial_Migration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "AirplaneTypes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Manufacturer = table.Column<string>(maxLength: 512, nullable: false),
+                    Model = table.Column<string>(maxLength: 512, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AirplaneTypes", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "AirportTypes",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(maxLength: 32, nullable: false)
                 },
                 constraints: table =>
@@ -25,7 +39,7 @@ namespace BGVC.Airline.Backend.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Iso = table.Column<string>(maxLength: 2, nullable: false),
                     Name = table.Column<string>(maxLength: 64, nullable: false),
                     PrintableName = table.Column<string>(maxLength: 64, nullable: true),
@@ -39,11 +53,31 @@ namespace BGVC.Airline.Backend.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "AirlineCompany",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(maxLength: 512, nullable: false),
+                    CountryId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AirlineCompany", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AirlineCompany_Countries_CountryId",
+                        column: x => x.CountryId,
+                        principalTable: "Countries",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "IsoRegions",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Code = table.Column<string>(maxLength: 16, nullable: false),
                     CountryId = table.Column<int>(nullable: false)
                 },
@@ -63,7 +97,7 @@ namespace BGVC.Airline.Backend.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(maxLength: 100, nullable: false),
                     IsoRegionId = table.Column<int>(nullable: false)
                 },
@@ -83,7 +117,7 @@ namespace BGVC.Airline.Backend.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Code = table.Column<string>(maxLength: 20, nullable: false),
                     TypeId = table.Column<int>(nullable: false),
                     Name = table.Column<string>(maxLength: 1000, nullable: false),
@@ -107,6 +141,59 @@ namespace BGVC.Airline.Backend.Migrations
                         principalTable: "AirportTypes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Flights",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    DepartureAirportId = table.Column<int>(nullable: false),
+                    DestinationAirportId = table.Column<int>(nullable: false),
+                    DepartureTime = table.Column<DateTime>(nullable: false),
+                    ArrivalTime = table.Column<DateTime>(nullable: false),
+                    AirplaneNumber = table.Column<string>(nullable: true),
+                    AirplaneTypeId = table.Column<int>(nullable: false),
+                    CompanyId = table.Column<int>(nullable: false),
+                    Price = table.Column<decimal>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Flights", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Flights_AirplaneTypes_AirplaneTypeId",
+                        column: x => x.AirplaneTypeId,
+                        principalTable: "AirplaneTypes",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Flights_AirlineCompany_CompanyId",
+                        column: x => x.CompanyId,
+                        principalTable: "AirlineCompany",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Flights_Airports_DepartureAirportId",
+                        column: x => x.DepartureAirportId,
+                        principalTable: "Airports",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Flights_Airports_DestinationAirportId",
+                        column: x => x.DestinationAirportId,
+                        principalTable: "Airports",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "AirplaneTypes",
+                columns: new[] { "Id", "Manufacturer", "Model" },
+                values: new object[,]
+                {
+                    { 1, "Boeing", "737" },
+                    { 2, "Airbus", "A330" }
                 });
 
             migrationBuilder.InsertData(
@@ -133,19 +220,23 @@ namespace BGVC.Airline.Backend.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "IsoRegions",
-                columns: new[] { "Id", "Code", "CountryId" },
-                values: new object[] { 2, "RS-05", 1 });
+                table: "AirlineCompany",
+                columns: new[] { "Id", "CountryId", "Name" },
+                values: new object[,]
+                {
+                    { 1, 1, "Jat Airways" },
+                    { 2, 2, "US AirTrans" }
+                });
 
             migrationBuilder.InsertData(
                 table: "IsoRegions",
                 columns: new[] { "Id", "Code", "CountryId" },
-                values: new object[] { 3, "RS-16", 1 });
-
-            migrationBuilder.InsertData(
-                table: "IsoRegions",
-                columns: new[] { "Id", "Code", "CountryId" },
-                values: new object[] { 1, "US-NJ", 2 });
+                values: new object[,]
+                {
+                    { 2, "RS-05", 1 },
+                    { 3, "RS-16", 1 },
+                    { 1, "US-NJ", 2 }
+                });
 
             migrationBuilder.InsertData(
                 table: "Municipalities",
@@ -168,6 +259,11 @@ namespace BGVC.Airline.Backend.Migrations
                 values: new object[] { 1, "LAX", null, null, null, 1, "Los Angeles International Airport", 7 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_AirlineCompany_CountryId",
+                table: "AirlineCompany",
+                column: "CountryId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Airports_MunicipalityId",
                 table: "Airports",
                 column: "MunicipalityId");
@@ -176,6 +272,26 @@ namespace BGVC.Airline.Backend.Migrations
                 name: "IX_Airports_TypeId",
                 table: "Airports",
                 column: "TypeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Flights_AirplaneTypeId",
+                table: "Flights",
+                column: "AirplaneTypeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Flights_CompanyId",
+                table: "Flights",
+                column: "CompanyId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Flights_DepartureAirportId",
+                table: "Flights",
+                column: "DepartureAirportId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Flights_DestinationAirportId",
+                table: "Flights",
+                column: "DestinationAirportId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_IsoRegions_CountryId",
@@ -190,6 +306,15 @@ namespace BGVC.Airline.Backend.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Flights");
+
+            migrationBuilder.DropTable(
+                name: "AirplaneTypes");
+
+            migrationBuilder.DropTable(
+                name: "AirlineCompany");
+
             migrationBuilder.DropTable(
                 name: "Airports");
 

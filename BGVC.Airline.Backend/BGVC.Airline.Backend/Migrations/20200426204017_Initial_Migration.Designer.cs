@@ -10,40 +10,120 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BGVC.Airline.Backend.Migrations
 {
     [DbContext(typeof(AirlineDBContext))]
-    [Migration("20200411224111_InitialSeed")]
-    partial class InitialSeed
+    [Migration("20200426204017_Initial_Migration")]
+    partial class Initial_Migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
+                .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("BGVC.Airline.Backend.Models.AirlineCompany", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CountryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(512)")
+                        .HasMaxLength(512);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CountryId");
+
+                    b.ToTable("AirlineCompany");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CountryId = 1,
+                            Name = "Jat Airways"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CountryId = 2,
+                            Name = "US AirTrans"
+                        });
+                });
+
+            modelBuilder.Entity("BGVC.Airline.Backend.Models.AirplaneType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Manufacturer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(512)")
+                        .HasMaxLength(512);
+
+                    b.Property<string>("Model")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(512)")
+                        .HasMaxLength(512);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AirplaneTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Manufacturer = "Boeing",
+                            Model = "737"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Manufacturer = "Airbus",
+                            Model = "A330"
+                        });
+                });
 
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Airport", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Code")
                         .IsRequired()
+                        .HasColumnType("nvarchar(20)")
                         .HasMaxLength(20);
 
-                    b.Property<int?>("ElevationFeet");
+                    b.Property<int?>("ElevationFeet")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("LatitudeDegrees");
+                    b.Property<int?>("LatitudeDegrees")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("LongitudeDegrees");
+                    b.Property<int?>("LongitudeDegrees")
+                        .HasColumnType("int");
 
-                    b.Property<int>("MunicipalityId");
+                    b.Property<int>("MunicipalityId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasColumnType("nvarchar(1000)")
                         .HasMaxLength(1000);
 
-                    b.Property<int>("TypeId");
+                    b.Property<int>("TypeId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -76,10 +156,12 @@ namespace BGVC.Airline.Backend.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasColumnType("nvarchar(32)")
                         .HasMaxLength(32);
 
                     b.HasKey("Id");
@@ -128,26 +210,33 @@ namespace BGVC.Airline.Backend.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Iso")
                         .IsRequired()
+                        .HasColumnType("nvarchar(2)")
                         .HasMaxLength(2);
 
                     b.Property<string>("Iso3")
+                        .HasColumnType("nvarchar(3)")
                         .HasMaxLength(3);
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasColumnType("nvarchar(64)")
                         .HasMaxLength(64);
 
                     b.Property<string>("NumCode")
+                        .HasColumnType("nvarchar(3)")
                         .HasMaxLength(3);
 
                     b.Property<string>("PhoneCode")
+                        .HasColumnType("nvarchar(4)")
                         .HasMaxLength(4);
 
                     b.Property<string>("PrintableName")
+                        .HasColumnType("nvarchar(64)")
                         .HasMaxLength(64);
 
                     b.HasKey("Id");
@@ -169,17 +258,64 @@ namespace BGVC.Airline.Backend.Migrations
                         });
                 });
 
+            modelBuilder.Entity("BGVC.Airline.Backend.Models.Flight", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AirplaneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("AirplaneTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ArrivalTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CompanyId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DepartureAirportId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DepartureTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DestinationAirportId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AirplaneTypeId");
+
+                    b.HasIndex("CompanyId");
+
+                    b.HasIndex("DepartureAirportId");
+
+                    b.HasIndex("DestinationAirportId");
+
+                    b.ToTable("Flights");
+                });
+
             modelBuilder.Entity("BGVC.Airline.Backend.Models.IsoRegion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Code")
                         .IsRequired()
+                        .HasColumnType("nvarchar(16)")
                         .HasMaxLength(16);
 
-                    b.Property<int>("CountryId");
+                    b.Property<int>("CountryId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -212,12 +348,15 @@ namespace BGVC.Airline.Backend.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("IsoRegionId");
+                    b.Property<int>("IsoRegionId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
                     b.HasKey("Id");
@@ -241,17 +380,55 @@ namespace BGVC.Airline.Backend.Migrations
                         });
                 });
 
+            modelBuilder.Entity("BGVC.Airline.Backend.Models.AirlineCompany", b =>
+                {
+                    b.HasOne("BGVC.Airline.Backend.Models.Country", "Country")
+                        .WithMany()
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Airport", b =>
                 {
                     b.HasOne("BGVC.Airline.Backend.Models.Municipality", "Municipality")
                         .WithMany("Airports")
                         .HasForeignKey("MunicipalityId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("BGVC.Airline.Backend.Models.AirportType", "AirportType")
                         .WithMany("Airports")
                         .HasForeignKey("TypeId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BGVC.Airline.Backend.Models.Flight", b =>
+                {
+                    b.HasOne("BGVC.Airline.Backend.Models.AirplaneType", "AirplaneType")
+                        .WithMany()
+                        .HasForeignKey("AirplaneTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BGVC.Airline.Backend.Models.AirlineCompany", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BGVC.Airline.Backend.Models.Airport", "DepartureAirport")
+                        .WithMany()
+                        .HasForeignKey("DepartureAirportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BGVC.Airline.Backend.Models.Airport", "DestinationAirport")
+                        .WithMany()
+                        .HasForeignKey("DestinationAirportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("BGVC.Airline.Backend.Models.IsoRegion", b =>
@@ -259,7 +436,8 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.Country", "Country")
                         .WithMany("IsoRegions")
                         .HasForeignKey("CountryId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Municipality", b =>
@@ -267,7 +445,8 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.IsoRegion", "IsoRegion")
                         .WithMany("Municipalities")
                         .HasForeignKey("IsoRegionId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

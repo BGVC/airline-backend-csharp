@@ -22,10 +22,13 @@ namespace BGVC.Airline.Backend
         public DbSet<Municipality> Municipalities { get; set; }
         public DbSet<AirportType> AirportTypes { get; set; }
         public DbSet<Airport> Airports { get; set; }
+        public DbSet<AirplaneType> AirplaneTypes { get; set; }
+        public DbSet<Flight> Flights { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             SeedData(modelBuilder);
+            base.OnModelCreating(modelBuilder);
         }
 
         private static void SeedData(ModelBuilder modelBuilder)
@@ -36,13 +39,71 @@ namespace BGVC.Airline.Backend
             var airportTypes = CreateAirportTypes();
             var municipalities = municipalitiesPart1;
             var airports = CreateAirports();
+            var airplaneTypes = CreateAirplaneTypes();
+            var airlineCompanies = CreateAirlineCompanies();
+            //var flights = CreateFlights(airports, airplaneTypes, airlineCompanies);
 
             SeedEntities(modelBuilder, countries);
             SeedEntities(modelBuilder, isoRegions);
             SeedEntities(modelBuilder, municipalities);
             SeedEntities(modelBuilder, airportTypes);
+            SeedEntities(modelBuilder, airplaneTypes);
             SeedEntities(modelBuilder, airports);
+            SeedEntities(modelBuilder, airlineCompanies);
+            //SeedEntities(modelBuilder, flights);
         }
+
+        private static List<AirlineCompany> CreateAirlineCompanies()
+        {
+            var companies = new List<AirlineCompany>
+            {
+                new AirlineCompany { Id = 1, Name = "Jat Airways", CountryId = 1 },
+                new AirlineCompany { Id = 2, Name = "US AirTrans", CountryId = 2 },
+            };
+
+            return companies;
+        }
+
+        private static List<AirplaneType> CreateAirplaneTypes()
+        {
+            var types = new List<AirplaneType>
+            {
+                new AirplaneType { Id = 1, Manufacturer = "Boeing", Model = "737" },
+                new AirplaneType { Id = 2, Manufacturer = "Airbus", Model = "A330" },
+            };
+
+            return types;
+        }
+
+        private static List<Flight> CreateFlights(List<Airport> airports, List<AirplaneType> airplaneTypes, List<AirlineCompany> companies)
+        {
+            var flights = new List<Flight>
+            {
+                new Flight {
+                    Id = 1,
+                    AirplaneNumber = "No1",
+                    DepartureTime = new DateTime(2020, 6, 1),
+                    ArrivalTime = new DateTime(2020, 6, 1),
+                    DepartureAirportId = 1,
+                    DestinationAirportId = 2,
+                    Price = 100,
+                    CompanyId = 1,
+                },
+                new Flight {
+                    Id = 2,
+                    AirplaneNumber = "No2",
+                    DepartureTime = new DateTime(2020, 6, 2),
+                    ArrivalTime = new DateTime(2020, 6, 2),
+                    DepartureAirportId = 2,
+                    DestinationAirportId = 1,
+                    Price = 150,
+                    CompanyId = 2
+                }
+            };
+
+            return flights;
+        }
+
 
         private static List<IsoRegion> CreateIsoRegions(List<Country> countries)
         {
