@@ -9,9 +9,9 @@ namespace BGVC.Airline.Backend.Models
         public Airport DepartureAirport { get; set; }
         [ForeignKey("Airport")]
         public int DepartureAirportId { get; set; }
-        public Airport DestinationAirport { get; set; }
-        [ForeignKey("Airport")]
-        public int DestinationAirportId { get; set; }
+        //public Airport DestinationAirport { get; set; }
+        //[ForeignKey("Airport")]
+        //public int DestinationAirportId { get; set; }
         public DateTime DepartureTime { get; set; }
         public DateTime ArrivalTime { get; set; }
         public string AirplaneNumber { get; set; }

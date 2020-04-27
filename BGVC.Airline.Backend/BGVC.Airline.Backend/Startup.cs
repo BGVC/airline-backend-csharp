@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using BGVC.Airline.Backend.Automapper;
 
 namespace BGVC.Airline.Backend
 {
@@ -26,6 +28,7 @@ namespace BGVC.Airline.Backend
         {
             // Setup from https://code-maze.com/net-core-web-api-ef-core-code-first/#GeneratingDatabase
             services.AddDbContext<AirlineDBContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:Airline"]));
+            services.AddAutoMapper(typeof(MappingProfile));
             services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 

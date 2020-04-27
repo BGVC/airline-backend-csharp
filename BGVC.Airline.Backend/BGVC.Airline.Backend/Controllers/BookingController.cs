@@ -8,6 +8,7 @@ using BGVC.Airline.Backend.DTO;
 using BGVC.Airline.Backend.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BGVC.Airline.Backend.Controllers
 {
@@ -16,6 +17,11 @@ namespace BGVC.Airline.Backend.Controllers
     public class BookingController : ControllerBase
     {
         private readonly IMapper _mapper;
+
+        public BookingController(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
 
         [HttpGet]
         public BookingInitialStepChoiceDto GetBookingInitialStepChoice()
@@ -56,18 +62,27 @@ namespace BGVC.Airline.Backend.Controllers
                 var availableDepartingFlights = context.Flights
                     .Where(flight => 
                         flight.DepartureAirport.Id == flightSelectionOptions.DepartureAirportId
-                        && flight.DestinationAirport.Id == flightSelectionOptions.DestinationAirportId
+                        //&& flight.DestinationAirport.Id == flightSelectionOptions.DestinationAirportId
                         && flight.DepartureTime.Date == flightSelectionOptions.DepartureDate.Date)
                     .ToList();
 
-                var departingFlightDtos = _mapper.Map<List<Flight>, List<FlightDto>>(availableDepartingFlights);
+                var airport = context.Airports
+                    .Include(airport => airport.Municipality)
+                        .ThenInclude(municipality => municipality.IsoRegion)
+                            .ThenInclude(isoRegion => isoRegion.Country)
+                    .First(airport => airport.Id == 1);
+
+                var airportDto = _mapper.Map<Airport, AirportDto>(airport);
+
+                var departingFlightDtos = new List<FlightDto>();
+                var flight = _mapper.Map<Flight, FlightDto>(availableDepartingFlights.First());
                 departingFlightDtos.ForEach(x => x.FlightDirectionId = (int)FlightDirection.Departure);
                 flightSearchResultsDto.DepartingFlights = departingFlightDtos;
 
                 var availableReturningFlights = context.Flights
                     .Where(flight =>
                         flight.DepartureAirport.Id == flightSelectionOptions.DestinationAirportId
-                        && flight.DestinationAirport.Id == flightSelectionOptions.DepartureAirportId
+                        //&& flight.DestinationAirport.Id == flightSelectionOptions.DepartureAirportId
                         && flight.DepartureTime.Date == flightSelectionOptions.ReturnDate.Date)
                      .ToList();
 

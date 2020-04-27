@@ -281,9 +281,6 @@ namespace BGVC.Airline.Backend.Migrations
                     b.Property<DateTime>("DepartureTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("DestinationAirportId")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
@@ -295,9 +292,31 @@ namespace BGVC.Airline.Backend.Migrations
 
                     b.HasIndex("DepartureAirportId");
 
-                    b.HasIndex("DestinationAirportId");
-
                     b.ToTable("Flights");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AirplaneNumber = "No1",
+                            AirplaneTypeId = 1,
+                            ArrivalTime = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CompanyId = 1,
+                            DepartureAirportId = 1,
+                            DepartureTime = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Price = 100m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AirplaneNumber = "No2",
+                            AirplaneTypeId = 2,
+                            ArrivalTime = new DateTime(2020, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CompanyId = 2,
+                            DepartureAirportId = 2,
+                            DepartureTime = new DateTime(2020, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Price = 150m
+                        });
                 });
 
             modelBuilder.Entity("BGVC.Airline.Backend.Models.IsoRegion", b =>
@@ -419,13 +438,7 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.Airport", "DepartureAirport")
                         .WithMany()
                         .HasForeignKey("DepartureAirportId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BGVC.Airline.Backend.Models.Airport", "DestinationAirport")
-                        .WithMany()
-                        .HasForeignKey("DestinationAirportId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
 

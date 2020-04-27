@@ -27,6 +27,16 @@ namespace BGVC.Airline.Backend
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Debugger.Launch();
+            foreach (var foreignKey in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+            {
+                if (foreignKey.DeclaringEntityType.DisplayName() == "Flight"
+                    && (foreignKey.DependentToPrincipal.Name == "DestinationAirport"
+                        || foreignKey.DependentToPrincipal.Name == "DepartureAirport"))
+                    foreignKey.DeleteBehavior = DeleteBehavior.NoAction;
+                
+            }
+
             SeedData(modelBuilder);
             base.OnModelCreating(modelBuilder);
         }
@@ -41,7 +51,7 @@ namespace BGVC.Airline.Backend
             var airports = CreateAirports();
             var airplaneTypes = CreateAirplaneTypes();
             var airlineCompanies = CreateAirlineCompanies();
-            //var flights = CreateFlights(airports, airplaneTypes, airlineCompanies);
+            var flights = CreateFlights(airports, airplaneTypes, airlineCompanies);
 
             SeedEntities(modelBuilder, countries);
             SeedEntities(modelBuilder, isoRegions);
@@ -50,7 +60,7 @@ namespace BGVC.Airline.Backend
             SeedEntities(modelBuilder, airplaneTypes);
             SeedEntities(modelBuilder, airports);
             SeedEntities(modelBuilder, airlineCompanies);
-            //SeedEntities(modelBuilder, flights);
+            SeedEntities(modelBuilder, flights);
         }
 
         private static List<AirlineCompany> CreateAirlineCompanies()
@@ -82,20 +92,22 @@ namespace BGVC.Airline.Backend
                 new Flight {
                     Id = 1,
                     AirplaneNumber = "No1",
+                    AirplaneTypeId = 1,
                     DepartureTime = new DateTime(2020, 6, 1),
                     ArrivalTime = new DateTime(2020, 6, 1),
                     DepartureAirportId = 1,
-                    DestinationAirportId = 2,
+                    //DestinationAirportId = 2,
                     Price = 100,
                     CompanyId = 1,
                 },
                 new Flight {
                     Id = 2,
                     AirplaneNumber = "No2",
+                    AirplaneTypeId = 2,
                     DepartureTime = new DateTime(2020, 6, 2),
                     ArrivalTime = new DateTime(2020, 6, 2),
                     DepartureAirportId = 2,
-                    DestinationAirportId = 1,
+                    //DestinationAirportId = 1,
                     Price = 150,
                     CompanyId = 2
                 }

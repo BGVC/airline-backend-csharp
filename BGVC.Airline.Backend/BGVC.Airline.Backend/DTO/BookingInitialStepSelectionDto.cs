@@ -8,11 +8,11 @@ namespace BGVC.Airline.Backend.Controllers
     {
         public int DepartureAirportId { get; set; }
         public int DestinationAirportId { get; set; }
-        public TripType TripType { get; set; }
+        public int TripTypeId { get; set; }
         public DateTime DepartureDate { get; set; }
         public DateTime ReturnDate { get; set; }
         public int NumberOfAdults { get; set; }
         public int NumberOfChildren { get; set; }
-        public TravelClass FlightClass { get; set; }
+        public int FlightClassId { get; set; }
     }
 }
