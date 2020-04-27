@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BGVC.Airline.Backend.Migrations
 {
-    public partial class initial_migration : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -150,6 +150,7 @@ namespace BGVC.Airline.Backend.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     DepartureAirportId = table.Column<int>(nullable: false),
+                    DestinationAirportId = table.Column<int>(nullable: false),
                     DepartureTime = table.Column<DateTime>(nullable: false),
                     ArrivalTime = table.Column<DateTime>(nullable: false),
                     AirplaneNumber = table.Column<string>(nullable: true),
@@ -175,6 +176,11 @@ namespace BGVC.Airline.Backend.Migrations
                     table.ForeignKey(
                         name: "FK_Flights_Airports_DepartureAirportId",
                         column: x => x.DepartureAirportId,
+                        principalTable: "Airports",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Flights_Airports_DestinationAirportId",
+                        column: x => x.DestinationAirportId,
                         principalTable: "Airports",
                         principalColumn: "Id");
                 });
@@ -252,13 +258,13 @@ namespace BGVC.Airline.Backend.Migrations
 
             migrationBuilder.InsertData(
                 table: "Flights",
-                columns: new[] { "Id", "AirplaneNumber", "AirplaneTypeId", "ArrivalTime", "CompanyId", "DepartureAirportId", "DepartureTime", "Price" },
-                values: new object[] { 2, "No2", 2, new DateTime(2020, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, 2, new DateTime(2020, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 150m });
+                columns: new[] { "Id", "AirplaneNumber", "AirplaneTypeId", "ArrivalTime", "CompanyId", "DepartureAirportId", "DepartureTime", "DestinationAirportId", "Price" },
+                values: new object[] { 1, "No1", 1, new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 1, new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, 100m });
 
             migrationBuilder.InsertData(
                 table: "Flights",
-                columns: new[] { "Id", "AirplaneNumber", "AirplaneTypeId", "ArrivalTime", "CompanyId", "DepartureAirportId", "DepartureTime", "Price" },
-                values: new object[] { 1, "No1", 1, new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 1, new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 100m });
+                columns: new[] { "Id", "AirplaneNumber", "AirplaneTypeId", "ArrivalTime", "CompanyId", "DepartureAirportId", "DepartureTime", "DestinationAirportId", "Price" },
+                values: new object[] { 2, "No2", 2, new DateTime(2020, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, 2, new DateTime(2020, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 150m });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AirlineCompany_CountryId",
@@ -289,6 +295,11 @@ namespace BGVC.Airline.Backend.Migrations
                 name: "IX_Flights_DepartureAirportId",
                 table: "Flights",
                 column: "DepartureAirportId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Flights_DestinationAirportId",
+                table: "Flights",
+                column: "DestinationAirportId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_IsoRegions_CountryId",

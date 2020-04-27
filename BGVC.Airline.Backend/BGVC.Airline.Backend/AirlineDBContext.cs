@@ -96,7 +96,7 @@ namespace BGVC.Airline.Backend
                     DepartureTime = new DateTime(2020, 6, 1),
                     ArrivalTime = new DateTime(2020, 6, 1),
                     DepartureAirportId = 1,
-                    //DestinationAirportId = 2,
+                    DestinationAirportId = 2,
                     Price = 100,
                     CompanyId = 1,
                 },
@@ -107,7 +107,7 @@ namespace BGVC.Airline.Backend
                     DepartureTime = new DateTime(2020, 6, 2),
                     ArrivalTime = new DateTime(2020, 6, 2),
                     DepartureAirportId = 2,
-                    //DestinationAirportId = 1,
+                    DestinationAirportId = 1,
                     Price = 150,
                     CompanyId = 2
                 }

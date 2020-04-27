@@ -281,6 +281,9 @@ namespace BGVC.Airline.Backend.Migrations
                     b.Property<DateTime>("DepartureTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("DestinationAirportId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
@@ -291,6 +294,8 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasIndex("CompanyId");
 
                     b.HasIndex("DepartureAirportId");
+
+                    b.HasIndex("DestinationAirportId");
 
                     b.ToTable("Flights");
 
@@ -304,6 +309,7 @@ namespace BGVC.Airline.Backend.Migrations
                             CompanyId = 1,
                             DepartureAirportId = 1,
                             DepartureTime = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DestinationAirportId = 2,
                             Price = 100m
                         },
                         new
@@ -315,6 +321,7 @@ namespace BGVC.Airline.Backend.Migrations
                             CompanyId = 2,
                             DepartureAirportId = 2,
                             DepartureTime = new DateTime(2020, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DestinationAirportId = 1,
                             Price = 150m
                         });
                 });
@@ -438,6 +445,12 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.Airport", "DepartureAirport")
                         .WithMany()
                         .HasForeignKey("DepartureAirportId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("BGVC.Airline.Backend.Models.Airport", "DestinationAirport")
+                        .WithMany()
+                        .HasForeignKey("DestinationAirportId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
