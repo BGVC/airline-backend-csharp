@@ -539,6 +539,9 @@ namespace BGVC.Airline.Backend.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("CitizenshipCountryId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CountryOfIssueId")
                         .HasColumnType("int");
 
@@ -550,6 +553,8 @@ namespace BGVC.Airline.Backend.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CitizenshipCountryId");
 
                     b.HasIndex("CountryOfIssueId");
 
@@ -593,7 +598,7 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.Country", "Country")
                         .WithMany()
                         .HasForeignKey("CountryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
@@ -602,13 +607,13 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.Municipality", "Municipality")
                         .WithMany("Airports")
                         .HasForeignKey("MunicipalityId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BGVC.Airline.Backend.Models.AirportType", "AirportType")
                         .WithMany("Airports")
                         .HasForeignKey("TypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
@@ -616,7 +621,8 @@ namespace BGVC.Airline.Backend.Migrations
                 {
                     b.HasOne("BGVC.Airline.Backend.Models.Passport", "PassportNumber")
                         .WithMany()
-                        .HasForeignKey("PassportNumberId");
+                        .HasForeignKey("PassportNumberId")
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Flight", b =>
@@ -624,25 +630,25 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.AirplaneType", "AirplaneType")
                         .WithMany()
                         .HasForeignKey("AirplaneTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BGVC.Airline.Backend.Models.AirlineCompany", "Company")
                         .WithMany()
                         .HasForeignKey("CompanyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BGVC.Airline.Backend.Models.Airport", "DepartureAirport")
                         .WithMany()
                         .HasForeignKey("DepartureAirportId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BGVC.Airline.Backend.Models.Airport", "DestinationAirport")
                         .WithMany()
                         .HasForeignKey("DestinationAirportId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
@@ -651,7 +657,7 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.Country", "Country")
                         .WithMany("IsoRegions")
                         .HasForeignKey("CountryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
@@ -660,16 +666,22 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.IsoRegion", "IsoRegion")
                         .WithMany("Municipalities")
                         .HasForeignKey("IsoRegionId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Passport", b =>
                 {
+                    b.HasOne("BGVC.Airline.Backend.Models.Country", "CitizenshipCountry")
+                        .WithMany()
+                        .HasForeignKey("CitizenshipCountryId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("BGVC.Airline.Backend.Models.Country", "CountryOfIssue")
                         .WithMany()
                         .HasForeignKey("CountryOfIssueId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
@@ -678,25 +690,25 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.Customer", "Customer")
                         .WithMany()
                         .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BGVC.Airline.Backend.Models.FlightExtraOption", "FlightExtraOption")
                         .WithMany()
                         .HasForeignKey("FlightExtraOptionId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BGVC.Airline.Backend.Models.Flight", "Flight")
                         .WithMany()
                         .HasForeignKey("FlightId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BGVC.Airline.Backend.Models.LuggageOption", "LuggageOption")
                         .WithMany()
                         .HasForeignKey("LuggageOptionId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

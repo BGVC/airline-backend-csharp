@@ -12,9 +12,9 @@ namespace BGVC.Airline.Backend.Models
         [ForeignKey("CountryOfIssueId")]
         public virtual Country CountryOfIssue { get; set; }
         public int CountryOfIssueId { get; set; }
-        //[ForeignKey("CitizenshipCountryId")]
-        //public virtual Country CitizenshipCountry { get; set; }
-        //public int CitizenshipCountryId { get; set; }
+        [ForeignKey("CitizenshipCountryId")]
+        public virtual Country CitizenshipCountry { get; set; }
+        public int CitizenshipCountryId { get; set; }
         [Required]
         public DateTime ExpiryDate { get; set; }
     }

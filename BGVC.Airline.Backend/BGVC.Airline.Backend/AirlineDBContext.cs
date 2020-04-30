@@ -32,6 +32,7 @@ namespace BGVC.Airline.Backend
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            /*
             //Debugger.Launch();
             foreach (var foreignKey in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
             {
@@ -41,6 +42,13 @@ namespace BGVC.Airline.Backend
                     foreignKey.DeleteBehavior = DeleteBehavior.NoAction;
                 
             }
+            */
+
+            foreach (var foreignKey in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+            {
+                foreignKey.DeleteBehavior = DeleteBehavior.Restrict;
+            }
+
 
             SeedData(modelBuilder);
             base.OnModelCreating(modelBuilder);

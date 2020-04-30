@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BGVC.Airline.Backend.Migrations
 {
-    public partial class Initialmigration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -99,7 +99,7 @@ namespace BGVC.Airline.Backend.Migrations
                         column: x => x.CountryId,
                         principalTable: "Countries",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -119,7 +119,7 @@ namespace BGVC.Airline.Backend.Migrations
                         column: x => x.CountryId,
                         principalTable: "Countries",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -130,17 +130,24 @@ namespace BGVC.Airline.Backend.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Number = table.Column<string>(nullable: false),
                     CountryOfIssueId = table.Column<int>(nullable: false),
+                    CitizenshipCountryId = table.Column<int>(nullable: false),
                     ExpiryDate = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Passports", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_Passports_Countries_CitizenshipCountryId",
+                        column: x => x.CitizenshipCountryId,
+                        principalTable: "Countries",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
                         name: "FK_Passports_Countries_CountryOfIssueId",
                         column: x => x.CountryOfIssueId,
                         principalTable: "Countries",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -160,7 +167,7 @@ namespace BGVC.Airline.Backend.Migrations
                         column: x => x.IsoRegionId,
                         principalTable: "IsoRegions",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -209,13 +216,13 @@ namespace BGVC.Airline.Backend.Migrations
                         column: x => x.MunicipalityId,
                         principalTable: "Municipalities",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Airports_AirportTypes_TypeId",
                         column: x => x.TypeId,
                         principalTable: "AirportTypes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -241,23 +248,25 @@ namespace BGVC.Airline.Backend.Migrations
                         column: x => x.AirplaneTypeId,
                         principalTable: "AirplaneTypes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Flights_AirlineCompany_CompanyId",
                         column: x => x.CompanyId,
                         principalTable: "AirlineCompany",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Flights_Airports_DepartureAirportId",
                         column: x => x.DepartureAirportId,
                         principalTable: "Airports",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Flights_Airports_DestinationAirportId",
                         column: x => x.DestinationAirportId,
                         principalTable: "Airports",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -279,25 +288,25 @@ namespace BGVC.Airline.Backend.Migrations
                         column: x => x.CustomerId,
                         principalTable: "Customers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Reservations_FlightExtraOptions_FlightExtraOptionId",
                         column: x => x.FlightExtraOptionId,
                         principalTable: "FlightExtraOptions",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Reservations_Flights_FlightId",
                         column: x => x.FlightId,
                         principalTable: "Flights",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Reservations_LuggageOptions_LuggageOptionId",
                         column: x => x.LuggageOptionId,
                         principalTable: "LuggageOptions",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.InsertData(
@@ -450,6 +459,11 @@ namespace BGVC.Airline.Backend.Migrations
                 name: "IX_Municipalities_IsoRegionId",
                 table: "Municipalities",
                 column: "IsoRegionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Passports_CitizenshipCountryId",
+                table: "Passports",
+                column: "CitizenshipCountryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Passports_CountryOfIssueId",
