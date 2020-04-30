@@ -15,6 +15,7 @@ namespace BGVC.Airline.Backend
             var connectionString = @"Server=localhost;Database=Airline;Integrated Security=True";
             var options = new DbContextOptionsBuilder<AirlineDBContext>();
             options.UseSqlServer(connectionString);
+            options.UseLazyLoadingProxies();
             return new AirlineDBContext(options.Options);
         }
     }

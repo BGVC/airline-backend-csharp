@@ -24,6 +24,11 @@ namespace BGVC.Airline.Backend
         public DbSet<Airport> Airports { get; set; }
         public DbSet<AirplaneType> AirplaneTypes { get; set; }
         public DbSet<Flight> Flights { get; set; }
+        public DbSet<LuggageOption> LuggageOptions { get; set; }
+        public DbSet<FlightExtraOption> FlightExtraOptions { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Passport> Passports { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -52,7 +57,11 @@ namespace BGVC.Airline.Backend
             var airplaneTypes = CreateAirplaneTypes();
             var airlineCompanies = CreateAirlineCompanies();
             var flights = CreateFlights(airports, airplaneTypes, airlineCompanies);
+            var luggageOptions = CreateLuggageOptions();
+            var flightExtraOptions = CreateFlightExtraOptions();
 
+            SeedEntities(modelBuilder, luggageOptions);
+            SeedEntities(modelBuilder, flightExtraOptions);
             SeedEntities(modelBuilder, countries);
             SeedEntities(modelBuilder, isoRegions);
             SeedEntities(modelBuilder, municipalities);
@@ -61,6 +70,30 @@ namespace BGVC.Airline.Backend
             SeedEntities(modelBuilder, airports);
             SeedEntities(modelBuilder, airlineCompanies);
             SeedEntities(modelBuilder, flights);
+        }
+
+        private static List<FlightExtraOption> CreateFlightExtraOptions()
+        {
+            var flightExtraOptions = new List<FlightExtraOption>
+            {
+                new FlightExtraOption { Id = 1, Name = "Basic", Description = "A sandwich and a beverage"},
+                new FlightExtraOption { Id = 2, Name = "Silver", Description = "A premium meal"},
+                new FlightExtraOption { Id = 3, Name = "Gold", Description = "Three course meal at the airplane lounge"}
+            };
+
+            return flightExtraOptions;
+        }
+
+        private static List<LuggageOption> CreateLuggageOptions()
+        {
+            var luggageOptions = new List<LuggageOption>
+            {
+                new LuggageOption { Id = 1, Name = "Basic", Description = "Cabin luggage up to 8 kg"},
+                new LuggageOption { Id = 2, Name = "Silver", Description = "One bag up to 20kg + cabin luggage up to 8 kg"},
+                new LuggageOption { Id = 3, Name = "Gold", Description = "Two bags up to 20kg each + cabin luggage up to 8 kg"},
+            };
+
+            return luggageOptions;
         }
 
         private static List<AirlineCompany> CreateAirlineCompanies()

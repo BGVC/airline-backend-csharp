@@ -12,7 +12,7 @@ namespace BGVC.Airline.Backend.Models
         public int Id { get; set; }
         [Required, MaxLength(512)]
         public string Name { get; set; }
-        public Country Country { get; set; }
+        public virtual Country Country { get; set; }
         [ForeignKey("Country")]
         public int CountryId { get; set; }
     }

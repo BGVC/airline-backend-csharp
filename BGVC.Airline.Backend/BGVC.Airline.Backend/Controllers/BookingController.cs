@@ -62,32 +62,29 @@ namespace BGVC.Airline.Backend.Controllers
                 var availableDepartingFlights = context.Flights
                     .Where(flight => 
                         flight.DepartureAirport.Id == flightSelectionOptions.DepartureAirportId
-                        //&& flight.DestinationAirport.Id == flightSelectionOptions.DestinationAirportId
+                        && flight.DestinationAirport.Id == flightSelectionOptions.DestinationAirportId
                         && flight.DepartureTime.Date == flightSelectionOptions.DepartureDate.Date)
                     .ToList();
 
-                var airport = context.Airports
-                    .Include(airport => airport.Municipality)
-                        .ThenInclude(municipality => municipality.IsoRegion)
-                            .ThenInclude(isoRegion => isoRegion.Country)
-                    .First(airport => airport.Id == 1);
+                var departingFlightDtos = _mapper.Map<List<Flight>, List<FlightDto>>(availableDepartingFlights);
+                departingFlightDtos
+                    .ForEach(x => 
+                        x.FlightDirectionId = (int)FlightDirection.Departure);
 
-                var airportDto = _mapper.Map<Airport, AirportDto>(airport);
-
-                var departingFlightDtos = new List<FlightDto>();
-                var flight = _mapper.Map<Flight, FlightDto>(availableDepartingFlights.First());
-                departingFlightDtos.ForEach(x => x.FlightDirectionId = (int)FlightDirection.Departure);
                 flightSearchResultsDto.DepartingFlights = departingFlightDtos;
 
                 var availableReturningFlights = context.Flights
                     .Where(flight =>
                         flight.DepartureAirport.Id == flightSelectionOptions.DestinationAirportId
-                        //&& flight.DestinationAirport.Id == flightSelectionOptions.DepartureAirportId
+                        && flight.DestinationAirport.Id == flightSelectionOptions.DepartureAirportId
                         && flight.DepartureTime.Date == flightSelectionOptions.ReturnDate.Date)
                      .ToList();
 
                 var returningFlightDtos = _mapper.Map<List<Flight>, List<FlightDto>>(availableReturningFlights);
-                returningFlightDtos.ForEach(x => x.FlightDirectionId = (int)FlightDirection.Return);
+                returningFlightDtos
+                    .ForEach(x =>
+                        x.FlightDirectionId = (int)FlightDirection.Return);
+
                 flightSearchResultsDto.ReturningFlights = returningFlightDtos;
 
                 return flightSearchResultsDto;

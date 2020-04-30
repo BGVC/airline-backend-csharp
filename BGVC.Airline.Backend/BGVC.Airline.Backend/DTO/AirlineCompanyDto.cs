@@ -10,6 +10,6 @@ namespace BGVC.Airline.Backend.DTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public CountryDto Country { get; set; }
+        public string CountryName { get; set; }
     }
 }

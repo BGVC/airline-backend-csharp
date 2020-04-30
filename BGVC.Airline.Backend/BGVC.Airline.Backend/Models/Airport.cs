@@ -21,7 +21,7 @@ namespace BGVC.Airline.Backend.Models
         public int? LongitudeDegrees { get; set; }
         public int? ElevationFeet { get; set; }
         public int MunicipalityId { get; set; }
-        public Municipality Municipality { get; set; }
-        public AirportType AirportType { get; set; }
+        public virtual Municipality Municipality { get; set; }
+        public virtual AirportType AirportType { get; set; }
     }
 }

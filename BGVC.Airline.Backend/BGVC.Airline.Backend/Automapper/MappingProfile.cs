@@ -13,15 +13,18 @@ namespace BGVC.Airline.Backend.Automapper
         public MappingProfile()
         {
             CreateMap<AirplaneType, AirplaneTypeDto>();
-            CreateMap<AirlineCompany, AirlineCompanyDto>();
-            CreateMap<Airport, AirportDto>()
+            CreateMap<Country, CountryDto>();
+            CreateMap<AirlineCompany, AirlineCompanyDto>()
+                .ForMember(company => company.CountryName, opt => opt.MapFrom(s => s.Country.Name));
+            CreateMap<Airport, AirportMinimalDto>()
                 .ForMember(airport => airport.City, opt => opt.MapFrom(s => s.Municipality.Name))
-                .ForMember(airport => airport.Country, opt => opt.MapFrom(s => s.Municipality.IsoRegion.Country.Name))
                 .ForMember(airport => airport.Abbreviation, opt => opt.MapFrom(s => s.Code));
 
             CreateMap<Flight, FlightDto>()
                 .ForMember(flight => flight.DepartureAirport, 
-                            opt => opt.MapFrom(s => s.DepartureAirport));
+                            opt => opt.MapFrom(s => s.DepartureAirport))
+                .ForMember(flight => flight.ArrivalAirport,
+                            opt => opt.MapFrom(s => s.DestinationAirport));
         }       
     }
 }

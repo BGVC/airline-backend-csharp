@@ -27,7 +27,9 @@ namespace BGVC.Airline.Backend
         public void ConfigureServices(IServiceCollection services)
         {
             // Setup from https://code-maze.com/net-core-web-api-ef-core-code-first/#GeneratingDatabase
-            services.AddDbContext<AirlineDBContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:Airline"]));
+            services.AddDbContext<AirlineDBContext>(opts =>
+                opts.UseSqlServer(Configuration["ConnectionString:Airline"])
+                .UseLazyLoadingProxies());
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddMvc(options => options.EnableEndpointRouting = false);
         }

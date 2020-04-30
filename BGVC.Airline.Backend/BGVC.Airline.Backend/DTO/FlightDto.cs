@@ -6,8 +6,8 @@ namespace BGVC.Airline.Backend.DTO
 {
     public class FlightDto
     {
-        public AirportDto DepartureAirport { get; set; }
-        //public AirportDto ArrivalAirport { get; set; }
+        public AirportMinimalDto DepartureAirport { get; set; }
+        public AirportMinimalDto ArrivalAirport { get; set; }
         // todo: Show the local time in the corresponding country and also get precise flight duration information
         public DateTime DepartureTime { get; set; }
         public DateTime ArrivalTime { get; set; }
