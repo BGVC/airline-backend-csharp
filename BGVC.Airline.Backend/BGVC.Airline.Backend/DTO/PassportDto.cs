@@ -2,22 +2,14 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BGVC.Airline.Backend.Models
+namespace BGVC.Airline.Backend.DTO
 {
-    public class Passport
+    public class PassportDto
     {
         public int Id { get; set; }
-        [Required]
         public string Number { get; set; }
-        [ForeignKey("CountryOfIssueId")]
-        public virtual Country CountryOfIssue { get; set; }
-        [Required]
         public int CountryOfIssueId { get; set; }
-        [ForeignKey("CitizenshipCountryId")]
-        public virtual Country CitizenshipCountry { get; set; }
-        [Required]
         public int CitizenshipCountryId { get; set; }
-        [Required]
         public DateTime ExpiryDate { get; set; }
     }
 }

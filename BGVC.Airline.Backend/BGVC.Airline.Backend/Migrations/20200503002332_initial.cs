@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BGVC.Airline.Backend.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -171,24 +171,24 @@ namespace BGVC.Airline.Backend.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Customers",
+                name: "Passengers",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
+                    FirstName = table.Column<string>(nullable: false),
+                    LastName = table.Column<string>(nullable: false),
                     DateOfBirth = table.Column<DateTime>(nullable: false),
                     Email = table.Column<string>(nullable: true),
                     PhoneNumber = table.Column<string>(nullable: true),
-                    PassportNumberId = table.Column<int>(nullable: true)
+                    PassportId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Customers", x => x.Id);
+                    table.PrimaryKey("PK_Passengers", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Customers_Passports_PassportNumberId",
-                        column: x => x.PassportNumberId,
+                        name: "FK_Passengers_Passports_PassportId",
+                        column: x => x.PassportId,
                         principalTable: "Passports",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -275,7 +275,8 @@ namespace BGVC.Airline.Backend.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CustomerId = table.Column<int>(nullable: false),
+                    Number = table.Column<string>(type: "char(6)", maxLength: 6, nullable: false),
+                    PassengerId = table.Column<int>(nullable: false),
                     FlightId = table.Column<int>(nullable: false),
                     LuggageOptionId = table.Column<int>(nullable: false),
                     FlightExtraOptionId = table.Column<int>(nullable: false)
@@ -283,12 +284,6 @@ namespace BGVC.Airline.Backend.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Reservations", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Reservations_Customers_CustomerId",
-                        column: x => x.CustomerId,
-                        principalTable: "Customers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Reservations_FlightExtraOptions_FlightExtraOptionId",
                         column: x => x.FlightExtraOptionId,
@@ -305,6 +300,12 @@ namespace BGVC.Airline.Backend.Migrations
                         name: "FK_Reservations_LuggageOptions_LuggageOptionId",
                         column: x => x.LuggageOptionId,
                         principalTable: "LuggageOptions",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Reservations_Passengers_PassengerId",
+                        column: x => x.PassengerId,
+                        principalTable: "Passengers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -347,8 +348,8 @@ namespace BGVC.Airline.Backend.Migrations
                 values: new object[,]
                 {
                     { 1, "A sandwich and a beverage", "Basic", 0m },
-                    { 2, "A premium meal", "Silver", 0m },
-                    { 3, "Three course meal at the airplane lounge", "Gold", 0m }
+                    { 2, "A premium meal", "Silver", 15m },
+                    { 3, "Three course meal at the airplane lounge", "Gold", 50m }
                 });
 
             migrationBuilder.InsertData(
@@ -356,9 +357,9 @@ namespace BGVC.Airline.Backend.Migrations
                 columns: new[] { "Id", "Description", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 2, "One bag up to 20kg + cabin luggage up to 8 kg", "Silver", 0m },
+                    { 2, "One bag up to 20kg + cabin luggage up to 8 kg", "Silver", 20m },
                     { 1, "Cabin luggage up to 8 kg", "Basic", 0m },
-                    { 3, "Two bags up to 20kg each + cabin luggage up to 8 kg", "Gold", 0m }
+                    { 3, "Two bags up to 20kg each + cabin luggage up to 8 kg", "Gold", 32m }
                 });
 
             migrationBuilder.InsertData(
@@ -416,6 +417,12 @@ namespace BGVC.Airline.Backend.Migrations
                 column: "CountryId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_AirplaneTypes_Manufacturer_Model",
+                table: "AirplaneTypes",
+                columns: new[] { "Manufacturer", "Model" },
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Airports_MunicipalityId",
                 table: "Airports",
                 column: "MunicipalityId");
@@ -424,11 +431,6 @@ namespace BGVC.Airline.Backend.Migrations
                 name: "IX_Airports_TypeId",
                 table: "Airports",
                 column: "TypeId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Customers_PassportNumberId",
-                table: "Customers",
-                column: "PassportNumberId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Flights_AirplaneTypeId",
@@ -461,6 +463,11 @@ namespace BGVC.Airline.Backend.Migrations
                 column: "IsoRegionId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Passengers_PassportId",
+                table: "Passengers",
+                column: "PassportId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Passports_CitizenshipCountryId",
                 table: "Passports",
                 column: "CitizenshipCountryId");
@@ -471,9 +478,10 @@ namespace BGVC.Airline.Backend.Migrations
                 column: "CountryOfIssueId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Reservations_CustomerId",
-                table: "Reservations",
-                column: "CustomerId");
+                name: "IX_Passports_Number",
+                table: "Passports",
+                column: "Number",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Reservations_FlightExtraOptionId",
@@ -489,15 +497,23 @@ namespace BGVC.Airline.Backend.Migrations
                 name: "IX_Reservations_LuggageOptionId",
                 table: "Reservations",
                 column: "LuggageOptionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Reservations_Number",
+                table: "Reservations",
+                column: "Number",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Reservations_PassengerId",
+                table: "Reservations",
+                column: "PassengerId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
                 name: "Reservations");
-
-            migrationBuilder.DropTable(
-                name: "Customers");
 
             migrationBuilder.DropTable(
                 name: "FlightExtraOptions");
@@ -509,7 +525,7 @@ namespace BGVC.Airline.Backend.Migrations
                 name: "LuggageOptions");
 
             migrationBuilder.DropTable(
-                name: "Passports");
+                name: "Passengers");
 
             migrationBuilder.DropTable(
                 name: "AirplaneTypes");
@@ -519,6 +535,9 @@ namespace BGVC.Airline.Backend.Migrations
 
             migrationBuilder.DropTable(
                 name: "Airports");
+
+            migrationBuilder.DropTable(
+                name: "Passports");
 
             migrationBuilder.DropTable(
                 name: "Municipalities");

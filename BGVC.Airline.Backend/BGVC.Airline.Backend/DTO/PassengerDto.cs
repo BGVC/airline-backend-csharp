@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BGVC.Airline.Backend.Models
+namespace BGVC.Airline.Backend.DTO
 {
-    public class Customer
+    public class PassengerDto
     {
         public int Id { get; set; }
         // todo: handle enums properties properly
@@ -15,11 +15,9 @@ namespace BGVC.Airline.Backend.Models
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
         //public Gender GenderId { get; set; }
-        [EmailAddress]
         public string Email { get; set; }
-        [Phone]
         public string PhoneNumber { get; set; }
-        public virtual Passport PassportNumber { get; set; }
+        public PassportDto Passport { get; set; }
 
     }
 }

@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using BGVC.Airline.Backend.Automapper;
+using BGVC.Airline.Backend.Interfaces;
+using BGVC.Airline.Backend.Services;
 
 namespace BGVC.Airline.Backend
 {
@@ -32,6 +28,8 @@ namespace BGVC.Airline.Backend
                 .UseLazyLoadingProxies());
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddMvc(options => options.EnableEndpointRouting = false);
+            // todo: Select service lifetime appropriately between singleton, transient and scope
+            services.AddScoped<IBookingService, BookingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

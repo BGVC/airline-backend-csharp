@@ -2,7 +2,7 @@
 using BGVC.Airline.Backend.Models;
 using System;
 
-namespace BGVC.Airline.Backend.Controllers
+namespace BGVC.Airline.Backend.DTO
 {
     public class BookingInitialStepSelectionDto
     {

@@ -11,6 +11,8 @@ namespace BGVC.Airline.Backend.Controllers
     [Route("api/[controller]")]
     public class CountriesController : Controller
     {
+        private readonly AirlineDBContext _dbContext;
+
         public CountriesController(AirlineDBContext context)
         {
             _context = context;
@@ -41,7 +43,7 @@ namespace BGVC.Airline.Backend.Controllers
             // TODO: VC -> BG: Do not use Initialize.GetContext() but instead use the injected context
             // TODO: VC -> BG: Do not use Single here instead use SingleOrDefault because if it does not exist, should return NotFound (instead of exception)
 
-            var country = Initialize.GetContext().Countries.Single(x => x.Id == id);
+            var country = _dbContext.Countries.Single(x => x.Id == id);
 
             var result = new
             {

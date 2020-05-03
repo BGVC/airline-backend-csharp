@@ -13,6 +13,9 @@ namespace BGVC.Airline.Backend.Automapper
         public MappingProfile()
         {
             CreateMap<AirplaneType, AirplaneTypeDto>();
+            CreateMap<LuggageOption, LuggageOptionDto>();
+            CreateMap<FlightExtraOption, FlightExtraOptionDto>();
+            CreateMap<AirplaneType, AirplaneTypeDto>();
             CreateMap<Country, CountryDto>();
             CreateMap<AirlineCompany, AirlineCompanyDto>()
                 .ForMember(company => company.CountryName, opt => opt.MapFrom(s => s.Country.Name));
@@ -25,6 +28,12 @@ namespace BGVC.Airline.Backend.Automapper
                             opt => opt.MapFrom(s => s.DepartureAirport))
                 .ForMember(flight => flight.ArrivalAirport,
                             opt => opt.MapFrom(s => s.DestinationAirport));
+            CreateMap<PassengerDto, Passenger>()
+                .ForMember(passenger => passenger.Passport,
+                    opt => opt.MapFrom(s => s.Passport));
+            CreateMap<PassportDto, Passport>();
+
+            CreateMap<ReservationDto, Reservation>();
         }       
     }
 }

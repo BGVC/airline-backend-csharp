@@ -3,7 +3,7 @@ using BGVC.Airline.Backend.DTO;
 using System;
 using System.Collections.Generic;
 
-namespace BGVC.Airline.Backend.Controllers
+namespace BGVC.Airline.Backend.DTO
 {
     public class BookingInitialStepChoiceDto
     {

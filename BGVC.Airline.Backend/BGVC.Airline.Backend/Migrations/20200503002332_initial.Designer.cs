@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BGVC.Airline.Backend.Migrations
 {
     [DbContext(typeof(AirlineDBContext))]
-    [Migration("20200430193617_Initial")]
-    partial class Initial
+    [Migration("20200503002332_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -75,6 +75,9 @@ namespace BGVC.Airline.Backend.Migrations
                         .HasMaxLength(512);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Manufacturer", "Model")
+                        .IsUnique();
 
                     b.ToTable("AirplaneTypes");
 
@@ -258,38 +261,6 @@ namespace BGVC.Airline.Backend.Migrations
                         });
                 });
 
-            modelBuilder.Entity("BGVC.Airline.Backend.Models.Customer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("PassportNumberId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PassportNumberId");
-
-                    b.ToTable("Customers");
-                });
-
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Flight", b =>
                 {
                     b.Property<int>("Id")
@@ -397,14 +368,14 @@ namespace BGVC.Airline.Backend.Migrations
                             Id = 2,
                             Description = "A premium meal",
                             Name = "Silver",
-                            Price = 0m
+                            Price = 15m
                         },
                         new
                         {
                             Id = 3,
                             Description = "Three course meal at the airplane lounge",
                             Name = "Gold",
-                            Price = 0m
+                            Price = 50m
                         });
                 });
 
@@ -487,14 +458,14 @@ namespace BGVC.Airline.Backend.Migrations
                             Id = 2,
                             Description = "One bag up to 20kg + cabin luggage up to 8 kg",
                             Name = "Silver",
-                            Price = 0m
+                            Price = 20m
                         },
                         new
                         {
                             Id = 3,
                             Description = "Two bags up to 20kg each + cabin luggage up to 8 kg",
                             Name = "Gold",
-                            Price = 0m
+                            Price = 32m
                         });
                 });
 
@@ -534,6 +505,40 @@ namespace BGVC.Airline.Backend.Migrations
                         });
                 });
 
+            modelBuilder.Entity("BGVC.Airline.Backend.Models.Passenger", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PassportId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PassportId");
+
+                    b.ToTable("Passengers");
+                });
+
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Passport", b =>
                 {
                     b.Property<int>("Id")
@@ -552,13 +557,16 @@ namespace BGVC.Airline.Backend.Migrations
 
                     b.Property<string>("Number")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CitizenshipCountryId");
 
                     b.HasIndex("CountryOfIssueId");
+
+                    b.HasIndex("Number")
+                        .IsUnique();
 
                     b.ToTable("Passports");
                 });
@@ -570,9 +578,6 @@ namespace BGVC.Airline.Backend.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
                     b.Property<int>("FlightExtraOptionId")
                         .HasColumnType("int");
 
@@ -582,15 +587,26 @@ namespace BGVC.Airline.Backend.Migrations
                     b.Property<int>("LuggageOptionId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.Property<string>("Number")
+                        .IsRequired()
+                        .HasColumnType("char(6)")
+                        .HasMaxLength(6);
 
-                    b.HasIndex("CustomerId");
+                    b.Property<int>("PassengerId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("FlightExtraOptionId");
 
                     b.HasIndex("FlightId");
 
                     b.HasIndex("LuggageOptionId");
+
+                    b.HasIndex("Number")
+                        .IsUnique();
+
+                    b.HasIndex("PassengerId");
 
                     b.ToTable("Reservations");
                 });
@@ -617,14 +633,6 @@ namespace BGVC.Airline.Backend.Migrations
                         .HasForeignKey("TypeId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("BGVC.Airline.Backend.Models.Customer", b =>
-                {
-                    b.HasOne("BGVC.Airline.Backend.Models.Passport", "PassportNumber")
-                        .WithMany()
-                        .HasForeignKey("PassportNumberId")
-                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Flight", b =>
@@ -672,6 +680,15 @@ namespace BGVC.Airline.Backend.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("BGVC.Airline.Backend.Models.Passenger", b =>
+                {
+                    b.HasOne("BGVC.Airline.Backend.Models.Passport", "Passport")
+                        .WithMany()
+                        .HasForeignKey("PassportId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Passport", b =>
                 {
                     b.HasOne("BGVC.Airline.Backend.Models.Country", "CitizenshipCountry")
@@ -689,12 +706,6 @@ namespace BGVC.Airline.Backend.Migrations
 
             modelBuilder.Entity("BGVC.Airline.Backend.Models.Reservation", b =>
                 {
-                    b.HasOne("BGVC.Airline.Backend.Models.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("BGVC.Airline.Backend.Models.FlightExtraOption", "FlightExtraOption")
                         .WithMany()
                         .HasForeignKey("FlightExtraOptionId")
@@ -710,6 +721,12 @@ namespace BGVC.Airline.Backend.Migrations
                     b.HasOne("BGVC.Airline.Backend.Models.LuggageOption", "LuggageOption")
                         .WithMany()
                         .HasForeignKey("LuggageOptionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BGVC.Airline.Backend.Models.Passenger", "Passenger")
+                        .WithMany()
+                        .HasForeignKey("PassengerId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });

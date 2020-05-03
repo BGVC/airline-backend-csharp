@@ -7,10 +7,13 @@ namespace BGVC.Airline.Backend.Models
     public class Reservation
     {
         public int Id { get; set; }
-        [ForeignKey("CustomerId")]
-        public virtual Customer Customer { get; set; }
+        [Column(TypeName = "char(6)")]
+        [Required, MinLength(6), MaxLength(6)]
+        public string Number { get; set; }
+        [ForeignKey("PassengerId")]
+        public virtual Passenger Passenger { get; set; }
         [Required]
-        public int CustomerId { get; set; }
+        public int PassengerId { get; set; }
         [ForeignKey("FlightId")]
         public virtual Flight Flight { get; set; }
         [Required]

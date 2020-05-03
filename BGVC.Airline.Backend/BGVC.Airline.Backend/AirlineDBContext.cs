@@ -28,7 +28,7 @@ namespace BGVC.Airline.Backend
         public DbSet<FlightExtraOption> FlightExtraOptions { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<Passport> Passports { get; set; }
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Passenger> Passengers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -49,6 +49,17 @@ namespace BGVC.Airline.Backend
                 foreignKey.DeleteBehavior = DeleteBehavior.Restrict;
             }
 
+            modelBuilder.Entity<Passport>()
+                .HasIndex(passport => passport.Number)
+                .IsUnique();
+
+            modelBuilder.Entity<Reservation>()
+                .HasIndex(reservation => reservation.Number)
+                .IsUnique(true);
+
+            modelBuilder.Entity<AirplaneType>()
+                .HasIndex(type => new { type.Manufacturer, type.Model })
+                .IsUnique();
 
             SeedData(modelBuilder);
             base.OnModelCreating(modelBuilder);
@@ -84,9 +95,9 @@ namespace BGVC.Airline.Backend
         {
             var flightExtraOptions = new List<FlightExtraOption>
             {
-                new FlightExtraOption { Id = 1, Name = "Basic", Description = "A sandwich and a beverage"},
-                new FlightExtraOption { Id = 2, Name = "Silver", Description = "A premium meal"},
-                new FlightExtraOption { Id = 3, Name = "Gold", Description = "Three course meal at the airplane lounge"}
+                new FlightExtraOption { Id = 1, Name = "Basic", Description = "A sandwich and a beverage", Price = 0 },
+                new FlightExtraOption { Id = 2, Name = "Silver", Description = "A premium meal", Price = 15 },
+                new FlightExtraOption { Id = 3, Name = "Gold", Description = "Three course meal at the airplane lounge", Price = 50 }
             };
 
             return flightExtraOptions;
@@ -96,9 +107,9 @@ namespace BGVC.Airline.Backend
         {
             var luggageOptions = new List<LuggageOption>
             {
-                new LuggageOption { Id = 1, Name = "Basic", Description = "Cabin luggage up to 8 kg"},
-                new LuggageOption { Id = 2, Name = "Silver", Description = "One bag up to 20kg + cabin luggage up to 8 kg"},
-                new LuggageOption { Id = 3, Name = "Gold", Description = "Two bags up to 20kg each + cabin luggage up to 8 kg"},
+                new LuggageOption { Id = 1, Name = "Basic", Description = "Cabin luggage up to 8 kg", Price = 0 },
+                new LuggageOption { Id = 2, Name = "Silver", Description = "One bag up to 20kg + cabin luggage up to 8 kg", Price = 20 },
+                new LuggageOption { Id = 3, Name = "Gold", Description = "Two bags up to 20kg each + cabin luggage up to 8 kg", Price = 32 },
             };
 
             return luggageOptions;

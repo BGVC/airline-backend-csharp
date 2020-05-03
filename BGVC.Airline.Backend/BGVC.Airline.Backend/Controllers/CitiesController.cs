@@ -11,11 +11,18 @@ namespace BGVC.Airline.Backend.Controllers
     [Route("api/[controller]")]
     public class CitiesController : Controller
     {
+        private readonly AirlineDBContext _dbContext;
+
+        public CitiesController(AirlineDBContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         // GET: api/<controller>
         [HttpGet]
         public ActionResult Get()
         {
-            var cities = Initialize.GetContext().Municipalities.ToList();
+            var cities = _dbContext.Municipalities.ToList();
             return Ok(cities);
         }
 
@@ -23,7 +30,7 @@ namespace BGVC.Airline.Backend.Controllers
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
-            var city = Initialize.GetContext().Municipalities.Single(x => x.Id == id);
+            var city = _dbContext.Municipalities.Single(x => x.Id == id);
             return Ok(city);
         }
     }
