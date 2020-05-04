@@ -3,7 +3,9 @@ using BGVC.Airline.Backend.Common;
 using BGVC.Airline.Backend.DTO;
 using BGVC.Airline.Backend.Interfaces;
 using BGVC.Airline.Backend.Models;
+using BGVC.Airline.Backend.Persistence.Interfaces;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace BGVC.Airline.Backend.Services
@@ -11,29 +13,43 @@ namespace BGVC.Airline.Backend.Services
     public class BookingService : IBookingService
     {
         private readonly IMapper _mapper;
+        private readonly IReservationRepository _reservationRepository;
+        private readonly IAirportRepository _airportRepository;
+        private readonly IFlightRepository _flightRepository;
+        private readonly ILuggageOptionRepository _luggageOptionRepository;
+        private readonly IFlightExtraOptionRepository _flightExtraOptionRepository;
+        private readonly IPassengerRepository _passengerRepository;
 
-        private readonly AirlineDBContext _dbContext;
-
-        public BookingService(IMapper mapper, AirlineDBContext dbContext)
+        public BookingService(IMapper mapper,
+            IReservationRepository reservationRepository, 
+            IAirportRepository airportRepository,
+            IFlightRepository flightRepository,
+            ILuggageOptionRepository luggageOptionRepository,
+            IFlightExtraOptionRepository flightExtraOptionRepository,
+            IPassengerRepository passengerRepository)
         {
-            _dbContext = dbContext;
             _mapper = mapper;
+            _reservationRepository = reservationRepository;
+            _airportRepository = airportRepository;
+            _flightRepository = flightRepository;
+            _luggageOptionRepository = luggageOptionRepository;
+            _flightExtraOptionRepository = flightExtraOptionRepository;
+            _passengerRepository = passengerRepository;
         }
 
         public BookingInitialStepChoiceDto GetBookingInitialStepChoice()
         {
-            var availableAirports = new List<AirportDto>();
-            availableAirports = _dbContext.Airports
+            var availableAirports = _airportRepository.GetAll()
             .Select(airport => new AirportDto
-            {
-                Id = airport.Id,
-                Name = airport.Name,
-                Abbreviation = airport.Code,
-                City = airport.Municipality.Name,
-                Country = airport.Municipality.IsoRegion.Country.Name
-            }
-            ).ToList();
-
+                {
+                    Id = airport.Id,
+                    Name = airport.Name,
+                    Abbreviation = airport.Code,
+                    City = airport.Municipality.Name,
+                    Country = airport.Municipality.IsoRegion.Country.Name
+                }
+            )
+            .ToList();
 
             var availableTravelClasses = EnumHelper.GetIdName<TravelClass>();
             var tripTypes = EnumHelper.GetIdName<TripType>();
@@ -46,15 +62,14 @@ namespace BGVC.Airline.Backend.Services
             };
         }
 
-        public FlightSearchResultsDto GetAvailableFlights(BookingInitialStepSelectionDto flightSelectionOptions)
+        public FlightSearchResultsDto GetAvailableFlights([NotNull] BookingInitialStepSelectionDto flightSelectionOptions)
         {
             var flightSearchResultsDto = new FlightSearchResultsDto();
-            var availableDepartingFlights = _dbContext.Flights
-                .Where(flight =>
-                    flight.DepartureAirport.Id == flightSelectionOptions.DepartureAirportId
-                    && flight.DestinationAirport.Id == flightSelectionOptions.DestinationAirportId
-                    && flight.DepartureTime.Date == flightSelectionOptions.DepartureDate.Date)
-                .ToList();
+            var availableDepartingFlights = _flightRepository
+                .GetByDepartureAirportAndByDestinationAirportAndByDate(
+                    flightSelectionOptions.DepartureAirportId,
+                    flightSelectionOptions.DestinationAirportId,
+                    flightSelectionOptions.DepartureDate.Date);
 
             var departingFlightDtos = _mapper.Map<List<Flight>, List<FlightDto>>(availableDepartingFlights);
             departingFlightDtos
@@ -63,12 +78,11 @@ namespace BGVC.Airline.Backend.Services
 
             flightSearchResultsDto.DepartingFlights = departingFlightDtos;
 
-            var availableReturningFlights = _dbContext.Flights
-                .Where(flight =>
-                    flight.DepartureAirport.Id == flightSelectionOptions.DestinationAirportId
-                    && flight.DestinationAirport.Id == flightSelectionOptions.DepartureAirportId
-                    && flight.DepartureTime.Date == flightSelectionOptions.ReturnDate.Date)
-                    .ToList();
+            var availableReturningFlights = _flightRepository
+                .GetByDepartureAirportAndByDestinationAirportAndByDate(
+                    flightSelectionOptions.DestinationAirportId,
+                    flightSelectionOptions.DepartureAirportId,
+                    flightSelectionOptions.ReturnDate.Date);
 
             var returningFlightDtos = _mapper.Map<List<Flight>, List<FlightDto>>(availableReturningFlights);
             returningFlightDtos
@@ -83,9 +97,9 @@ namespace BGVC.Airline.Backend.Services
         public ReservationOptionsDto GetAvailableReservationOptions()
         {
             var reservationOptions = new ReservationOptionsDto();
-            var luggageOptions = _dbContext.LuggageOptions.ToList();
+            var luggageOptions = _luggageOptionRepository.GetAll();
             var luggageOptionsDto = _mapper.Map<List<LuggageOption>, List<LuggageOptionDto>>(luggageOptions);
-            var extraOptions = _dbContext.FlightExtraOptions.ToList();
+            var extraOptions = _flightExtraOptionRepository.GetAll();
             var extraOptionsDto = _mapper.Map<List<FlightExtraOption>, List<FlightExtraOptionDto>>(extraOptions);
             reservationOptions.LuggageOptions = luggageOptionsDto;
             reservationOptions.ExtraOptions = extraOptionsDto;
@@ -104,8 +118,8 @@ namespace BGVC.Airline.Backend.Services
             };
 
             var reservation = _mapper.Map<ReservationDto, Reservation>(reservationDto);
-            var existingPassenger = _dbContext.Passengers.FirstOrDefault(passenger =>
-                passenger.Passport.Number == reservationDto.Passenger.Passport.Number);
+            var existingPassenger = _passengerRepository
+                .GetByPassportNumber(reservationDto.Passenger.Passport.Number);
             if (existingPassenger != null)
             {
                 reservation.Passenger = existingPassenger;
@@ -117,9 +131,7 @@ namespace BGVC.Airline.Backend.Services
             }
 
             reservation.Number = GeneratorHelper.GetRandomAlphanumericString(6);
-            _dbContext.Add(reservation);
-            // todo: check places to use SaveChangesAsync
-            _dbContext.SaveChanges();
+            _reservationRepository.Add(reservation);
             reservationDto.Id = reservation.Id;
             reservationDto.Number = reservation.Number;
 

@@ -22,6 +22,10 @@ namespace BGVC.Airline.Backend.Automapper
             CreateMap<Airport, AirportMinimalDto>()
                 .ForMember(airport => airport.City, opt => opt.MapFrom(s => s.Municipality.Name))
                 .ForMember(airport => airport.Abbreviation, opt => opt.MapFrom(s => s.Code));
+            CreateMap<Airport, AirportDto>()
+                .ForMember(airport => airport.City, opt => opt.MapFrom(s => s.Municipality.Name))
+                .ForMember(airport => airport.Country, opt => opt.MapFrom(s => s.Municipality.IsoRegion.Country.Name))
+                .ForMember(airport => airport.Abbreviation, opt => opt.MapFrom(s => s.Code));
 
             CreateMap<Flight, FlightDto>()
                 .ForMember(flight => flight.DepartureAirport, 

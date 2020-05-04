@@ -7,6 +7,8 @@ using AutoMapper;
 using BGVC.Airline.Backend.Automapper;
 using BGVC.Airline.Backend.Interfaces;
 using BGVC.Airline.Backend.Services;
+using BGVC.Airline.Backend.Persistence.Repositories;
+using BGVC.Airline.Backend.Persistence.Interfaces;
 
 namespace BGVC.Airline.Backend
 {
@@ -30,6 +32,12 @@ namespace BGVC.Airline.Backend
             services.AddMvc(options => options.EnableEndpointRouting = false);
             // todo: Select service lifetime appropriately between singleton, transient and scope
             services.AddScoped<IBookingService, BookingService>();
+            services.AddScoped<IAirportRepository, AirportRepository>();
+            services.AddScoped<IFlightExtraOptionRepository, FlightExtraOptionRepository>();
+            services.AddScoped<IFlightRepository, FlightRepository>();
+            services.AddScoped<ILuggageOptionRepository, LuggageOptionRepository>();
+            services.AddScoped<IPassengerRepository, PassengerRepository>();
+            services.AddScoped<IReservationRepository, ReservationRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
