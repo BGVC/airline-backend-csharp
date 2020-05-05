@@ -9,6 +9,7 @@ using BGVC.Airline.Backend.Interfaces;
 using BGVC.Airline.Backend.Services;
 using BGVC.Airline.Backend.Persistence.Repositories;
 using BGVC.Airline.Backend.Persistence.Interfaces;
+using BGVC.Airline.Backend.Persistence;
 
 namespace BGVC.Airline.Backend
 {
@@ -38,6 +39,7 @@ namespace BGVC.Airline.Backend
             services.AddScoped<ILuggageOptionRepository, LuggageOptionRepository>();
             services.AddScoped<IPassengerRepository, PassengerRepository>();
             services.AddScoped<IReservationRepository, ReservationRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

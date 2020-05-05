@@ -19,8 +19,10 @@ namespace BGVC.Airline.Backend.Services
         private readonly ILuggageOptionRepository _luggageOptionRepository;
         private readonly IFlightExtraOptionRepository _flightExtraOptionRepository;
         private readonly IPassengerRepository _passengerRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
         public BookingService(IMapper mapper,
+            IUnitOfWork unitOfWork,
             IReservationRepository reservationRepository, 
             IAirportRepository airportRepository,
             IFlightRepository flightRepository,
@@ -29,6 +31,7 @@ namespace BGVC.Airline.Backend.Services
             IPassengerRepository passengerRepository)
         {
             _mapper = mapper;
+            _unitOfWork = unitOfWork;
             _reservationRepository = reservationRepository;
             _airportRepository = airportRepository;
             _flightRepository = flightRepository;
@@ -132,6 +135,7 @@ namespace BGVC.Airline.Backend.Services
 
             reservation.Number = GeneratorHelper.GetRandomAlphanumericString(6);
             _reservationRepository.Add(reservation);
+            _unitOfWork.Commit();
             reservationDto.Id = reservation.Id;
             reservationDto.Number = reservation.Number;
 
